@@ -1,0 +1,35 @@
+.policy-cont{
+   padding: 20px 15px;
+}
+.policy-cont h3{
+   font-weight: 800;
+   font-size: 1.75rem;
+   color: #252525;
+   margin-bottom: 12px;
+   margin-top: 0px;
+}
+.policy-cont p{
+    color: #727695;
+    text-align: justify;
+    font-size: 15px;
+}
+.policy-cont ul{
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.policy-cont ul li{
+    color: #727695;
+    text-align: justify;
+    font-size: 15px;
+
+}
+@media screen and (max-width: 576px){
+    .policy-cont h3{
+        font-size: 1.5rem;
+    }
+    .policy-cont p{
+        font-size: 13px;
+    }
+
+
+}

@@ -1,0 +1,126 @@
+var ddata;
+    function getorderidbolt(planid,ccode,totalamount,name,email,mob,pcode,batchid)
+    {
+        $("#piModal").hide();
+        $('#blackbg').css('display','block');
+        $('#blackbg').css('height',$(document).height());
+
+        var url = '/pl2024/mockpages/getrzprelog.php';
+
+        var params = {};
+        params['amount'] = totalamount;
+        params['name'] = name;
+        params['email'] = email;
+        params['mob'] = mob;
+        params['pin'] = pcode;
+        params['ccode'] = ccode;
+        params['planid'] = planid;
+        params['batchid'] = batchid;
+
+        $.post(url,params, function(data) {
+            eval(data.trim());
+
+        var options = {
+            "key": "rzp_live_z4DfETwIS9g5gI", 
+            "amount": resp[1], 
+            "currency": "INR",
+            "name": "SkillVertex",
+            "order_id": resp[0],
+            redirect: true,
+            "callback_url": mockurl + "?payment=1",
+            "prefill": {
+                "name": name,
+                "email": email,
+                "contact": mob
+            },
+            "theme": {
+                "color": "#528FF0"
+            },
+
+    "modal": {
+        "ondismiss": function(){
+            
+            $('#blackbg').hide();
+        }
+    }
+
+
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+        });
+    }
+
+
+        $("#piClose").on("click", function(){
+            $("#piModal").hide();
+        });
+        $(function () {
+                $('input,textarea').focus(function () {
+                    $(this).data('placeholder', $(this).attr('placeholder'))
+                           .attr('placeholder', '');
+                }).blur(function () {
+                    $(this).attr('placeholder', $(this).data('placeholder'));
+                });
+        });
+
+            /* validation */
+            function proceed(){
+
+                var totalamount = $('#actamt').text();
+                var name = $("#uname").val();
+                var email = $("#puemail").val();
+                var mob = $('#uphone').val();
+                var pcode = $('#upincode').val();
+                var ccode = $('#ccode').text();
+                var planid = $('#planid').text();
+                var batchid = $('#batchid').text();
+
+                if(name!='' && email!='' && mob!='' && pcode!='') {
+                    var filter = /^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*?)\s*;?\s*)+/;
+                    if(!filter.test(email)){
+                        $('#errmsg').html('Enter Valid Email Address');
+                         }
+                     else {
+
+                            var mfilter = /^\d{10}$/; 
+                            var pinfilter = /^\d{6}$/; 
+                            if (!mfilter.test(mob))
+                            {
+                                $('#errmsg').html('Enter Valid phone number');
+                            }
+                            else
+                            {
+                                if (!pinfilter.test(pcode))
+                                {
+                                $('#errmsg').html('Enter Valid area pincode');
+                                }
+                                else
+                                {
+                                    getorderidbolt(planid,ccode,totalamount,name,email,mob,pcode,batchid);
+                                }
+                            }
+                    }
+                }
+                else
+                {
+                    $('#errmsg').html('Fields cannot be empty');
+                }
+            }
+            
+            /* number validation */
+            $("#uphone, #upincode").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                     // Allow: Ctrl+A, Command+A
+                    (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
+                     // Allow: home, end, left, right, down, up
+                    (e.keyCode >= 35 && e.keyCode <= 40)) {
+                         // let it happen, don't do anything
+                         return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });

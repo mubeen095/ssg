@@ -1,0 +1,27 @@
+jQuery("#carousel, #carousel1").owlCarousel({
+          autoplay: true,   
+          rewind: true, /* use rewind if you don't want loop */
+          margin: 0,
+           /*
+          animateOut: 'fadeOut', 
+          animateIn: 'fadeIn', 
+          */
+          responsiveClass: true,
+          autoHeight: true,
+          autoplayTimeout: 3000,                                                                     
+          smartSpeed: 800,
+          nav: true,
+          responsive: {
+            0: {        
+              items: 1      
+            },                  
+                                
+            600: {              
+              items: 2      
+            },          
+                    
+            1024: {
+              items: 3
+            },
+          }
+});                 

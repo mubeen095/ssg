@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C/C++ Preprocessors</title>
+	<atom:link href="https://www.skillvertex.com/tag/c-c-preprocessors/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:41:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>C/C++ Preprocessors</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>C/C++ Preprocessors</title>
+		<link>https://www.skillvertex.com/blog/c-c-preprocessors/</link>
+					<comments>https://www.skillvertex.com/blog/c-c-preprocessors/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:41:06 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[C/C++ Preprocessors]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3226</guid>
+
+					<description><![CDATA[C/C++ Preprocessors C/C++ preprocessors are powerful tools that play a crucial role in the software development process. These tools are responsible for processing and modifying the source code before actual compilation, enabling developers to streamline their work, enhance code reusability, and improve code maintenance. By handling tasks such as including header files, defining macros, and ... <a title="C/C++ Preprocessors" class="read-more" href="https://www.skillvertex.com/blog/c-c-preprocessors/" aria-label="More on C/C++ Preprocessors">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#c-c-preprocessors">C/C++ Preprocessors</a></li><li ><a href="#what-are-c-c-preprocessors">What are C/C++ Preprocessors</a></li><li ><a href="#preprocessor-directives-in-c-c">Preprocessor Directives in C/C++</a></li><li ><a href="#types-of-c-c-preprocessors">Types of C/C++ Preprocessors</a></li><li ><a href="#1-macros">1. Macros</a></li><li ><a href="#macros-with-arguments">Macros With Arguments</a></li><li ><a href="#2-file-inclusion">2. File Inclusion</a></li><li ><a href="#standard-header-files">Standard Header Files</a></li><li ><a href="#user-defined-header-files">User-defined Header Files</a></li><li ><a href="#3-conditional-compilation">3. Conditional Compilation</a></li><li ><a href="#other-directive">Other Directive</a></li><li ><a href="#1-undef-directive">1. #undef Directive</a></li><li ><a href="#2-pragma-directive">2. #pragma Directive</a></li><li ><a href="#pragma-warn-directive">#pragma warn Directive</a></li><li ><a href="#faq-c-c-preprocessors">FAQ- C/C++ Preprocessors</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="c-c-preprocessors">C/C++ Preprocessors</h2>
+
+
+
+<p>C/C++ preprocessors are powerful tools that play a crucial role in the software development process. These tools are responsible for processing and modifying the source code before actual compilation, enabling developers to streamline their work, enhance code reusability, and improve code maintenance. By handling tasks such as including header files, defining macros, and performing conditional compilation, C/C++ preprocessors help shape the code and make it more efficient, readable, and adaptable. In this introductory exploration, we will delve into the world of C/C++ preprocessors to understand their significance and how they enhance the development of software in these programming languages.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-c-c-preprocessors">What are C/C++ Preprocessors</h2>
+
+
+
+<p>Preprocessors are those which can process source code before compilation. There are several steps that will involve writing a program and executing the program in C/C++. </p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Preprocessing:</strong> The source code file &#8220;program.c&#8221; is processed by preprocessors. This step results in the creation of an expanded source code file known as &#8220;program.i.&#8221;</li>
+
+
+
+<li><strong>Compilation:</strong> The &#8220;program.i&#8221; file, which has been expanded by the preprocessor, is then compiled by the compiler. The compiler&#8217;s job is to translate the code into a lower-level language or machine code. The outcome of this step is an object code file named &#8220;program.obj.&#8221;</li>
+
+
+
+<li><strong>Linking:</strong> The linker comes into play. It takes the &#8220;program.obj&#8221; file and combines it with object code from library functions. This linking process results in the generation of the final executable file named &#8220;program.exe.&#8221;</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="preprocessor-directives-in-c-c">Preprocessor Directives in C/C++</h2>
+
+
+
+<p>The Preprocessor program will provide the preprocessor directive that can guide the compiler to preprocess the source code before compiling. Preprocessor directives will begin with a (# ) symbol. This # symbol will refer to whatever statement begins with # and, further, it will go to the preprocessor program to be executed. Thereafter, we can even place these preprocessor directives anywhere in the program.</p>
+
+
+
+<p><strong>The following table about  the preprocessor directives in C/C++:</strong></p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Preprocessor Directives</th><th>Description</th></tr></thead><tbody><tr><td><strong>#define</strong></td><td>It is used to define a macro</td></tr><tr><td><strong>#undef</strong></td><td>It is used  to undefine a macro</td></tr><tr><td><strong>#include</strong></td><td>This preprocessor is used to include a file in the source code program</td></tr><tr><td><strong>#ifdef</strong></td><td>This is used to include a section of code if a certain macro is not defined by #define</td></tr><tr><td><strong>#ifndef</strong></td><td>This is used to include a section of code when a certain macro is not defined by #define</td></tr><tr><td><strong>#if</strong></td><td>Used to monitor  the specified condition</td></tr><tr><td>#else</td><td># else is another alternative that will execute when#if fails </td></tr><tr><td>#endif</td><td>It is used to indicate the end of #if,#ifdef, and#ifndef</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="types-of-c-c-preprocessors">Types of C/C++ Preprocessors</h2>
+
+
+
+<p>4 Main types of preprocessor directives are:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Macros</li>
+
+
+
+<li>File Inclusion</li>
+
+
+
+<li>Conditional Compilation</li>
+
+
+
+<li>Other directives</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-macros">1. Macros</h2>
+
+
+
+<p>In C/C++, macros are like shortcuts for code. They are created by giving a name to a piece of code. When the compiler sees this name in your program, it replaces it with the actual code. To make macros, we use the <code>#define</code> directive. This allows us to define these handy code snippets for reuse in our programs.</p>
+
+
+
+<p>Syntax of Macro Definition</p>
+
+
+
+<pre class="wp-block-code"><code>#define token value
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C Program to illustrate the macro
+#include &lt;stdio.h&gt;
+ 
+// macro definition
+#define LIMIT 5
+ 
+int main()
+{
+    for (int i = 0; i &lt; LIMIT; i++) {
+        printf("%d \n", i);
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>0 
+1 
+2 
+3 
+4</code></pre>
+
+
+
+<p>The above program illustrates that the compiler will execute the word  LIMIT and later, it will replace it with 5. Hence, LIMIT in the macro definition is known as the macro template, and 5 as the macro expansion.</p>
+
+
+
+<h2 class="wp-block-heading" id="macros-with-arguments">Macros With Arguments</h2>
+
+
+
+<p>Macros in C/C++ can indeed be defined with arguments, and they work somewhat like functions. When you define a macro with arguments, you can use those arguments within the macro code to make it more flexible and versatile. These macros are known as &#8220;function-like macros.&#8221; They enable you to create reusable code blocks with parameters, similar to functions, but they are preprocessed and substituted directly into your code, often resulting in more efficient code execution.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>#define foo(a, b) a + b
+#define func(r) r * r</code></pre>
+
+
+
+<pre class="wp-block-code"><code>
+// C Program to illustrate function like macros
+#include &lt;stdio.h&gt;
+ 
+// macro with parameter
+#define AREA(l, b) (l * b)
+ 
+int main()
+{
+    int l1 = 10, l2 = 5, area;
+ 
+    area = AREA(l1, l2);
+ 
+    printf("Area of rectangle is: %d", area);
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Area of rectangle is: 50
+</code></pre>
+
+
+
+<p>The program you&#8217;ve described illustrates how macros work. When the compiler encounters the macro <code>AREA(l, b)</code> in your code, it directly replaces it with the statement <code>(l * b)</code>. Additionally, any values you pass to the macro, like in <code>AREA(10, 5)</code>, will also be substituted into the statement. So, <code>AREA(10, 5)</code> is effectively equal to <code>10 * 5</code>, making it a simple way to create reusable code snippets with dynamic values.</p>
+
+
+
+<h2 class="wp-block-heading" id="2-file-inclusion">2. File Inclusion</h2>
+
+
+
+<p>This type of preprocessor directive will insist the compiler to include a file in the source code program. The #include preprocessor director will include the header files in the C/C ++ program.</p>
+
+
+
+<p><strong>There are two types of files that can be included by the user in the program:</strong></p>
+
+
+
+<h2 class="wp-block-heading" id="standard-header-files"><strong>Standard Header Files</strong></h2>
+
+
+
+<p>The stanard header file will contain definition of pre-defined function such as print f () , scan(). Those files should be included to work with those functions. Additionaly, different functions will declared in different header files.</p>
+
+
+
+<p>So, standard I/O function will be in the &#8216;iostream file&#8217;, and functions that will perform string operation will be in the string file.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;file_name&gt;
+</code></pre>
+
+
+
+<p>In the syntax given above, file_name refer to the name of the header file that should be included.  The &lt; and &gt; brackets will assist the compiler to search the file in the standard directory.</p>
+
+
+
+<h2 class="wp-block-heading" id="user-defined-header-files"><strong>User-defined Header Files</strong></h2>
+
+
+
+<p>When a program turns into large, it is better to change into smaller files and the, include them in whatever required. Those types of files are user-defined header files. They can be included as:</p>
+
+
+
+<pre class="wp-block-code"><code>#include "filename"
+</code></pre>
+
+
+
+<p>(&#8220;&#8221; ) These double quotes will tell about the compiler and to look for the header file in the source file&#8217;s directory.</p>
+
+
+
+<h2 class="wp-block-heading" id="3-conditional-compilation"><strong>3. Conditional Compilation</strong></h2>
+
+
+
+<p>It is a type of directive which is used to compile a small portion of the program or skip the compilation of some specific part of the program depending on certain conditions. Preprocessor directive which are used to insert the conditional code.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#if Directive</strong></li>
+
+
+
+<li><strong>#ifdef Directive</strong></li>
+
+
+
+<li><strong>#ifndef Directive</strong></li>
+
+
+
+<li><strong>#else Directive</strong></li>
+
+
+
+<li><strong>#elif Directive</strong></li>
+
+
+
+<li><strong>#endif Directive</strong></li>
+</ol>
+
+
+
+<p><strong>#endif</strong>&nbsp;directive functions  to close off the #if, #ifdef, and #ifndef opening directives, and it refers that  the preprocessing of these directives is hence completed.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#ifdef macro_name
+    statement1;
+    statement2;
+    statement3;
+    .
+    .
+    .
+    statementN;
+#endif</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="other-directive">Other Directive</h2>
+
+
+
+<p>The directive that are not commonly used are:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#undef Directive</strong></li>
+
+
+
+<li><strong>#pragma Directive</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-undef-directive"><strong>1. #undef Directive</strong></h2>
+
+
+
+<p>This is used to undefine an existing macro.</p>
+
+
+
+<pre class="wp-block-code"><code>#undef LIMIT
+</code></pre>
+
+
+
+<p>&nbsp;After this statement, every “#ifdef LIMIT” statement will be evaluated as false.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="2-pragma-directive">2. #pragma Directive</h2>
+
+
+
+<p>This directive has a special purpose directive and, also to turn on or off some features. These types of directives are basically compiler-specific, i.e., they will vary from compiler to compiler. Some of the #pragma directives are discussed below:&nbsp;</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#pragma startup:&nbsp;</strong>These directives are used to specify the functions that are required to run before program startup (before the control passes to main()).</li>
+
+
+
+<li><strong>#pragma exit</strong>: These directives help us to specify the functions that are needed to run just before the program exit (just before the control returns from main()).</li>
+</ol>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to illustrate the #pragma exit and pragma
+// startup
+#include &lt;stdio.h&gt;
+ 
+void func1();
+void func2();
+ 
+// specifying funct1 to execute at start
+#pragma startup func1
+// specifying funct2 to execute before end
+#pragma exit func2
+ 
+void func1() { printf("Inside func1()\n"); }
+ 
+void func2() { printf("Inside func2()\n"); }
+ 
+// driver code
+int main()
+{
+    void func1();
+    void func2();
+    printf("Inside main()\n");
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside main()
+</code></pre>
+
+
+
+<p>Expected Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside func1()
+Inside main()
+Inside func2()</code></pre>
+
+
+
+<p>While running on GCC Compilers, it will show output as below:</p>
+
+
+
+<pre class="wp-block-code"><code>Inside main()
+</code></pre>
+
+
+
+<p>This happens as GCC won&#8217;t support #pragma startup or exit. Hence, you can use the below code for the expected output on GCC compilers.&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>
+
+#include &lt;iostream&gt;
+using namespace std;
+ 
+void func1();
+void func2();
+ 
+void __attribute__((constructor)) func1();
+void __attribute__((destructor)) func2();
+ 
+void func1()
+{
+    printf("Inside func1()\n");
+}
+ 
+void func2()
+{
+    printf("Inside func2()\n");
+}
+ 
+// Driver code
+int main()
+{
+    printf("Inside main()\n");
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside func1()
+Inside main()
+Inside func2()</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="pragma-warn-directive"><strong>#pragma warn Directive</strong></h2>
+
+
+
+<p>This directive intends to hide the warning message that  are  displayed during compilation.&nbsp;We can hide the warnings as shown below:&nbsp;</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>#pragma warn -rvl</strong>: This directive hides those warnings that are raised when a function that is supposed to return a value does not return a value.</li>
+
+
+
+<li><strong>#pragma warn -par</strong>: This directive hides those warnings that are raised when a function won&#8217;t use the parameters passed to it.</li>
+
+
+
+<li><strong>#pragma warn -rch</strong>: This directive hides those warnings which are raised when a code is unreachable. For example, any code written after the&nbsp;<em>return</em>&nbsp;statement in a function is unreachable.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="faq-c-c-preprocessors">FAQ- C/C++ Preprocessors</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698927109746" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is the preprocessor in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The preprocessor can perform the preliminary operations on C and C++ files before they are passed to the compiler. Therefore, you can add the preprocessor to conditionally compile code, insert files, specify compile-time error messages, and apply machine-specific rules to sections of code</p>
+
+</div>
+</div>
+<div id="faq-question-1698927115582" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is #define in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. When you use <code>#define</code> in your code, you create a macro that associates an identifier (or parameterized identifier) with a token string. Once defined, the compiler replaces every instance of that identifier in the source file with the specified token string. This allows you to create shortcuts, constants, or reusable code blocks that make your code more readable and efficient.</p>
+
+</div>
+</div>
+<div id="faq-question-1698927120401" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. Which of the following are C preprocessors?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <code>#define</code>, <code>#ifdef</code>, and <code>#endif</code> are all part of the C preprocessor. The C compiler automatically employs the C preprocessor, which is essentially a macro processor, to modify your program before the actual compilation. These preprocessor directives are used to define macros, conditionally include or exclude parts of the code, and perform various other preprocessing tasks to prepare the code for compilation. They are an integral part of the C programming language and contribute to code organization, optimization, and customization.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/c-c-preprocessors/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+.sec-creative{
+    padding: 50px 0;
+    background: #cfd0e3; 
+}
+.sec-creative .head-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec-creative .head-cont h2{
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 3.2rem;
+    line-height: 60px;
+    max-width: 680px;
+    text-align: center;
+    margin-bottom:25px;
+}
+.sec-creative .outer-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sec-creative .outer-cont .cont-left{
+    display: flex;
+    width: 50%;
+    text-align: justify;
+    border-right: 1px solid #fff;
+    padding: 20px;
+    padding-left: 0;
+}
+.sec-creative .outer-cont .cont-left p{
+    color: #727695;
+    margin: 0;
+}
+.sec-creative .outer-cont .cont-right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+.sec-creative .outer-cont .cont-right .img-bx{
+    display: flex;
+}
+.sec-creative .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 56px;
+    background: #ebf6ff;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.sec-creative .row .btn-abt{
+    background-color: #6d87fe;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+}
+.sec-creative .row .btn-abt:hover{
+    background-color: #000 !important;
+}
+@media screen and (max-width: 991px) {
+    .sec-creative .outer-cont{
+        flex-direction: column;
+    }
+    .sec-creative .outer-cont .cont-left{
+        border : none;
+        padding: 0;
+        width: 100%;
+        margin-bottomx;
+    }
+    .sec-creative .outer-cont .cont-right{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sec-creative{
+        padding: 50px 10px;
+    }
+    .sec-creative .head-cont h2{
+        font-size: 2.3rem;
+        line-height: 1;  
+    }
+    .sec-creative .outer-cont .cont-left p{
+        font-size: 14px;
+    }
+}
+/*Join Our Team*/
+.sec-join{
+    padding-top: 140px;
+    padding-bottom: 80px; 
+}
+.sec-join .row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sec-join .row .right-cont{
+    background-image: url(../img/sitting-girl.png);
+    background-size: contain;
+    display: flex;
+    width: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 10% 40%;
+}
+.sec-join .row .left-cont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(../img/pattern.png);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-join .row .left-cont h3{
+    margin-bottom: 14px;
+    font-size: 37px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    color: #252525;
+    line-height: 1.2;
+}
+.sec-join .row .left-cont p{
+    color: #727695;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.sec-join .row .left-cont a{
+    padding: 13px 25px 12px 25px;
+    width: fit-content;
+    border-radius: 25px;
+    display: flex;
+    flex-direction:row;
+    transition: all 0.5s ease-out;
+}
+.sec-join .row .left-cont a:hover{
+    background: #000 !important;
+    flex-direction:row-reverse;
+}
+.sec-join .row .left-cont .btn .fa-circle-plus{
+    margin: 0 10px;
+}
+@media screen and (max-width: 1400px){
+    .sec-join .row .right-cont {
+       background-position: -18% 40%;
+     }
+}
+@media screen and (max-width: 1200px){
+    .sec-join .row .right-cont {
+        background-position: -70% 40%;
+     }
+}
+@media screen and (max-width: 991px) {
+    .sec-join .row{
+        flex-direction: column;
+    }
+    .sec-join .row .right-cont{
+        width: 100%;
+        height: 500px;
+        background-attachment: scroll;
+        background-position: center;
+    }
+    .sec-join .row .left-cont{
+        width: 100%;
+        align-items: center;
+        padding:0;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .sec-join{
+        padding: 50px 10px;
+    }
+    .sec-join .row .left-cont h3{
+        font-size: 28px;
+    }
+    .sec-join .row .left-cont p{
+        font-size:14px;
+    } 
+}
+
+.sec-perks .perks-row .card h2{
+    display: flex !important;
+}
+.sec-overview{
+    justify-content: center;
+}

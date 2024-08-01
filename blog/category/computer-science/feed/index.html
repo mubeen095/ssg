@@ -1,0 +1,3092 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Computer Science</title>
+	<atom:link href="https://www.skillvertex.com/category/computer-science/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:47:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>Computer Science</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How To Write Your Own Header File In C?</title>
+		<link>https://www.skillvertex.com/blog/how-to-write-your-own-header-file-in-c/</link>
+					<comments>https://www.skillvertex.com/blog/how-to-write-your-own-header-file-in-c/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:47:31 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[How To Write Your Own Header File In C?]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3269</guid>
+
+					<description><![CDATA[How To Write Your Own Header File In C? Creating your own header files in C is an important skill that helps you organize your code better. Header files allow you to declare functions and data structures that you can use in different parts of your program. This guide will show you how to make ... <a title="How To Write Your Own Header File In C?" class="read-more" href="https://www.skillvertex.com/blog/how-to-write-your-own-header-file-in-c/" aria-label="More on How To Write Your Own Header File In C?">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#how-to-write-your-own-header-file-in-c">How To Write Your Own Header File In C?</a></li><li ><a href="#example-to-show-how-to-create-a-header-file">Example to show how to create a header file </a><ul><li ><a href="#1-creating-my-head-h">1. Creating my head.h</a></li><li ><a href="#2-including-the-h-file-in-other-programs">2. Including the .h file in other programs</a></li><li ><a href="#3-using-the-created-header-file">3. Using the created header file </a></li></ul></li><li ><a href="#important-points">Important Points</a></li><li ><a href="#faq-how-to-write-your-own-header-file-in-c">FAQ- How To Write Your Own Header File In C?</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="how-to-write-your-own-header-file-in-c">How To Write Your Own Header File In C?</h2>
+
+
+
+<p>Creating your own header files in C is an important skill that helps you organize your code better. Header files allow you to declare functions and data structures that you can use in different parts of your program. This guide will show you how to make your own header files in C, making your code easier to manage and reuse. Whether you&#8217;re working on a small project or a big one, learning this skill will make your coding life simpler.</p>
+
+
+
+<p>Note:</p>
+
+
+
+<p>The Header files will mostly have definitions of data types, function prototypes and C preprocessor commands.</p>
+
+
+
+<h2 class="wp-block-heading" id="example-to-show-how-to-create-a-header-file">Example to show how to create a header file </h2>
+
+
+
+<h3 class="wp-block-heading" id="1-creating-my-head-h">1. <strong>Creating my head.h</strong></h3>
+
+
+
+<p>Write the code provided below and save it as <strong>myhead.h</strong> or  enter any name along with the extension of .h which will represent a header file.</p>
+
+
+
+<pre class="wp-block-code"><code>// It is not recommended to put function definitions  
+// in a header file. Ideally there should be only 
+// function declarations. Purpose of this code is 
+// to only demonstrate working of header files. 
+void add(int a, int b) 
+{ 
+    printf("Added value=%d\n", a + b); 
+} 
+void multiply(int a, int b) 
+{ 
+    printf("Multiplied value=%d\n", a * b); 
+} </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="2-including-the-h-file-in-other-programs">2. <strong>Including the .h file in other programs</strong></h3>
+
+
+
+<p>We have to add stdio.h as  #include for using the printf () function. Additionally, we have to add the header file. h as #include&#8221;my header.h&#8221;. These  &#8220;&#8221;  functions to instructs the preprocessor to monitor the present folder and you can look at the standard folder  when the header file is not found in the present folder. Make a note that only use &#8220;&#8221; angular bracket if the header file is saved in same folder.</p>
+
+
+
+<h3 class="wp-block-heading" id="3-using-the-created-header-file">3. <strong>Using the created header file </strong></h3>
+
+
+
+<pre class="wp-block-code"><code>// C program to use the above created header file 
+#include &lt;stdio.h&gt; 
+#include "myhead.h" 
+int main() 
+{ 
+    add(4, 6); 
+  
+    /*This calls add function written in myhead.h   
+      and therefore no compilation error.*/
+    multiply(5, 5); 
+  
+    // Same for the multiply function in myhead.h 
+    printf("BYE!See you Soon"); 
+    return 0; 
+} </code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Added value:10
+Multiplied value:25
+BYE!See you Soon</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="important-points">Important Points</h2>
+
+
+
+<p>Header files play a crucial role in large C programs by allowing different parts of the program to share essential information like function definitions, prototypes, global variables, and structure declarations. They help centralize these declarations, making code more organized and reusable.</p>
+
+
+
+<p>To create effective header files:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Include only the minimum required statements.</li>
+
+
+
+<li>Avoid redundant or unnecessary header files.</li>
+
+
+
+<li>Don&#8217;t place function definitions in header files; save them in separate .c files.</li>
+
+
+
+<li>Include declarations for functions and variables whose definitions are meant to be shared with the linker.</li>
+
+
+
+<li>Define data structures and enumerations that are used across multiple source files.</li>
+</ul>
+
+
+
+<p>In summary, keep header files concise and include only what&#8217;s necessary for efficient code organization and reusability.</p>
+
+
+
+<h2 class="wp-block-heading" id="faq-how-to-write-your-own-header-file-in-c">FAQ- How To Write Your Own Header File In C?</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1699264406691" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. Where can I find C header files?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. To use Metal C Runtime Library header files in z/OS® UNIX, located in <code>/usr/include/metal/</code>, ensure the Metal C compiler can find them. You can specify the directory using <code>-I</code>, set environment variables like <strong>CPATH</strong>, or adjust the compiler&#8217;s configuration. Check the compiler&#8217;s documentation for details.</p>
+
+</div>
+</div>
+<div id="faq-question-1699264414786" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What to put in header file C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. A common practice in C and C++ programming is to place constants, macros, global variables, and function prototypes in header files. These header files are then included in the source files where they are needed. This approach promotes code organization, reusability, and maintainability.</p>
+
+</div>
+</div>
+<div id="faq-question-1699264422368" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is the C type header file?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The <code>ctype.h</code> header file in C defines functions for character classification and transformation. These functions typically take an integer, which is the ASCII value of a character, as input. If a character is provided as input, it is internally typecasted to its integer ASCII value within the function. This header file is commonly used to check and manipulate character properties, such as checking if a character is alphanumeric, converting characters to uppercase or lowercase, and more.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/how-to-write-your-own-header-file-in-c/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?</title>
+		<link>https://www.skillvertex.com/blog/whats-the-difference-between-header-files-stdio-h-and-stdlib-h/</link>
+					<comments>https://www.skillvertex.com/blog/whats-the-difference-between-header-files-stdio-h-and-stdlib-h/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:47:19 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3264</guid>
+
+					<description><![CDATA[What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ? In C programming, &#60;stdio.h&#62; and &#60;stdlib.h&#62; are two important standard library header files that serve different purposes. This header file provides functions and declarations related to input and output operations.It includes declarations for functions like printf(), scanf(), and other functions that are used for reading ... <a title="What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?" class="read-more" href="https://www.skillvertex.com/blog/whats-the-difference-between-header-files-stdio-h-and-stdlib-h/" aria-label="More on What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#whats-the-difference-between-header-files-stdio-h-and-stdlib-h"> What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?</a></li><li ><a href="#faq-whats-the-difference-between-header-files-stdio-h-and-stdlib-h">FAQ-  What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="whats-the-difference-between-header-files-stdio-h-and-stdlib-h"> What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?</h2>
+
+
+
+<p> In C programming, &lt;stdio.h&gt; and &lt;stdlib.h&gt; are two important standard library header files that serve different purposes.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>&lt;stdio.h&gt; (Standard Input/Output):</strong></li>
+</ol>
+
+
+
+<p>This header file provides functions and declarations related to input and output operations.It includes declarations for functions like printf(), scanf(), and other functions that are used for reading and writing data to and from files, as well as the standard input and output streams. It is mainly focused on handling file-related input/output operations and console input/output.</p>
+
+
+
+<p><strong>2.&lt;stdlib.h&gt; (Standard Library):</strong></p>
+
+
+
+<p>This header file provides functions for memory management and general utilities. It includes declarations for functions like malloc(), free(), and other functions for dynamic memory allocation and manipulation, as well as various utility functions. It is primarily used for memory allocation and freeing functions and other general-purpose functions.</p>
+
+
+
+<p>The differentiation between these two header files, with &lt;stdio.h&gt; being for &#8220;File related Input/Output&#8221; functions and &lt;stdlib.h&gt; for &#8220;Memory Allocation/Freeing&#8221; functions, is a good way to understand their primary purposes. Developers include these header files in their C programs as needed, depending on the functionality they require.</p>
+
+
+
+<p>In C, the association with UNIX history is indeed reflected in its treatment of keyboard input and display output as &#8220;files.&#8221; This concept is rooted in the Unix philosophy of &#8220;everything is a file,&#8221; where input and output streams are treated similarly to files. Keyboard input is often associated with the default stdin file stream, and display output is associated with the default stdout file stream. This concept simplifies handling input and output, making it consistent with file operations. While &lt;stdlib.h&gt; does include memory-related functions like malloc() and free(), it also contains other utility functions such as atoi() for string-to-integer conversion, exit() for program termination, and rand() for random number generation. So, it&#8217;s a versatile header file that goes beyond memory management functions.</p>
+
+
+
+<p>Indeed, header files can contain not only function declarations but also definitions of constants, variables, macros, and custom data types. Header files are used to summarize and share common code among multiple source files in a C program, making it easier to maintain and reuse code.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th></th><th>stdio.h</th><th>stdlib.h</th></tr></thead><tbody><tr><td><strong>1.</strong></td><td>stdio. h is referred to as  Standard Input Output</td><td>stdio. h is referred to as  Standard Library</td></tr><tr><td><strong>2.</strong></td><td>stdio. h contains information regarding input and output functions.</td><td>Whereas, functions of stdlib. h are&nbsp;<strong>malloc , &nbsp;free ,abort , exit , </strong>etc.</td></tr><tr><td><strong>3.</strong></td><td>stdlib. h is only used when we need to allocate memory in our program.</td><td>Whereas, functions of stdlib. h are&nbsp;<strong>malloc , &nbsp;free ,abort , exit , </strong>etc.</td></tr><tr><td><strong>4.</strong></td><td>stdlib.h is only used when we need to allocate memory in our program.</td><td> Functions of stdio. h are&nbsp;<strong>printf, scanf</strong>&nbsp;,<strong>getc, putc ,&nbsp;</strong>etc</td></tr></tbody></table><figcaption class="wp-element-caption"> </figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="faq-whats-the-difference-between-header-files-stdio-h-and-stdlib-h">FAQ-  What’s The Difference Between Header Files “Stdio.h” And “Stdlib.h” ?</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1699254229595" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is the use of Stdlib H header file?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. &lt;stdlib.h> is a standard C header file that&#8217;s part of the C Standard Library. It includes utility functions, data types, and macros for tasks like memory allocation, type conversions, random number generation, program termination, sorting, and searching. It&#8217;s an essential tool for various C programming tasks.</p>
+
+</div>
+</div>
+<div id="faq-question-1699254242681" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. Is Stdio H part of the standard library?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.&lt;stdio.h> is indeed one of the header files within the C standard library, and it stands for &#8220;Standard Input Output.&#8221; This header file contains declarations for functions that are used to handle input, output, and file operations in C programming. It provides a standardized way to work with data streams, files, and other input/output operations in C.</p>
+
+</div>
+</div>
+<div id="faq-question-1699254250786" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is the use of Stdio H and Conio H?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. stdio.h is a standard C library header file that declares functions for standard input and output, commonly used for console input and output operations. On the other hand, conio.h is a header file that declares console input and output functions,</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/whats-the-difference-between-header-files-stdio-h-and-stdlib-h/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Header Files In C/C++ And Its Uses</title>
+		<link>https://www.skillvertex.com/blog/header-files-in-c-c-and-its-uses/</link>
+					<comments>https://www.skillvertex.com/blog/header-files-in-c-c-and-its-uses/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:46:34 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Header Files In C/C++ And Its Uses]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3248</guid>
+
+					<description><![CDATA[Header Files In C/C++ And Its Uses Header files are an essential part of both programming languages, and they serve as a means to include predefined standard library functions, data types, macros, and other features in your programs.In C, header files typically have the &#8220;.h&#8221; extension, and you include them in your code using the ... <a title="Header Files In C/C++ And Its Uses" class="read-more" href="https://www.skillvertex.com/blog/header-files-in-c-c-and-its-uses/" aria-label="More on Header Files In C/C++ And Its Uses">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#header-files-in-c-c-and-its-uses">Header Files In C/C++ And Its Uses</a></li><li ><a href="#syntax-of-header-file-in-c-c">Syntax Of Header File In C/C+</a></li><li ><a href="#types-of-header-files">Types of Header Files</a></li><li ><a href="#1-standard-header-files-in-c-and-their-uses">1. Standard Header Files in C and their Uses</a></li><li ><a href="#2-non-standard-header-files-in-c-and-their-uses">2. Non-Standard Header Files in C and Their Uses</a></li><li ><a href="#2-non-standard-header-files-in-c-and-their-uses-1">2. Non-Standard Header Files in C and Their Uses</a></li><li ><a href="#standard-header-files-in-c-and-their-uses">Standard Header Files in C++ and their Uses</a></li><li ><a href="#c-languages-standard-libraries-are-the-following">C language’s Standard Libraries are the following</a></li><li ><a href="#non-standard-header-files-in-c-and-their-uses">Non-Standard Header Files in C++ and Their Uses</a></li><li ><a href="#create-your-own-header-file-in-c-and-c">Create your own Header File in C and C++</a></li><li ><a href="#including-multiple-header-files">Including Multiple Header Files</a></li><li ><a href="#faq-header-files-in-c-c-and-its-uses">FAQ- Header Files In C/C++ And Its Uses</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="header-files-in-c-c-and-its-uses">Header Files In C/C++ And Its Uses</h2>
+
+
+
+<p>Header files are an essential part of both programming languages, and they serve as a means to include predefined standard library functions, data types, macros, and other features in your programs.In C, header files typically have the &#8220;.h&#8221; extension, and you include them in your code using the #include preprocessor directive. These header files provide access to various libraries and functions to simplify programming.</p>
+
+
+
+<p>In C++, header files may or may not have the &#8220;.h&#8221; extension. The #include directive is used to import these header files and access the features they provide, including library functions, data types, and macros.These preprocessor directives are vital in both languages, as they ensure that the necessary header files are processed before the actual compilation, making the required features available for your code.</p>
+
+
+
+<h2 class="wp-block-heading" id="syntax-of-header-file-in-c-c">Syntax Of Header File In C/C+</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;filename.h&gt;    // for files in system/default directory
+       or
+#include "filename.h"    // for files in same directory as source file</code></pre>
+
+
+
+<p>The #include directive instructs the compiler to process the specified header file before the actual compilation of the source code. This includes making available all the necessary data types, function definitions, and other declarations contained within the included header file for use in your program. It allows you to access predefined functionality and libraries to simplify your programming tasks.</p>
+
+
+
+<pre class="wp-block-code"><code>
+// C program to demonstrate the use of header files
+//    standard input and output stdio.h header file
+#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    printf(
+        "Printf() is the function in stdio.h header file");
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Printf() is the function in stdio.h header file
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="types-of-header-files">Types of Header Files</h2>
+
+
+
+<p>There are two types of header files in C and C++:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Standard / Pre-existing header files</strong></li>
+
+
+
+<li><strong>Non-standard / User-defined header files</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-standard-header-files-in-c-and-their-uses">1. Standard Header Files in C and their Uses</h2>
+
+
+
+<p>Standard header files contain libraries and functions that are defined in the ISO standard of the C programming language. These header files are typically stored in the default directory of the C compiler, making them universally accessible and present in all C compilers from different vendors. This standardization ensures that C programs can be written and compiled consistently across different platforms and compilers, making it a powerful feature of the C programming language.</p>
+
+
+
+<p>There are 31 standard header files in the latest version of C language.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header File</th><th>Description</th></tr></thead><tbody><tr><td>&lt;assert.h&gt;</td><td>It has information regarding adding diagnostics that aid program debugging.</td></tr><tr><td>&lt;errorno.h&gt;</td><td>It has to perform&nbsp;<a href="https://www.geeksforgeeks.org/error-handling-c-programs/" rel="nofollow noopener" target="_blank">error-handling</a>&nbsp;operations like errno(), strerror(), perror(), etc.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/cfloat-float-h-in-c-c-with-examples/" rel="nofollow noopener" target="_blank">&lt;float.h&gt;</a></td><td>It has to perform&nbsp;<a href="https://www.geeksforgeeks.org/error-handling-c-programs/" rel="nofollow noopener" target="_blank">error-handling</a>&nbsp;operations like errno(), strerror(), perror(), etc.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/c-library-math_h/" rel="nofollow noopener" target="_blank">&lt;math.h&gt;</a></td><td>It has to perform mathematical operations like&nbsp;<a href="https://www.geeksforgeeks.org/sqrt-sqrtl-sqrtf-cpp/" rel="nofollow noopener" target="_blank">sqrt()</a>,&nbsp;<a href="https://www.geeksforgeeks.org/log2-function-in-c-with-examples/" rel="nofollow noopener" target="_blank">log2()</a>,&nbsp;<a href="https://www.geeksforgeeks.org/power-function-cc/" rel="nofollow noopener" target="_blank">pow()</a>, etc.</td></tr><tr><td>&lt;signal.h&gt;</td><td>It has to perform signal handling functions like signal() and raise().</td></tr><tr><td>&lt;stdarg.h&gt;</td><td>It has to perform standard argument functions like va_start() and va_arg(). Moreover, they are used to indicate the start of the variable-length argument list and to get the arguments from the variable-length argument list in the program respectively.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/ctype-hcctype-library-in-c-c-with-examples/" rel="nofollow noopener" target="_blank">&lt;ctype.h&gt;</a></td><td>It has function prototypes for functions that will test characters for certain properties and also function prototypes for&nbsp;functions that will be used to convert uppercase letters to lowercase letters and vice versa.<br>&nbsp;</td></tr><tr><td>&lt;stdio.h&gt;</td><td>&lt;stdio.h&gt; functions to perform input and output operations using functions like&nbsp;<a href="https://www.geeksforgeeks.org/scanf-and-fscanf-in-c-simple-yet-poweful/" rel="nofollow noopener" target="_blank">scanf()</a>,&nbsp;<a href="https://www.geeksforgeeks.org/return-values-of-printf-and-scanf-in-c-cpp/" rel="nofollow noopener" target="_blank">printf()</a>, etc.</td></tr><tr><td>&lt;setjump.h&gt;</td><td>It even contains standard utility functions like malloc(), realloc(), etc. It contains function prototypes for functions that allow bypassing&nbsp;of the usual function call and return sequence.</td></tr><tr><td>&lt;string.h&gt;</td><td>It determines the various properties of the various variable types. The macros defined in this header limit the values of&nbsp;various variable types like char, int, and long. These limits specify that a variable cannot store any value&nbsp;beyond these limits, for example, an unsigned character can store up to a maximum value of 255.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/climits-limits-h-cc/" rel="nofollow noopener" target="_blank">&lt;limits.h&gt;</a></td><td>It determines the various properties of the various variable types. The macros defined in this header limits the values of&nbsp;various variable types like char, int, and long. These limits specify that a variable cannot store any value&nbsp;beyond these limits, for example, an unsigned character can store up to a maximum value of 255.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/time-h-header-file-in-c-with-examples" rel="nofollow noopener" target="_blank">&lt;time.h&gt;</a></td><td>It will perform functions related to date() and&nbsp;<a href="https://www.geeksforgeeks.org/time-function-in-c/" rel="nofollow noopener" target="_blank">time()</a>&nbsp;like&nbsp;<a href="https://www.geeksforgeeks.org/getdate-and-setdate-function-in-c-with-examples/" rel="nofollow noopener" target="_blank">setdate()</a>&nbsp;and&nbsp;<a href="https://www.geeksforgeeks.org/getdate-and-setdate-function-in-c-with-examples/" rel="nofollow noopener" target="_blank">getdate()</a>. It is also used to modify the system date&nbsp;and get the CPU time respectively.</td></tr><tr><td>&lt;stddef.h&gt;</td><td>It will contain common type definitions used by C for performing calculations.</td></tr><tr><td>&lt;locale.h&gt;</td><td>It will  contain function prototypes and other information that enables a program to be modified for the current locale on which it’s running.&nbsp;It enables the computer system to handle different conventions for expressing data such as times, dates, or large numbers throughout the world.</td></tr></tbody></table></figure>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>/ C program to illustrate
+// the use of header file
+// in C
+#include &lt;math.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+ 
+// Driver Code
+int main()
+{
+    char s1&#91;20] = "12345";
+    char s2&#91;10] = "Geeks";
+    char s3&#91;10] = "ForGeeks";
+    long int res;
+ 
+    // Find the value of 9^3 using a
+    // function in math.h library
+    res = pow(9, 3);
+    printf("Using math.h, "
+           "The value is: %ld\n",
+           res);
+ 
+    // Convert a string to long long int
+    // using a function in stdlib.h library
+    long int a = atol(s1);
+    printf("Using stdlib.h, the string");
+    printf(" to long int: %ld\n", a);
+ 
+    // Copy the string s3 into s2 using
+    // using a function in string.h library
+    strcpy(s2, s3);
+    printf("Using string.h, the strings"
+           " s2 and s3: %s %s\n",
+           s2, s3);
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Using math.h, The value is: 729
+Using stdlib.h, the string to long int: 12345
+Using string.h, the strings s2 and s3: Skill Vertex</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="2-non-standard-header-files-in-c-and-their-uses">2. Non-Standard Header Files in C and Their Uses</h2>
+
+
+
+<p>Non-standard header files are not part of the ISO standard of the C programming language. These header files are typically created by programmers for various purposes, such as containing custom library functions or platform-specific code. They are not part of the standard library and are not guaranteed to be available on all C compilers.</p>
+
+
+
+<p>Non-standard header files can be manually installed by the user, included as part of a third-party library, or provided by specific vendors. Their use is often limited to specific projects or platforms and may not be portable across different environments or compilers.</p>
+
+
+
+<p>&nbsp;Some commonly used non-standard/user-defined header files are listed below:</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header File</th><th>Description</th></tr></thead><tbody><tr><td>&lt;conio.h&gt;</td><td>It has  some useful console functions.</td></tr><tr><td>&lt;gtk/gtk.h&gt;</td><td>It has some useful console functions.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="2-non-standard-header-files-in-c-and-their-uses-1">2. Non-Standard Header Files in C and Their Uses</h2>
+
+
+
+<p>Non-standard header files are not included in the official ISO standard for the C programming language. These header files are typically created by programmers for various purposes, including custom library functions or platform-specific code. They are not guaranteed to be universally available, and their use is often limited to specific projects, user installations, or specific compiler distributions by certain vendors. Non-standard header files provide a way to extend the functionality of C for specific use cases but may not be portable across different environments or compilers.</p>
+
+
+
+<p>There are various non-standard libraries for C language. Some are commonly used non-standard/user-defined header files are listed below:</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header File</th><th>Description</th></tr></thead><tbody><tr><td>&lt;conio.h&gt;</td><td>It has some useful console functions.</td></tr><tr><td>&lt;gtk/gtk.h&gt;</td><td>It has GNU’s GUI library for C.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="standard-header-files-in-c-and-their-uses">Standard Header Files in C++ and their Uses</h2>
+
+
+
+<p>Standard header files in C++ contain libraries and functionalities that are part of the C++ ISO standard. These header files come pre-installed with the C++ compiler from any vendor, ensuring that they are universally available for C++ programmers.</p>
+
+
+
+<p>You can include these standard header files in your C++ programs using the <code>#include</code> preprocessor directive. This allows you to access the standard libraries, data types, and functions defined by the C++ ISO standard in your code, making it easier to write portable and standardized C++ programs across different platforms and compilers.</p>
+
+
+
+<h2 class="wp-block-heading" id="c-languages-standard-libraries-are-the-following">C language’s Standard Libraries are the following</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header File</th><th>Description</th></tr></thead><tbody><tr><td>&lt;iostream&gt;</td><td>It  has a stream of Input and Output using cin and cout.</td></tr><tr><td>&lt;iomanip&gt;</td><td>It has a stream of Input and Output using cin and cout.</td></tr><tr><td>&lt;fstream&gt;</td><td>It functions to control the data to read from a file as an input and data to write into the file as an output.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/c-magicians-stl-algorithms/" rel="nofollow noopener" target="_blank">&lt;algorithm&gt;</a></td><td>It has some useful algorithms which are part of STL.</td></tr><tr><td>&lt;new&gt;</td><td>It has a  dynamic memory allocation methods.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/" rel="nofollow noopener" target="_blank">&lt;vector&gt;</a></td><td>It has the definition of the vector class container of STL.</td></tr><tr><td><a href="https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/" rel="nofollow noopener" target="_blank">&lt;map&gt;</a></td><td>It has a  dynamic memory allocation method.</td></tr></tbody></table></figure>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>
+
+// C++ program to demonstrate the use of standard header
+// files in c++
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+ 
+using namespace std;
+ 
+// driver code
+int main()
+{
+    // cout is defined in &lt;iostream&gt;
+    cout &lt;&lt; "Using iostream's cout to print" &lt;&lt; endl;
+ 
+    // vector defined in &lt;vector&gt; header file
+    vector&lt;int&gt; v{ 11, 12, 14 };
+ 
+    cout &lt;&lt; "Using vector container: ";
+    for (auto i : v) {
+        cout &lt;&lt; i &lt;&lt; " ";
+    }
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Using iostream's cout to print
+Using vector container: 11 12 14</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="non-standard-header-files-in-c-and-their-uses">Non-Standard Header Files in C++ and Their Uses</h2>
+
+
+
+<p>Non-standard header files are not included in the ISO standard of C++, and they are typically created by programmers for their specific needs. These header files are not part of the official standard library and are not guaranteed to be universally available.</p>
+
+
+
+<p>Non-standard header files can be manually installed by the user or included as part of a specific compiler distribution by a vendor. They are often used to extend the functionality of C++ for particular projects, but their availability may be limited to specific environments or compilers.</p>
+
+
+
+<p><strong>some non-standard header files in C++</strong></p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header File</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://www.geeksforgeeks.org/bitsstdc-h-c/" rel="nofollow noopener" target="_blank">&lt;bits/stdc++.h&gt;</a></td><td>It has all the standard libraries of the header files mentioned above. However, if you include it in your code, then you need not have to&nbsp;include any other standard header files. But as it is a non-standard header file of GNU C++ library, so, if you try to compile your&nbsp;code with some compiler other than GCC it might fail; e.g. MSVC does not have this header.</td></tr><tr><td>&lt;Qpushbutton&gt;</td><td>It has a push button element of Qt GUI Library for C++</td></tr></tbody></table></figure>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C++ program to illustrate the use of
+// non-standard bits/stdc++.h header file in C++
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+ 
+// Driver Code
+int main()
+{
+ 
+    char s1&#91;20] = "12345";
+    char s2&#91;10] = "Geeks";
+    char s3&#91;10] = "ForGeeks";
+    long int res;
+ 
+    // All the below function are mentioned in bits/stdc++.h
+    // library Find the value of 9^3
+    res = pow(9, 3);
+    cout &lt;&lt; "Using bits/stdc++.h, "
+            "The value is: "
+         &lt;&lt; res &lt;&lt; "\n";
+ 
+    // Convert a string to long long int
+    long int a = atol(s1);
+    cout &lt;&lt; "Using bits/stdc++.h, the string";
+    cout &lt;&lt; " to long int: " &lt;&lt; a &lt;&lt; "\n";
+ 
+    // Copy the string s3 into s2 using
+    strcpy(s2, s3);
+    cout &lt;&lt; "Using bits/stdc++.h, the strings"
+            " s2 and s3: "
+&lt;&lt; s2 &lt;&lt; s3 &lt;&lt; "\n";
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Using bits/stdc++.h, The value is: 729
+Using bits/stdc++.h, the string to long int: 12345
+Using bits/stdc++.h, the strings s2 and s3: Skill Vertex</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="create-your-own-header-file-in-c-and-c">Create your own Header File in C and C++</h2>
+
+
+
+<p>Custom header files are a useful way to organize and modularize your code, making it more readable and maintainable. The steps you provided for creating a custom header file are generally correct:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Write your own C/C++ code and save it with a &#8220;.h&#8221; extension. This is how you create the header file, and it typically contains function declarations, data type definitions, and other declarations that you want to use in multiple parts of your program.</li>
+</ol>
+
+
+
+<p>By following this process, you can create your own reusable code modules, which can enhance code functionality, improve code organization, and make your programs more readable and manageable. These custom header files are included in your programs using the <code>#include</code> preprocessor directive, allowing you to access the declared functions and data types when needed.</p>
+
+
+
+<pre class="wp-block-code"><code>
+// Function to find the sum of two
+// numbers passed
+int sumOfTwoNumbers(int a, int b) 
+{
+  return (a + b); 
+}</code></pre>
+
+
+
+<p><strong>Step 2:</strong>&nbsp;We have to include your header file with&nbsp;<strong>“#include”</strong>&nbsp;in your C/C++ program as provided</p>
+
+
+
+<pre class="wp-block-code"><code>
+
+// C++ program to find the sum of two
+// numbers using function declared in
+// header file
+#include "iostream"
+ 
+// Including header file
+#include "sum.h"
+using namespace std;
+ 
+// Driver Code
+int main()
+{
+ 
+    // Given two numbers
+    int a = 13, b = 22;
+ 
+    // Function declared in header
+    // file to find the sum
+    printf("Sum is: %d", sumoftwonumbers(a, b));
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Sum is : 35
+Process returned  0  (O x O) execution time:  0.287 s 
+Press any key and continue
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="including-multiple-header-files">Including Multiple Header Files</h2>
+
+
+
+<p>When you include a header file more than once in a program, the contents of the header file are processed multiple times, which can lead to errors due to redefinition of symbols and declarations. To prevent these errors, conditional preprocessor directives, such as <code>#ifndef</code>, <code>#define</code>, and <code>#endif</code>, are commonly used to ensure that the header file is only processed once.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>#ifndef HEADER_FILE_NAME
+#define HEADER_FILE_NAME
+
+the entire header file
+
+#endi</code></pre>
+
+
+
+<p>This construct is referred to as the wrapper&nbsp;<strong>“#ifndef”</strong>. Whenever the header is included again, the conditional will be false, as &nbsp;<strong>HEADER_FILE_NAME</strong>&nbsp;will be defined. The preprocessor will skip over the entire file contents, and the compiler will not see it twice.</p>
+
+
+
+<p>Sometimes it’s important to have several diverse header files based on the requirements of the program. For this, multiple conditionals will be used.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>#if SYSTEM_ONE
+        #include "system1.h"
+#elif SYSTEM_TWO
+        #include "system2.h"
+#elif SYSTEM_THREE
+        ....
+#endif</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-header-files-in-c-c-and-its-uses">FAQ- Header Files In C/C++ And Its Uses</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1699012609535" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What are header files in C++ and their use?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Header files in C++ offer code reusability, organization, and complexity reduction. They allow you to declare functions and data types once and use them in various parts of your program, simplifying code and reducing errors.</p>
+
+</div>
+</div>
+<div id="faq-question-1699012620136" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. Can C header files be used in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.When including a C header file in a C++ program, you may need to use the <code>extern "C"</code> construct to inform the C++ compiler that the functions declared in the header file are C functions. This is necessary because C and C++ have different name mangling conventions, and using <code>extern "C"</code> ensures that the functions are treated as C functions with C linkage, making them compatible with C++ code.</p>
+
+</div>
+</div>
+<div id="faq-question-1699012628812" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What are the header files in C and their function?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Header files in C have the &#8220;.h&#8221; extension and contain function declarations and macros for sharing among different source files. There are two types: custom ones created by programmers and standard ones provided by the compiler for common functionality.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<h2 class="wp-block-heading"><br></h2>
+<div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/header-files-in-c-c-and-its-uses/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How Does A Preprocessor Work In C?</title>
+		<link>https://www.skillvertex.com/blog/how-does-a-preprocessor-work-in-c/</link>
+					<comments>https://www.skillvertex.com/blog/how-does-a-preprocessor-work-in-c/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:46:22 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[How Does A Preprocessor Work In C?]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3244</guid>
+
+					<description><![CDATA[How Does A Preprocessor Work In C? The preprocessor is indeed a system software component in the context of languages like C and C++. It performs preprocessing of the high-level language source code before actual compilation. The primary purpose of the preprocessor is to prepare the code for translation into machine-level language or absolute machine ... <a title="How Does A Preprocessor Work In C?" class="read-more" href="https://www.skillvertex.com/blog/how-does-a-preprocessor-work-in-c/" aria-label="More on How Does A Preprocessor Work In C?">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#how-does-a-preprocessor-work-in-c">How Does A Preprocessor Work In C?</a></li><li ><a href="#a-preprocessor-will-perform-three-tasks-on-hll-code">A Preprocessor will perform three tasks on HLL Code</a></li><li ><a href="#faq-how-does-a-preprocessor-work-in-c">FAQ- How Does A Preprocessor Work In C?</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="how-does-a-preprocessor-work-in-c">How Does A Preprocessor Work In C?</h2>
+
+
+
+<p>The preprocessor is indeed a system software component in the context of languages like C and C++. It performs preprocessing of the high-level language source code before actual compilation. The primary purpose of the preprocessor is to prepare the code for translation into machine-level language or absolute machine code that can be executed by the computer&#8217;s hardware.</p>
+
+
+
+<p>In the context of languages like C and C++, the preprocessor handles tasks such as macro expansion, including header files, conditional compilation, and other text-based transformations on the source code, which is an essential step in the overall compilation process.</p>
+
+
+
+<p>The preprocessor in C and C++ operates on a text-based level and doesn&#8217;t have an understanding of the scope rules or the program&#8217;s block structure. Preprocessor directives like #define take effect as soon as they are encountered in the source code and remain in effect until the end of the file that contains them.</p>
+
+
+
+<p>This means that preprocessor macros and directives are not subject to the same scope rules and block structure as regular C or C++ code. They are essentially a text substitution mechanism, and their effects extend throughout the entire file in which they are defined. This lack of awareness of scope and block structure is an important consideration when using preprocessor directives, as it can lead to unintended consequences if macros are not used carefully.</p>
+
+
+
+<h2 class="wp-block-heading" id="a-preprocessor-will-perform-three-tasks-on-hll-code">A Preprocessor will perform three tasks on HLL Code</h2>
+
+
+
+<p>1.<strong>Removing Comments</strong>: While it is true that comments are meant for human readability and are ignored by the compiler during the compilation process, they are typically removed by the preprocessor. The actual removal of comments occurs during the preprocessing stage in the C and C++ compilation process.</p>
+
+
+
+<p>However, you don&#8217;t need to explicitly use <code>gcc -E</code> to preprocess the source code and remove comments. The <code>-E</code> flag is used to generate the preprocessed output, which includes comments and other preprocessing directives. To remove comments and generate a cleaned source code file without preprocessing directives, you can use a tool like <code>sed</code> in Linux. </p>
+
+
+
+<p>2.<strong>File Inclusion</strong>: The <code>#include</code> directive is used to include the contents of a library or header file in your program. It allows you to use functions, variables, and definitions from those files in your code.</p>
+
+
+
+<p>You&#8217;ve also correctly noted the distinction between using angle brackets (<code>&lt;&gt;</code>) and double quotes (<code>""</code>) when specifying the filename to include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>When you use angle brackets (<code>&lt;&gt;</code>), the preprocessor searches for the file in the standard compiler include paths.</li>
+
+
+
+<li>When you use double quotes (<code>""</code>), the search path is expanded to include the current source directory, making it easier to include files that are part of your project.</li>
+</ul>
+
+
+
+<p>This flexibility in specifying the include paths allows you to include standard library headers as well as headers from your project&#8217;s directory or other custom locations.</p>
+
+
+
+<p>3. <strong><a href="https://www.geeksforgeeks.org/interesting-facts-preprocessors-c/" rel="nofollow noopener" target="_blank">Macro</a>&nbsp;expansion</strong>: Macros in C and C++ can be thought of as text substitutions that are performed by the preprocessor before compilation. They are often used for code that needs to be repeated or is small in nature, as they can provide performance benefits by avoiding the overhead of a function call.</p>
+
+
+
+<p>One common use case for macros is when you need to perform a simple operation repeatedly, especially in situations where you want to avoid the function call overhead. However, it&#8217;s important to be cautious when using macros, as they lack the type-checking and safety features of functions. Macros are essentially textual replacements and can lead to unexpected behavior if not used carefully. Additionally, functions are generally more readable and maintainable, so it&#8217;s essential to strike a balance between code performance and code clarity.</p>
+
+
+
+<p>Defining these macros is basically by preprocessor:</p>
+
+
+
+<pre class="wp-block-code"><code>#define SI 1000
+</code></pre>
+
+
+
+<p>This illustrates an example of a macro</p>
+
+
+
+<p><strong>Object-like Macros (or Object Macros)</strong>: These macros do not take any parameters and are essentially simple text substitutions. They are defined using <code>#define</code> and typically used for constants or straightforward textual substitutions.</p>
+
+
+
+<p><strong>Function-like Macros</strong>: These macros can take parameters and are used for more complex substitutions. They are defined using <code>#define</code> with parameters and can be thought of as small, inline functions.</p>
+
+
+
+<pre class="wp-block-code"><code>// object-like macro
+#define        
+// function-like macro          
+#define ()   </code></pre>
+
+
+
+<p>We can also delete a macro definition with #umdef:</p>
+
+
+
+<pre class="wp-block-code"><code>// delete the macro
+# undef  </code></pre>
+
+
+
+<p>Also, a multi-line macro can be written the same as a function. But, each statement will end with &#8220;/&#8221;</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;stdio.h&gt; 
+   
+#define MACRO(num, str) {\ 
+            printf("%d", num);\ 
+            printf(" is");\ 
+            printf(" %s number", str);\ 
+            printf("\n");\ 
+           }</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-how-does-a-preprocessor-work-in-c">FAQ- How Does A Preprocessor Work In C?</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1699004359283" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. How does a preprocessor work in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The C preprocessor is indeed a macro processor that is automatically invoked by the C compiler to preprocess your source code before the actual compilation process begins. It allows you to define macros, which are essentially shortcuts or abbreviations for longer code constructs, making your code more concise and readable. Macros are expanded during preprocessing, which means that the preprocessor replaces macro invocations with their corresponding definitions, effectively transforming your source code.</p>
+
+</div>
+</div>
+<div id="faq-question-1699004367725" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is the symbol of preprocessor in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. # (hash) symbol is the symbol of preprocessor in C.</p>
+
+</div>
+</div>
+<div id="faq-question-1699004375014" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is the difference between processor and preprocessor in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. A preprocessor and a processor have different jobs:<br /><strong>Preprocessor</strong>: This is like a helper for the compiler. It gets your code ready for the real work. It does things like replacing shortcuts with full code, including other files, and choosing which parts of code to keep or throw away. But it doesn&#8217;t actually run the code.<br /><strong>Processor (CPU)</strong>: This is the computer&#8217;s brain. It takes the code prepared by the compiler and does the actual work, like calculations and making your computer do things. It&#8217;s all about execution.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/how-does-a-preprocessor-work-in-c/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C/C++ Preprocessor Directives &#124; Set 2</title>
+		<link>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/</link>
+					<comments>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:46:13 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[C/C++ Preprocessor Directives | Set 2]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3240</guid>
+
+					<description><![CDATA[C/C++ Preprocessor Directives &#124; Set 2 In C and C++, preprocessor directives are lines of code that start with a # symbol and are processed by the preprocessor before the actual compilation of the program. These directives are not terminated by semicolons like regular C/C++ statements. They are used for various purposes, such as Types ... <a title="C/C++ Preprocessor Directives &#124; Set 2" class="read-more" href="https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/" aria-label="More on C/C++ Preprocessor Directives &#124; Set 2">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#c-c-preprocessor-directives-set-2">C/C++ Preprocessor Directives | Set 2</a></li><li ><a href="#types-of-preprocessor-directives-are-given-below">Types of preprocessor directives are given below:</a></li><li ><a href="#faq-c-c-preprocessor-directives-set-2">FAQ- C/C++ Preprocessor Directives | Set 2</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="c-c-preprocessor-directives-set-2">C/C++ Preprocessor Directives | Set 2</h2>
+
+
+
+<p>In C and C++, preprocessor directives are lines of code that start with a <code>#</code> symbol and are processed by the preprocessor before the actual compilation of the program. These directives are not terminated by semicolons like regular C/C++ statements. They are used for various purposes, such as</p>
+
+
+
+<h2 class="wp-block-heading" id="types-of-preprocessor-directives-are-given-below"><strong>Types of preprocessor directives are given below:</strong></h2>
+
+
+
+<ol class="wp-block-list">
+<li>Conditional Compilation</li>
+
+
+
+<li>Line control</li>
+
+
+
+<li>Error directive</li>
+</ol>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Conditional Compilation: </strong>The #ifdef directive is used to conditionally include a block of code in the preprocessor output based on whether a macro name is defined. The #ifdef directive checks if a macro is defined. If the macro is defined, the code within the conditional block is included in the preprocessor output. If the macro is not defined, the code within the block is skipped. The #ifndef directive is the opposite of #ifdef. It checks if a macro is not defined. If the macro is not defined, the code within the conditional block is included in the preprocessor output. The #if directive allows you to conditionally include code based on an expression that evaluates to either true or false. If the expression is true, the code is included; otherwise, it&#8217;s skipped.</li>
+</ol>
+
+
+
+<pre class="wp-block-code"><code>ifndef macro_name
+    statement1;
+    statement2;
+    statement3;
+    .
+    .
+    .
+    statementN;
+endif</code></pre>
+
+
+
+<p>Whereas, a macro with the name &#8216;macro name&#8217; has not been defined using the #define directive. Therefore, only the block of statements will be executed. </p>
+
+
+
+<ul class="wp-block-list">
+<li><code>#if</code>: The #if directive allows you to specify a condition, and if that condition evaluates to a non-zero value (true), the code block immediately following #if is executed. If the condition is false (evaluates to zero), the code block is skipped.</li>
+
+
+
+<li>#elif (short for &#8220;else if&#8221;): The #elif directive provides an alternative condition to be checked if the preceding #if or #elif condition is false. If the #elif condition evaluates to a non-zero value, the code block immediately following #elif is executed.</li>
+
+
+
+<li><code>#else</code>: The #else directive is used to specify a block of code that is executed when none of the previous conditions (specified in #if or #elif) are met. In other words, if all previous conditions are false, the code block following #else is executed.</li>
+</ul>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#if macro_condition
+   statements
+#elif macro_condition
+   statements
+#else
+   statements
+#endif</code></pre>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>#include&lt;iostream&gt;
+ 
+#define gfg 7
+  
+#if gfg &gt; 200
+   #undef gfg
+   #define gfg 200
+#elif gfg &lt; 50
+   #undef gfg
+   #define gfg 50
+#else
+   #undef gfg
+   #define gfg 100
+#endif
+ 
+int main()
+{
+    std::cout &lt;&lt; gfg;  // gfg = 50
+}    </code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>50</code></pre>
+
+
+
+<p>2. <strong>Line control ( #line )</strong>: The <code>#line</code> directive in C and C++ allows you to control error reporting by specifying the filename and line number associated with error messages. It is useful for custom error reporting and code generation tools.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#line number "filename"
+</code></pre>
+
+
+
+<p>The <code>#line</code> directive in C and C++ is used to set the line number for the next code line and can also specify an optional filename to be displayed in error messages. The line numbers of successive lines are increased one by one from this point on, and the &#8220;filename&#8221; parameter is used to redefine the file name shown in error messages.</p>
+
+
+
+<p>3. <strong>Error directive ( #error )</strong>:The <code>#error</code> directive is used in C and C++ to intentionally halt the compilation process and generate an error message, which can be optionally specified as a parameter. It is often used for creating custom error messages or for controlling compilation based on specific conditions.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>#error optional_error
+</code></pre>
+
+
+
+<p>Optional_error is an error that is specified by the user and will be displayed when the directive is found in the program. Example:</p>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>error: #error Skill Vertex not found !
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-c-c-preprocessor-directives-set-2">FAQ- C/C++ Preprocessor Directives | Set 2</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698996123559" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What are the types of C++ preprocessing directives?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. In C++, preprocessor directives serve various purposes, including defining macros, including files, controlling compilation, handling errors, and more. They are processed before the program&#8217;s actual compilation.</p>
+
+</div>
+</div>
+<div id="faq-question-1698996132551" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is #ifdef and #endif in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. #ifdef is used to check if a symbol is defined. If the specified symbol is defined, the code enclosed between #ifdef and #endif is included in the preprocessor output and compiled.<br />#if is used to evaluate a Boolean expression. If the expression following #if evaluates to true, the enclosed code is included in the preprocessor output and compiled.</p>
+
+</div>
+</div>
+<div id="faq-question-1698996137438" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.What is a preprocessor directive and its types?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Preprocessor directives in programming languages, such as C and C++, are lines that start with the <code>#</code> character. They are not part of the standard source code but are instructions for the compiler to process certain aspects of the program before actual compilation. Preprocessor directives are used for tasks like macro definitions, conditional compilation, including header files, and other preprocessing tasks to prepare the code for compilation.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C/C++ Preprocessors</title>
+		<link>https://www.skillvertex.com/blog/c-c-preprocessors/</link>
+					<comments>https://www.skillvertex.com/blog/c-c-preprocessors/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:41:06 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[C/C++ Preprocessors]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3226</guid>
+
+					<description><![CDATA[C/C++ Preprocessors C/C++ preprocessors are powerful tools that play a crucial role in the software development process. These tools are responsible for processing and modifying the source code before actual compilation, enabling developers to streamline their work, enhance code reusability, and improve code maintenance. By handling tasks such as including header files, defining macros, and ... <a title="C/C++ Preprocessors" class="read-more" href="https://www.skillvertex.com/blog/c-c-preprocessors/" aria-label="More on C/C++ Preprocessors">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#c-c-preprocessors">C/C++ Preprocessors</a></li><li ><a href="#what-are-c-c-preprocessors">What are C/C++ Preprocessors</a></li><li ><a href="#preprocessor-directives-in-c-c">Preprocessor Directives in C/C++</a></li><li ><a href="#types-of-c-c-preprocessors">Types of C/C++ Preprocessors</a></li><li ><a href="#1-macros">1. Macros</a></li><li ><a href="#macros-with-arguments">Macros With Arguments</a></li><li ><a href="#2-file-inclusion">2. File Inclusion</a></li><li ><a href="#standard-header-files">Standard Header Files</a></li><li ><a href="#user-defined-header-files">User-defined Header Files</a></li><li ><a href="#3-conditional-compilation">3. Conditional Compilation</a></li><li ><a href="#other-directive">Other Directive</a></li><li ><a href="#1-undef-directive">1. #undef Directive</a></li><li ><a href="#2-pragma-directive">2. #pragma Directive</a></li><li ><a href="#pragma-warn-directive">#pragma warn Directive</a></li><li ><a href="#faq-c-c-preprocessors">FAQ- C/C++ Preprocessors</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="c-c-preprocessors">C/C++ Preprocessors</h2>
+
+
+
+<p>C/C++ preprocessors are powerful tools that play a crucial role in the software development process. These tools are responsible for processing and modifying the source code before actual compilation, enabling developers to streamline their work, enhance code reusability, and improve code maintenance. By handling tasks such as including header files, defining macros, and performing conditional compilation, C/C++ preprocessors help shape the code and make it more efficient, readable, and adaptable. In this introductory exploration, we will delve into the world of C/C++ preprocessors to understand their significance and how they enhance the development of software in these programming languages.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-c-c-preprocessors">What are C/C++ Preprocessors</h2>
+
+
+
+<p>Preprocessors are those which can process source code before compilation. There are several steps that will involve writing a program and executing the program in C/C++. </p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Preprocessing:</strong> The source code file &#8220;program.c&#8221; is processed by preprocessors. This step results in the creation of an expanded source code file known as &#8220;program.i.&#8221;</li>
+
+
+
+<li><strong>Compilation:</strong> The &#8220;program.i&#8221; file, which has been expanded by the preprocessor, is then compiled by the compiler. The compiler&#8217;s job is to translate the code into a lower-level language or machine code. The outcome of this step is an object code file named &#8220;program.obj.&#8221;</li>
+
+
+
+<li><strong>Linking:</strong> The linker comes into play. It takes the &#8220;program.obj&#8221; file and combines it with object code from library functions. This linking process results in the generation of the final executable file named &#8220;program.exe.&#8221;</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="preprocessor-directives-in-c-c">Preprocessor Directives in C/C++</h2>
+
+
+
+<p>The Preprocessor program will provide the preprocessor directive that can guide the compiler to preprocess the source code before compiling. Preprocessor directives will begin with a (# ) symbol. This # symbol will refer to whatever statement begins with # and, further, it will go to the preprocessor program to be executed. Thereafter, we can even place these preprocessor directives anywhere in the program.</p>
+
+
+
+<p><strong>The following table about  the preprocessor directives in C/C++:</strong></p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Preprocessor Directives</th><th>Description</th></tr></thead><tbody><tr><td><strong>#define</strong></td><td>It is used to define a macro</td></tr><tr><td><strong>#undef</strong></td><td>It is used  to undefine a macro</td></tr><tr><td><strong>#include</strong></td><td>This preprocessor is used to include a file in the source code program</td></tr><tr><td><strong>#ifdef</strong></td><td>This is used to include a section of code if a certain macro is not defined by #define</td></tr><tr><td><strong>#ifndef</strong></td><td>This is used to include a section of code when a certain macro is not defined by #define</td></tr><tr><td><strong>#if</strong></td><td>Used to monitor  the specified condition</td></tr><tr><td>#else</td><td># else is another alternative that will execute when#if fails </td></tr><tr><td>#endif</td><td>It is used to indicate the end of #if,#ifdef, and#ifndef</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="types-of-c-c-preprocessors">Types of C/C++ Preprocessors</h2>
+
+
+
+<p>4 Main types of preprocessor directives are:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Macros</li>
+
+
+
+<li>File Inclusion</li>
+
+
+
+<li>Conditional Compilation</li>
+
+
+
+<li>Other directives</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-macros">1. Macros</h2>
+
+
+
+<p>In C/C++, macros are like shortcuts for code. They are created by giving a name to a piece of code. When the compiler sees this name in your program, it replaces it with the actual code. To make macros, we use the <code>#define</code> directive. This allows us to define these handy code snippets for reuse in our programs.</p>
+
+
+
+<p>Syntax of Macro Definition</p>
+
+
+
+<pre class="wp-block-code"><code>#define token value
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C Program to illustrate the macro
+#include &lt;stdio.h&gt;
+ 
+// macro definition
+#define LIMIT 5
+ 
+int main()
+{
+    for (int i = 0; i &lt; LIMIT; i++) {
+        printf("%d \n", i);
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>0 
+1 
+2 
+3 
+4</code></pre>
+
+
+
+<p>The above program illustrates that the compiler will execute the word  LIMIT and later, it will replace it with 5. Hence, LIMIT in the macro definition is known as the macro template, and 5 as the macro expansion.</p>
+
+
+
+<h2 class="wp-block-heading" id="macros-with-arguments">Macros With Arguments</h2>
+
+
+
+<p>Macros in C/C++ can indeed be defined with arguments, and they work somewhat like functions. When you define a macro with arguments, you can use those arguments within the macro code to make it more flexible and versatile. These macros are known as &#8220;function-like macros.&#8221; They enable you to create reusable code blocks with parameters, similar to functions, but they are preprocessed and substituted directly into your code, often resulting in more efficient code execution.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>#define foo(a, b) a + b
+#define func(r) r * r</code></pre>
+
+
+
+<pre class="wp-block-code"><code>
+// C Program to illustrate function like macros
+#include &lt;stdio.h&gt;
+ 
+// macro with parameter
+#define AREA(l, b) (l * b)
+ 
+int main()
+{
+    int l1 = 10, l2 = 5, area;
+ 
+    area = AREA(l1, l2);
+ 
+    printf("Area of rectangle is: %d", area);
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Area of rectangle is: 50
+</code></pre>
+
+
+
+<p>The program you&#8217;ve described illustrates how macros work. When the compiler encounters the macro <code>AREA(l, b)</code> in your code, it directly replaces it with the statement <code>(l * b)</code>. Additionally, any values you pass to the macro, like in <code>AREA(10, 5)</code>, will also be substituted into the statement. So, <code>AREA(10, 5)</code> is effectively equal to <code>10 * 5</code>, making it a simple way to create reusable code snippets with dynamic values.</p>
+
+
+
+<h2 class="wp-block-heading" id="2-file-inclusion">2. File Inclusion</h2>
+
+
+
+<p>This type of preprocessor directive will insist the compiler to include a file in the source code program. The #include preprocessor director will include the header files in the C/C ++ program.</p>
+
+
+
+<p><strong>There are two types of files that can be included by the user in the program:</strong></p>
+
+
+
+<h2 class="wp-block-heading" id="standard-header-files"><strong>Standard Header Files</strong></h2>
+
+
+
+<p>The stanard header file will contain definition of pre-defined function such as print f () , scan(). Those files should be included to work with those functions. Additionaly, different functions will declared in different header files.</p>
+
+
+
+<p>So, standard I/O function will be in the &#8216;iostream file&#8217;, and functions that will perform string operation will be in the string file.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;file_name&gt;
+</code></pre>
+
+
+
+<p>In the syntax given above, file_name refer to the name of the header file that should be included.  The &lt; and &gt; brackets will assist the compiler to search the file in the standard directory.</p>
+
+
+
+<h2 class="wp-block-heading" id="user-defined-header-files"><strong>User-defined Header Files</strong></h2>
+
+
+
+<p>When a program turns into large, it is better to change into smaller files and the, include them in whatever required. Those types of files are user-defined header files. They can be included as:</p>
+
+
+
+<pre class="wp-block-code"><code>#include "filename"
+</code></pre>
+
+
+
+<p>(&#8220;&#8221; ) These double quotes will tell about the compiler and to look for the header file in the source file&#8217;s directory.</p>
+
+
+
+<h2 class="wp-block-heading" id="3-conditional-compilation"><strong>3. Conditional Compilation</strong></h2>
+
+
+
+<p>It is a type of directive which is used to compile a small portion of the program or skip the compilation of some specific part of the program depending on certain conditions. Preprocessor directive which are used to insert the conditional code.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#if Directive</strong></li>
+
+
+
+<li><strong>#ifdef Directive</strong></li>
+
+
+
+<li><strong>#ifndef Directive</strong></li>
+
+
+
+<li><strong>#else Directive</strong></li>
+
+
+
+<li><strong>#elif Directive</strong></li>
+
+
+
+<li><strong>#endif Directive</strong></li>
+</ol>
+
+
+
+<p><strong>#endif</strong>&nbsp;directive functions  to close off the #if, #ifdef, and #ifndef opening directives, and it refers that  the preprocessing of these directives is hence completed.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#ifdef macro_name
+    statement1;
+    statement2;
+    statement3;
+    .
+    .
+    .
+    statementN;
+#endif</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="other-directive">Other Directive</h2>
+
+
+
+<p>The directive that are not commonly used are:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#undef Directive</strong></li>
+
+
+
+<li><strong>#pragma Directive</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-undef-directive"><strong>1. #undef Directive</strong></h2>
+
+
+
+<p>This is used to undefine an existing macro.</p>
+
+
+
+<pre class="wp-block-code"><code>#undef LIMIT
+</code></pre>
+
+
+
+<p>&nbsp;After this statement, every “#ifdef LIMIT” statement will be evaluated as false.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="2-pragma-directive">2. #pragma Directive</h2>
+
+
+
+<p>This directive has a special purpose directive and, also to turn on or off some features. These types of directives are basically compiler-specific, i.e., they will vary from compiler to compiler. Some of the #pragma directives are discussed below:&nbsp;</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>#pragma startup:&nbsp;</strong>These directives are used to specify the functions that are required to run before program startup (before the control passes to main()).</li>
+
+
+
+<li><strong>#pragma exit</strong>: These directives help us to specify the functions that are needed to run just before the program exit (just before the control returns from main()).</li>
+</ol>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to illustrate the #pragma exit and pragma
+// startup
+#include &lt;stdio.h&gt;
+ 
+void func1();
+void func2();
+ 
+// specifying funct1 to execute at start
+#pragma startup func1
+// specifying funct2 to execute before end
+#pragma exit func2
+ 
+void func1() { printf("Inside func1()\n"); }
+ 
+void func2() { printf("Inside func2()\n"); }
+ 
+// driver code
+int main()
+{
+    void func1();
+    void func2();
+    printf("Inside main()\n");
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside main()
+</code></pre>
+
+
+
+<p>Expected Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside func1()
+Inside main()
+Inside func2()</code></pre>
+
+
+
+<p>While running on GCC Compilers, it will show output as below:</p>
+
+
+
+<pre class="wp-block-code"><code>Inside main()
+</code></pre>
+
+
+
+<p>This happens as GCC won&#8217;t support #pragma startup or exit. Hence, you can use the below code for the expected output on GCC compilers.&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>
+
+#include &lt;iostream&gt;
+using namespace std;
+ 
+void func1();
+void func2();
+ 
+void __attribute__((constructor)) func1();
+void __attribute__((destructor)) func2();
+ 
+void func1()
+{
+    printf("Inside func1()\n");
+}
+ 
+void func2()
+{
+    printf("Inside func2()\n");
+}
+ 
+// Driver code
+int main()
+{
+    printf("Inside main()\n");
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Inside func1()
+Inside main()
+Inside func2()</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="pragma-warn-directive"><strong>#pragma warn Directive</strong></h2>
+
+
+
+<p>This directive intends to hide the warning message that  are  displayed during compilation.&nbsp;We can hide the warnings as shown below:&nbsp;</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>#pragma warn -rvl</strong>: This directive hides those warnings that are raised when a function that is supposed to return a value does not return a value.</li>
+
+
+
+<li><strong>#pragma warn -par</strong>: This directive hides those warnings that are raised when a function won&#8217;t use the parameters passed to it.</li>
+
+
+
+<li><strong>#pragma warn -rch</strong>: This directive hides those warnings which are raised when a code is unreachable. For example, any code written after the&nbsp;<em>return</em>&nbsp;statement in a function is unreachable.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="faq-c-c-preprocessors">FAQ- C/C++ Preprocessors</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698927109746" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is the preprocessor in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The preprocessor can perform the preliminary operations on C and C++ files before they are passed to the compiler. Therefore, you can add the preprocessor to conditionally compile code, insert files, specify compile-time error messages, and apply machine-specific rules to sections of code</p>
+
+</div>
+</div>
+<div id="faq-question-1698927115582" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is #define in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. When you use <code>#define</code> in your code, you create a macro that associates an identifier (or parameterized identifier) with a token string. Once defined, the compiler replaces every instance of that identifier in the source file with the specified token string. This allows you to create shortcuts, constants, or reusable code blocks that make your code more readable and efficient.</p>
+
+</div>
+</div>
+<div id="faq-question-1698927120401" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. Which of the following are C preprocessors?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <code>#define</code>, <code>#ifdef</code>, and <code>#endif</code> are all part of the C preprocessor. The C compiler automatically employs the C preprocessor, which is essentially a macro processor, to modify your program before the actual compilation. These preprocessor directives are used to define macros, conditionally include or exclude parts of the code, and perform various other preprocessing tasks to prepare the code for compilation. They are an integral part of the C programming language and contribute to code organization, optimization, and customization.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/c-c-preprocessors/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dynamic Array In C</title>
+		<link>https://www.skillvertex.com/blog/dynamic-array-in-c/</link>
+					<comments>https://www.skillvertex.com/blog/dynamic-array-in-c/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:39:51 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Dynamic Array In C]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3202</guid>
+
+					<description><![CDATA[Dynamic Array In C A dynamic array in C is a versatile and powerful data structure that provides the flexibility to allocate memory at runtime, allowing for the dynamic resizing of the array during program execution. Unlike static arrays, which have a fixed size determined at compile time, dynamic arrays can adapt to changing requirements, ... <a title="Dynamic Array In C" class="read-more" href="https://www.skillvertex.com/blog/dynamic-array-in-c/" aria-label="More on Dynamic Array In C">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#dynamic-array-in-c">Dynamic Array In C</a></li><li ><a href="#1-dynamic-array-using-malloc-function">1. Dynamic Array Using malloc() Function</a></li><li ><a href="#2-dynamic-array-using-calloc-function">2. Dynamic Array Using calloc() Function</a></li><li ><a href="#3-dynamically-resizing-array-using-realloc-function">3. Dynamically Resizing Array Using realloc() Function</a></li><li ><a href="#4-variable-length-arrays-vl-as">4. Variable Length Arrays(VLAs)</a></li><li ><a href="#5-flexible-array">5. Flexible Array</a></li><li ><a href="#dynamic-allocation-of-two-dimensional-array">Dynamic Allocation of Two-Dimensional Array</a></li><li ><a href="#"> </a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-array-in-c">Dynamic Array In C</h2>
+
+
+
+<p>A dynamic array in C is a versatile and powerful data structure that provides the flexibility to allocate memory at runtime, allowing for the dynamic resizing of the array during program execution. Unlike static arrays, which have a fixed size determined at compile time, dynamic arrays can adapt to changing requirements, making them an essential tool in C programming for managing and manipulating data efficiently. In this introduction, we&#8217;ll explore the concept of dynamic arrays in C, how to create and resize them, and the advantages they offer in terms of memory management and adaptability to varying program needs.</p>
+
+
+
+<p>However,  we can create a dynamic array with the help of the following methods:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Using malloc() Function</strong></li>
+
+
+
+<li><strong>Using calloc() Function</strong></li>
+
+
+
+<li><strong>Resizing Array Using realloc() Function</strong></li>
+
+
+
+<li><strong>Using Variable Length Arrays(VLAs)</strong></li>
+
+
+
+<li><strong>Using Flexible Array Members</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-dynamic-array-using-malloc-function">1. Dynamic Array Using malloc() Function</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Allocation</strong>: <code>malloc</code> is used to allocate memory at runtime. This is in contrast to static memory allocation, where memory is allocated at compile time, as seen in static arrays.</li>
+
+
+
+<li><strong>Memory Size</strong>: When you call <code>malloc</code>, you specify the size of the memory block you need in bytes. It allocates a contiguous block of memory of the specified size on the heap.</li>
+
+
+
+<li><strong>Return Type</strong>: <code>malloc</code> returns a pointer of type <code>void*</code>. This means it can be cast into a pointer of any data type based on your needs. You typically cast it to the appropriate pointer type to work with the allocated memory.</li>
+
+
+
+<li><strong>Header File</strong>: The <code>malloc</code> function is part of the C standard library and is defined in the <code>&lt;stdlib.h&gt;</code> header file. To use <code>malloc</code>, you need to include this header in your program.</li>
+</ol>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*) malloc(byte-size);
+</code></pre>
+
+
+
+<p>Therefore, we can produce a dynamic array of any type by allocating a single block of memory of a particular size and thus typecasting the returned pointer to the pointer of the returned type.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (int*) malloc(100 * sizeof(int));
+</code></pre>
+
+
+
+<p>Here, they have used a dynamic array of type&nbsp;<strong>int&nbsp;</strong>and size&nbsp;<strong>100 elements.</strong></p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to create dynamic array using malloc() function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size; 
+  
+    // Size of the array 
+    printf("Enter size of elements:"); 
+    scanf("%d", &amp;size); 
+  
+    //  Memory allocates dynamically using malloc() 
+    ptr = (int*)malloc(size * sizeof(int)); 
+  
+    // Checking for memory allocation 
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+    } 
+    else { 
+  
+        // Memory allocated 
+        printf("Memory successfully allocated using "
+               "malloc.\n"); 
+  
+        // Get the elements of the array 
+        for (int j = 0; j &lt; size; ++j) { 
+            ptr&#91;j] = j + 1; 
+        } 
+  
+        // Print the elements of the array 
+        printf("The elements of the array are: "); 
+        for (int k = 0; k &lt; size; ++k) { 
+            printf("%d, ", ptr&#91;k]); 
+        } 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter size of elements:5
+Memory successfully allocated using malloc.
+The elements of the array are: 1, 2, 3, 4, 5,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="2-dynamic-array-using-calloc-function">2. Dynamic Array Using calloc() Function</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dynamic Memory Allocation and Initialization</strong>: <code>calloc</code> is used to dynamically allocate a specified number of blocks of memory, each of a specified type. Unlike <code>malloc</code>, which does not initialize the memory, <code>calloc</code> initializes each block with a default value of 0. This ensures that the allocated memory is zero-initialized from the start.</li>
+
+
+
+<li><strong>Function Arguments</strong>: The <code>calloc</code> function takes two arguments:
+<ol class="wp-block-list">
+<li>The number of elements required in the dynamic array.</li>
+
+
+
+<li>The size of each element in bytes.</li>
+</ol>
+</li>
+
+
+
+<li><strong>Memory Allocation</strong>: <code>calloc</code> allocates a contiguous block of memory on the heap. The total memory allocated is equal to the number of elements multiplied by the size of each element. The memory block is initialized to zero for each byte.</li>
+</ul>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*)calloc(n, element-size);
+</code></pre>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (int*) calloc(5, sizeof(float));
+</code></pre>
+
+
+
+<p>The example provided below illustrates how to create a dynamic array using the calloc() method.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to create dynamic array using calloc() function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size; 
+  
+    // Size of the array 
+    printf("Enter size of elements:"); 
+    scanf("%d", &amp;size); 
+  
+    //  Memory allocates dynamically using calloc() 
+    ptr = (int*)calloc(size, sizeof(int)); 
+  
+    // Checking for memory allocation 
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+    } 
+    else { 
+  
+        // Memory allocated 
+        printf("Memory successfully allocated using "
+               "malloc.\n");
+ // Get the elements of the array 
+        for (int j = 0; j &lt; size; ++j) { 
+            ptr&#91;j] = j + 1; 
+        } 
+  
+        // Print the elements of the array 
+        printf("The elements of the array are: "); 
+        for (int k = 0; k &lt; size; ++k) { 
+            printf("%d, ", ptr&#91;k]); 
+        } 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter size of elements:6
+Memory successfully allocated using malloc.
+The elements of the array are: 1, 2, 3, 4, 5, 6, </code></pre>
+
+
+
+<h2 class="wp-block-heading" id="3-dynamically-resizing-array-using-realloc-function">3. Dynamically Resizing Array Using realloc() Function</h2>
+
+
+
+<p>In C, the realloc function is used to change the size of previously allocated memory. It&#8217;s a way to resize an existing array or create a new one with a different size. This allows your program to adapt to changing memory requirements. The function takes a pointer to the old memory block and the new size in bytes as arguments. It automatically copies the data from the old block to the new one if necessary.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = realloc(ptr, newSize);
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>/ C program to resize dynamic array using realloc() 
+// function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size = 5; 
+  
+  
+    //  Memory allocates dynamically using calloc() 
+    ptr = (int*)calloc(size, sizeof(int)); 
+  
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+        exit(0); 
+    } 
+    else { 
+        printf("Memory successfully allocated using "
+               "calloc.\n"); 
+    } 
+  
+    // inserting elements 
+    for (int j = 0; j &lt; size; ++j) { 
+        ptr&#91;j] = j + 1; 
+    } 
+  
+    printf("The elements of the array are: "); 
+    for (int k = 0; k &lt; size; ++k) { 
+        printf("%d, ", ptr&#91;k]); 
+    } 
+  
+    printf("\n"); 
+  
+    size = 10; 
+  
+    int *temp = ptr; 
+  
+    //  using realloc 
+    ptr = realloc(ptr, size * sizeof(int)); 
+    if (!ptr) { 
+        printf("Memory Re-allocation failed."); 
+        ptr = temp; 
+    } 
+    else { 
+        printf("Memory successfully re-allocated using "
+               "realloc.\n"); 
+    } 
+  
+    // inserting new elements 
+    for (int j = 5; j &lt; size; ++j) { 
+        ptr&#91;j] = j + 10; 
+    } 
+  
+    printf("The new elements of the array are: "); 
+    for (int k = 0; k &lt; size; ++k) { 
+        printf("%d, ", ptr&#91;k]); 
+    } 
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Memory successfully allocated using calloc.
+The elements of the array are: 1, 2, 3, 4, 5, 
+Memory successfully re-allocated using realloc.
+The new elements of the array are: 1, 2, 3, 4, 5, 15, 16, 17, 18, 19, </code></pre>
+
+
+
+<h2 class="wp-block-heading" id="4-variable-length-arrays-vl-as"><strong>4. Variable Length Arrays(VLAs)</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dynamic Sizing</strong>: VLAs in C allow you to determine the size of an array at runtime. This dynamic sizing is useful for situations where the array size is not known until the program is running.</li>
+
+
+
+<li><strong>Stack Memory Allocation</strong>: VLAs allocate memory on the stack, making them local to the scope in which they are defined. The memory is automatically released when the scope ends, which can be advantageous for memory management.</li>
+
+
+
+<li><strong>Immutable Size</strong>: Once you define a VLA with a specific size, you cannot change that size during its lifetime. The size remains fixed.</li>
+
+
+
+<li><strong>Limitations</strong>: Using VLAs has some limitations, such as the potential for stack overflow if the array size is too large, limited portability (as VLAs were introduced in C99 and may not be supported in older compilers), and potential inefficiency for very large arrays.</li>
+</ul>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>
+// C program to demonstrate the use of VLAs 
+#include &lt;stdio.h&gt; 
+  
+int main() 
+{ 
+  
+    int n; 
+    printf("Enter the size of the array: "); 
+    scanf("%d", &amp;n); 
+    
+    int arr&#91;n]; 
+  
+    printf("Enter elements: "); 
+  
+    for (int i = 0; i &lt; n; ++i) { 
+  
+        scanf("%d", &amp;arr&#91;i]); 
+    } 
+      
+      printf("Elements of VLA of Given Size: "); 
+    for (int i = 0; i &lt; n; ++i) { 
+  
+        printf("%d ", arr&#91;i]); 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter the size of the array: 5
+Enter elements: 1 2 3 4 5
+Elements of VLA of Given Size: 1 2 3 4 5</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="5-flexible-array">5. Flexible Array</h2>
+
+
+
+<p>Flexible array members in C are arrays defined within a structure without a specific size. Introduced in the C99 standard, they allow for variable-sized arrays in structures. You can control their size using malloc(). A few rules apply: the flexible array member is best placed as the last member of the structure, its size can change at runtime, and the structure must have at least one other named member. Flexible array members are valuable for creating dynamic arrays within structures, often used in data structures like queues and stacks.</p>
+
+
+
+<p>Refer  the structure given below for example</p>
+
+
+
+<pre class="wp-block-code"><code>struct student
+{
+  int len;
+  int 
+};</code></pre>
+
+
+
+<p>Then, we can use the malloc() function to allocate memory:</p>
+
+
+
+<pre class="wp-block-code"><code>struct student *s = malloc(sizeof(*s) + 5 * sizeof(int));
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to demonstrate the use of Flexible Array Member 
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+// defining struct 
+typedef struct { 
+    int len; 
+    int arr&#91;]; 
+} fam; 
+  
+int main() 
+{ 
+    // creating an array member of size 5 
+    fam* fam1 
+        = (fam*)malloc(sizeof(fam*) + 5 * sizeof(int)); 
+  
+    // creating an array mebmer of size 10 
+    fam* fam2 
+        = (fam*)malloc(sizeof(fam*) + 10 * sizeof(int)); 
+      
+    // inserting elements 
+    for (int i = 0; i &lt; 5; i++) { 
+        fam1-&gt;arr&#91;i] = i + 1; 
+    } 
+    for (int i = 0; i &lt; 10; i++) { 
+        fam2-&gt;arr&#91;i] = i + 10; 
+    } 
+  
+    //  printing elements 
+    printf("Array of Size 5:\n"); 
+    for (int i = 0; i &lt; 5; i++) { 
+        printf("%d, ", fam1-&gt;arr&#91;i]); 
+    } 
+    printf("\n"); 
+  
+    printf("Array of size 10:\n"); 
+    for (int i = 0; i &lt; 10; i++) { 
+        printf("%d, ", fam2-&gt;arr&#91;i]); 
+    } 
+    return 0; 
+}
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Array of Size 5:
+1, 2, 3, 4, 5, 
+Array of size 10:
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-allocation-of-two-dimensional-array">Dynamic Allocation of Two-Dimensional Array</h2>
+
+
+
+<p>  Creating  a two-dimensional dynamic array in c. &nbsp;These are the  various  methods inorder to produce a 2D dynamic array.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Using a single pointer and a 1D array with pointer arithmetic</strong></li>
+
+
+
+<li><strong>Using an array of pointers&nbsp;</strong></li>
+
+
+
+<li><strong>Using a pointer to a pointer&nbsp;</strong></li>
+
+
+
+<li><strong>Using a double-pointer and one malloc call&nbsp;</strong></li>
+
+
+
+<li><strong>Using a pointer to Variable Length Array</strong></li>
+
+
+
+<li><strong>Using a pointer to the first row of VLA</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="faq-dynamic-array-in-c">FAQ-  Dynamic Array In C</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698743429420" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is a dynamic array in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Dynamic arrays in C are a valuable data structure that enables the creation and manipulation of arrays with flexible sizes during program execution. They are implemented using pointers and memory allocation functions, which optimizes memory usage and helps in building efficient programs. This flexibility and memory efficiency make dynamic arrays a powerful tool in programming.</p>
+
+</div>
+</div>
+<div id="faq-question-1698743436081" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.What is the syntax of dynamic array in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. printf(&#8220;Enter size of elements:&#8221;); scanf(&#8220;%d&#8221;, &amp;size); //</p>
+
+</div>
+</div>
+<div id="faq-question-1698743440985" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. How to use dynamic array in class?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <br />Create a new array of the desired size.<br />Copy data from the old array to the new one.<br />Delete the old array to avoid memory waste.<br />Make sure your pointer points to the new array.<br />These steps help you resize a dynamic array efficiently.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<h2 class="wp-block-heading"><br></h2>
+<div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/dynamic-array-in-c/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is a Memory Leak? How can we avoid it?</title>
+		<link>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/</link>
+					<comments>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:38:49 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[What is a Memory Leak? How can we avoid it?]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3174</guid>
+
+					<description><![CDATA[What is a Memory Leak? How can we avoid it? A memory leak occurs when a program fails to release allocated memory, leading to reduced system performance and potential crashes. This is especially problematic for long-running processes like servers that never restart, as leaks accumulate over time, degrading performance and stability. Preventing memory leaks requires ... <a title="What is a Memory Leak? How can we avoid it?" class="read-more" href="https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/" aria-label="More on What is a Memory Leak? How can we avoid it?">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-a-memory-leak-how-can-we-avoid-it">What is a Memory Leak? How can we avoid it?</a></li><li ><a href="#example-of-memory-leak">Example of Memory Leak</a></li><li ><a href="#how-to-avoid-memory-leak">How to avoid Memory Leak</a><ul><li ><a href="#example-program-to-release-memory-allocated-in-heap-to-avoid-memory-leak">Example: Program to Release Memory Allocated in Heap to Avoid Memory Leak</a></li><li ><a href="#example-program-to-check-whether-the-memory-is-freed-or-not">Example: Program to Check Whether the Memory is Freed or Not</a></li></ul></li><li ><a href="#faq-what-is-a-memory-leak-how-can-we-avoid-it">FAQ- What is a Memory Leak? How can we avoid it?</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="what-is-a-memory-leak-how-can-we-avoid-it">What is a Memory Leak? How can we avoid it?</h2>
+
+
+
+<p>A memory leak occurs when a program fails to release allocated memory, leading to reduced system performance and potential crashes. This is especially problematic for long-running processes like servers that never restart, as leaks accumulate over time, degrading performance and stability. Preventing memory leaks requires careful memory management in programming, with some languages offering automatic memory handling to reduce this issue.</p>
+
+
+
+<h2 class="wp-block-heading" id="example-of-memory-leak">Example of Memory Leak</h2>
+
+
+
+<pre class="wp-block-code"><code>
+/* Function with memory leak */
+#include &lt;stdlib.h&gt;
+ 
+void f()
+{
+    int* ptr = (int*)malloc(sizeof(int));
+ 
+    /* Do some work */
+ 
+    /* Return without freeing ptr*/
+    return;
+}</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-avoid-memory-leak">How to avoid Memory Leak</h2>
+
+
+
+<p>In order to avoid the leak, memory should always be free from them, when it is not necessary.</p>
+
+
+
+<h3 class="wp-block-heading" id="example-program-to-release-memory-allocated-in-heap-to-avoid-memory-leak">Example: Program to Release Memory Allocated in Heap to Avoid Memory Leak</h3>
+
+
+
+<pre class="wp-block-code"><code>/* Function without memory leak */
+#include &lt;stdlib.h&gt;
+ 
+void f()
+{
+    int* ptr = (int*)malloc(sizeof(int));
+ 
+    /* Do some work */
+ 
+    /* Memory allocated by malloc is released */
+    free(ptr);
+    return;
+}</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-program-to-check-whether-the-memory-is-freed-or-not">Example: Program to Check Whether the Memory is Freed or Not</h3>
+
+
+
+<pre class="wp-block-code"><code>
+
+// C++ Program to check whether the memory is allocated or not 
+// if allocated free it
+ 
+#include &lt;iostream&gt;
+using namespace std;
+ 
+int main()
+{
+    int* ptr = new int;
+   
+    if (ptr == NULL)
+        cout &lt;&lt; "Memory Is Insuffficient\n";
+    else {
+        delete ptr;
+        cout &lt;&lt; "Memory Freed\n";
+    }
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Memory Freed
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-what-is-a-memory-leak-how-can-we-avoid-it">FAQ- What is a Memory Leak? How can we avoid it?</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698665985097" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. Why is there a memory leak?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. A memory leak occurs when a computer program fails to release memory that is no longer needed, preventing that memory from being used for other purposes and essentially wasting it.</p>
+
+</div>
+</div>
+<div id="faq-question-1698665997514" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. How is memory leak detected?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Built-in or external tools like profilers, debuggers, or heap analyzers can help monitor and analyze memory usage and allocation. These tools reveal crucial information about how much memory your program is using, where it&#8217;s allocated, and how it evolves over time. This data can be invaluable for identifying and diagnosing memory leaks.</p>
+
+</div>
+</div>
+<div id="faq-question-1698666006074" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. Can a memory leak cause damage?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Memory leaks can indeed lead to software becoming unresponsive or malfunctioning, but they do not cause physical or permanent damage to the hardware. Memory leaks are strictly a software issue, and their primary impact is on system performance and stability, causing applications to slow down and potentially fail.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Difference Between malloc() and calloc() with Examples</title>
+		<link>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/</link>
+					<comments>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:38:35 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Difference Between malloc() and calloc() with Examples]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3153</guid>
+
+					<description><![CDATA[Difference Between malloc() and calloc() with Examples The two functions such as malloc () and calloc() are library functions that can allocate dynamically. Dynamic refers to the memory that is allocated during the run time(execution of the program) from the heap segment. Initialization malloc() will allocate a memory block of the provided size(in bytes) and ... <a title="Difference Between malloc() and calloc() with Examples" class="read-more" href="https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/" aria-label="More on Difference Between malloc() and calloc() with Examples">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#difference-between-malloc-and-calloc-with-examples">Difference Between malloc() and calloc() with Examples</a></li><li ><a href="#initialization">Initialization</a></li><li ><a href="#return-value">Return Value</a></li><li ><a href="#difference-between-malloc-and-calloc-in-c">Difference between malloc() and calloc() in C</a></li><li ><a href="#faq-difference-between-malloc-and-calloc-with-examples">FAQ- Difference Between malloc() and calloc() with Examples</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="difference-between-malloc-and-calloc-with-examples">Difference Between malloc() and calloc() with Examples</h2>
+
+
+
+<p>The two functions such as malloc () and calloc() are library functions that can allocate dynamically. Dynamic refers to the memory that is allocated during the run time(execution of the program) from the heap segment.</p>
+
+
+
+<h2 class="wp-block-heading" id="initialization">Initialization</h2>
+
+
+
+<p>malloc() will allocate a memory block of the provided size(in bytes) and then it can return a pointer to the beginning of the block. Malloc() won&#8217;t initialize the memory. Whereas, if you attempt to read from the allocated memory without even initializing it, then it can show undefined behavior. This meant the value that you read will be garbage values.</p>
+
+
+
+<p>The <code>calloc()</code> function in C and C++ is used to allocate memory for an array of elements and initializes all the bytes in the allocated memory to zero. It takes two arguments: the number of elements to allocate memory for and the size of each element in bytes. <code>calloc()</code> then returns a pointer to the allocated memory block.</p>
+
+
+
+<p>Because <code>calloc()</code> initializes all the bytes to zero, if you try to read the values from the allocated memory without explicitly assigning values to them, you will indeed get 0 or equivalent representations for the data type you are using. This behavior is different from the <code>malloc()</code> function, which allocates memory but does not initialize it, so the values in the memory block may contain arbitrary data.</p>
+
+
+
+<p><strong>Parameters</strong></p>
+
+
+
+<p>The malloc() function in C and C++ takes a single argument, which is the number of bytes to allocate. It returns a pointer to a block of memory that is large enough to store the specified number of bytes. <code>malloc()</code> does not initialize the memory it allocates, which means the contents of the allocated memory are undefined, and you need to explicitly initialize it if needed.</p>
+
+
+
+<p>calloc() indeed takes two arguments:</p>
+
+
+
+<ol class="wp-block-list">
+<li>The number of blocks or elements to be allocated.</li>
+
+
+
+<li>The size of each block or element in bytes.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="return-value">Return Value</h2>
+
+
+
+<p>Both malloc() and calloc() return a pointer to the allocated memory block on successful allocation. If the allocation fails for any reason, they return a <code>NULL</code> pointer to indicate failure. It&#8217;s important to check the returned pointer to ensure that the allocation was successful before attempting to use the allocated memory.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C code that demonstrates the difference
+// between calloc and malloc
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+    // Both of these allocate the same number of bytes,
+    // which is the amount of bytes that is required to
+    // store 5 int values.
+ 
+    // The memory allocated by calloc will be
+    // zero-initialized, but the memory allocated with
+    // malloc will be uninitialized so reading it would be
+    // undefined behavior.
+    int* allocated_with_malloc = malloc(5 * sizeof(int));
+    int* allocated_with_calloc = calloc(5, sizeof(int));
+ 
+    // As you can see, all of the values are initialized to
+    // zero.
+    printf("Values of allocated_with_calloc: ");
+    for (size_t i = 0; i &lt; 5; ++i) {
+        printf("%d ", allocated_with_calloc&#91;i]);
+    }
+    putchar('\n');
+
+    // This malloc requests 1 terabyte of dynamic memory,
+    // which is unavailable in this case, and so the
+    // allocation fails and returns NULL.
+    int* failed_malloc = malloc(1000000000000);
+    if (failed_malloc == NULL) {
+        printf("The allocation failed, the value of "
+               "failed_malloc is: %p",
+               (void*)failed_malloc);
+    }
+ 
+    // Remember to always free dynamically allocated memory.
+    free(allocated_with_malloc);
+    free(allocated_with_calloc);
+}
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Values of allocated_with_calloc: 0 0 0 0 0 
+The allocation failed, the value of failed_malloc is: (nil)</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="difference-between-malloc-and-calloc-in-c">Difference between malloc() and calloc() in C</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>malloc()</strong></td><td><strong>calloc()</strong></td></tr><tr><td>Malloc() refers to a function which can create one block of memory of a fixed size</td><td>Calloc() is a function that will assign a specified number of blocks of memory to single variable</td></tr><tr><td>It can only take one segment.</td><td>It will take only two segments.</td></tr><tr><td>Malloc() will be faster than calloc ().</td><td>calloc () is comparatively  slower than mall0c()</td></tr><tr><td>It has more time efficiency</td><td>calloc() will have very low time efficiency.</td></tr><tr><td>Syntax: void*<br>malloc(size_t size;</td><td>Syntax : void* calloc(size_t num, size_t size);</td></tr><tr><td>It won&#8217;t initialize the memory to zero.</td><td>It will  initialize the memory to zero</td></tr><tr><td>It won&#8217;t add any extra memory overhead</td><td>calloc() will add extra memory overhead.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="faq-difference-between-malloc-and-calloc-with-examples">FAQ- Difference Between malloc() and calloc() with Examples</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698661702133" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is the return type of malloc () or calloc ()?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. malloc() and calloc() will return <strong>void *</strong></p>
+
+</div>
+</div>
+<div id="faq-question-1698661707314" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is the syntax of malloc?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <strong>ptr = (int*) malloc(100 * sizeof(int));</strong><br />It allocates memory for 100 integers, and since the size of an <code>int</code> is typically 4 bytes on many systems, this will allocate 400 bytes of memory. The pointer <code>ptr</code> holds the address of the first byte in the allocated memory, which is the starting address of the block of 400 bytes.</p>
+
+</div>
+</div>
+<div id="faq-question-1698661715067" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is difference between malloc and new?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <code>new</code> is a C++ operator for dynamic memory allocation, initializing objects and returning the exact data type.<br /><code>malloc()</code> is a C and C++ library function for general memory allocation, not initializing objects, and returning <code>void*</code></p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc()</title>
+		<link>https://www.skillvertex.com/blog/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/</link>
+					<comments>https://www.skillvertex.com/blog/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:38:24 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[calloc()]]></category>
+		<category><![CDATA[Dynamic Memory Allocation in C using malloc()]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3096</guid>
+
+					<description><![CDATA[Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc() Dynamic memory allocation is a fundamental concept in the C programming language that allows developers to efficiently manage memory resources during runtime. Unlike static memory allocation, which defines memory usage at compile time, dynamic memory allocation enables programs to request and release memory as ... <a title="Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc()" class="read-more" href="https://www.skillvertex.com/blog/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/" aria-label="More on Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc()">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc">Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc()</a></li><li ><a href="#dynamic-memory-allocation-in-c">Dynamic Memory Allocation in C </a></li><li ><a href="#c-malloc-method">C malloc() method</a></li><li ><a href="#syntax-of-malloc-in-c">Syntax of malloc() in C</a><ul><li ><a href="#example-of-malloc-in-c">Example of malloc() in C</a></li></ul></li><li ><a href="#c-calloc-method">C calloc() method</a><ul><li ><a href="#example-of-calloc-in-c">Example of calloc() in C</a></li></ul></li><li ><a href="#c-free-method">C free() method</a><ul><li ><a href="#example-of-free-in-c">Example of free() in C</a></li></ul></li><li ><a href="#c-realloc-method">C realloc() method</a></li><li ><a href="#example-of-realloc-in-c">Example of realloc() in C</a></li><li ><a href="#faq-dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc">FAQ- Dynamic Memory Allocation in C using malloc(), calloc(), free() and realloc()</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc">Dynamic Memory Allocation In C Using Malloc(), Calloc(), Free() And Realloc()</h2>
+
+
+
+<p>Dynamic memory allocation is a fundamental concept in the C programming language that allows developers to efficiently manage memory resources during runtime. Unlike static memory allocation, which defines memory usage at compile time, dynamic memory allocation enables programs to request and release memory as needed. This flexibility is particularly valuable when working with data structures of varying sizes or when you need to allocate memory for data structures whose size is not known until runtime. In C, this dynamic memory allocation is achieved through functions like <code>malloc()</code>, <code>calloc()</code>, <code>free()</code>, and <code>realloc()</code>. These functions provide the means to allocate memory, initialize it, release it, and even resize it, empowering programmers to optimize memory usage in their applications. This introductory guide will explore the usage of these functions, offering insights into how to harness their power for efficient memory management in C programming.</p>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-memory-allocation-in-c">Dynamic Memory Allocation in C </h2>
+
+
+
+<p>Dynamic memory allocation is a fundamental concept that allows developers to adapt the size of data structures, such as arrays, during program execution. This adaptability is especially crucial when the actual size of the data structure cannot be determined at compile time or when it needs to change dynamically based on program requirements.</p>
+
+
+
+<p>The four library functions provided by C, namely <code>malloc()</code>, <code>calloc()</code>, <code>free()</code>, and <code>realloc()</code>, are key tools for implementing dynamic memory allocation. They empower programmers to allocate memory, initialize it, release it when no longer needed, and resize data structures, ensuring the efficient use of memory resources.</p>
+
+
+
+<p>Dynamic memory allocation is a powerful feature that enhances the flexibility and efficiency of C programming, enabling developers to create more adaptable and resource-efficient applications. It is particularly valuable in scenarios like the ones you&#8217;ve described, where the size of an array needs to be adjusted at runtime to prevent memory wastage or accommodate additional data.</p>
+
+
+
+<h2 class="wp-block-heading" id="c-malloc-method">C malloc() method</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Allocation:</strong> The <code>malloc</code> function in C is used to dynamically allocate a single large block of memory during runtime. This memory allocation is done based on the specified size provided as an argument to <code>malloc</code>.</li>
+
+
+
+<li><strong>Pointer Return Type:</strong> <code>malloc</code> returns a pointer of type <code>void</code>, which means it can be cast into a pointer of any data type. Programmers typically cast this <code>void</code> pointer into the appropriate data type pointer to work with the allocated memory.</li>
+
+
+
+<li><strong>Uninitialized Memory:</strong> One crucial aspect of <code>malloc</code> is that it does not initialize the memory it allocates. The memory block initially contains garbage values, which means the content of the allocated memory is indeterminate until you explicitly write values into it. It&#8217;s important for programmers to initialize the memory if necessary to avoid unexpected behavior in their programs.</li>
+</ol>
+
+
+
+<p>This function is widely used for dynamic memory allocation in C and is the first step in allocating memory for various data structures, such as arrays, linked lists, and more. To ensure predictable behavior, it&#8217;s essential to initialize the allocated memory to the desired values before using it in your program.</p>
+
+
+
+<h2 class="wp-block-heading" id="syntax-of-malloc-in-c">Syntax of malloc() in C</h2>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*) malloc(byte-size)
+For Example:</code></pre>
+
+
+
+<pre class="wp-block-code"><code>ptr = (int*) malloc(100 * sizeof(int));
+Due  the size of int is 4 bytes, this statement will allocate 400 bytes of memory. Thus, the pointer ptr holds the address of the first byte in the allocated memory.</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-of-malloc-in-c">Example of malloc() in C</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+ 
+    // This pointer will hold the
+    // base address of the block created
+    int* ptr;
+    int n, i;
+ 
+    // Get the number of elements for the array
+    printf("Enter number of elements:");
+    scanf("%d",&amp;n);
+    printf("Entered number of elements: %d\n", n);
+ 
+    // Dynamically allocate memory using malloc()
+    ptr = (int*)malloc(n * sizeof(int));
+ 
+    // Check if the memory has been successfully
+    // allocated by malloc or not
+    if (ptr == NULL) {
+        printf("Memory not allocated.\n");
+        exit(0);
+    }
+    else {
+ // Memory has been successfully allocated
+        printf("Memory successfully allocated using malloc.\n");
+ 
+        // Get the elements of the array
+        for (i = 0; i &lt; n; ++i) {
+            ptr&#91;i] = i + 1;
+        }
+ 
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i &lt; n; ++i) {
+            printf("%d, ", ptr&#91;i]);
+        }
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter number of elements: 5
+Memory successfully allocated using malloc.
+The elements of the array are: 1, 2, 3, 4, 5,
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="c-calloc-method">C calloc() method</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Allocation:</strong> The <code>calloc</code> function in C is used for dynamic memory allocation, much like the <code>malloc</code> function. It allows you to allocate memory for a specified number of blocks of a specified type during program execution.</li>
+
+
+
+<li><strong>Initialization to Zero:</strong> One significant difference between <code>calloc</code> and <code>malloc</code> is that <code>calloc</code> initializes each block of memory with a default value of &#8216;0&#8217;. This means that the memory allocated by <code>calloc</code> is set to zeros by default. This can be useful when you want to ensure that the allocated memory starts with a known initial state.</li>
+
+
+
+<li><strong>Two Parameters:</strong> <code>calloc</code> takes two parameters or arguments: the number of blocks you want to allocate and the size of each block in bytes. In contrast, <code>malloc</code> typically takes a single argument, which is the total size of memory to allocate.</li>
+</ol>
+
+
+
+<p><code>calloc</code> is often used when you want to allocate and initialize an array of elements, and you want to ensure that all elements start with a default value of zero. This can be helpful in scenarios where you need to work with arrays or matrices and want to avoid any unpredictable values in the allocated memory.</p>
+
+
+
+<p>So, while <code>calloc</code> and <code>malloc</code> serve the same general purpose of dynamic memory allocation, they differ in their behavior regarding memory initialization and the number of parameters they accept.</p>
+
+
+
+<h4 class="wp-block-heading">Syntax of calloc() in C</h4>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*)calloc(n, element-size);
+here, n is the no. of elements and element-size is the size of each element.</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (float*) calloc(25, sizeof(float));
+This statement can allocate acontiguous space in memory for 25 elements whereas, each element with the size of the float. </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-of-calloc-in-c">Example of calloc() in C</h3>
+
+
+
+<pre class="wp-block-code"><code>
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+ 
+    // This pointer will hold the
+    // base address of the block created
+    int* ptr;
+    int n, i;
+ 
+    // Get the number of elements for the array
+    n = 5;
+    printf("Enter number of elements: %d\n", n);
+ 
+    // Dynamically allocate memory using calloc()
+    ptr = (int*)calloc(n, sizeof(int));
+ 
+    // Check if the memory has been successfully
+    // allocated by calloc or not
+    if (ptr == NULL) {
+        printf("Memory not allocated.\n");
+        exit(0);
+    }
+    else {
+     // Memory has been successfully allocated
+        printf("Memory successfully allocated using calloc.\n");
+ 
+        // Get the elements of the array
+        for (i = 0; i &lt; n; ++i) {
+            ptr&#91;i] = i + 1;
+        }
+ 
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i &lt; n; ++i) {
+            printf("%d, ", ptr&#91;i]);
+        }
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter number of elements: 5
+Memory successfully allocated using calloc.
+The elements of the array are: 1, 2, 3, 4, 5,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="c-free-method">C free() method</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Deallocation:</strong> The <code>free</code> function in C is used to dynamically deallocate (release) memory that was previously allocated using functions like <code>malloc</code> and <code>calloc</code>.</li>
+
+
+
+<li><strong>Manual Memory Management:</strong> Memory allocated using <code>malloc</code> and <code>calloc</code> is not automatically deallocated by the program; it remains allocated until explicitly released. This manual memory management is a fundamental responsibility of the programmer.</li>
+
+
+
+<li><strong>Wastage Reduction:</strong> One of the primary purposes of the <code>free</code> function is to reduce memory wastage. By releasing memory that is no longer needed, the program can make efficient use of available memory resources.</li>
+</ol>
+
+
+
+<p>It&#8217;s important to note that not properly freeing memory can lead to memory leaks, where memory is allocated but never released, causing the program&#8217;s memory consumption to grow over time. Therefore, it&#8217;s a good practice to use <code>free</code> to release memory as soon as it is no longer required within your program to ensure efficient memory management.</p>
+
+
+
+<p><strong>Syntax of free() in C</strong></p>
+
+
+
+<pre class="wp-block-code"><code>free(ptr);
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-of-free-in-c">Example of free() in C</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+ 
+    // This pointer will hold the
+    // base address of the block created
+    int *ptr, *ptr1;
+    int n, i;
+ 
+    // Get the number of elements for the array
+    n = 5;
+    printf("Enter number of elements: %d\n", n);
+ 
+    // Dynamically allocate memory using malloc()
+    ptr = (int*)malloc(n * sizeof(int));
+ 
+    // Dynamically allocate memory using calloc()
+    ptr1 = (int*)calloc(n, sizeof(int));
+ 
+    // Check if the memory has been successfully
+    // allocated by malloc or not
+    if (ptr == NULL || ptr1 == NULL) {
+        printf("Memory not allocated.\n");
+        exit(0);
+    }
+    else {
+ 
+        // Memory has been successfully allocated
+        printf("Memory successfully allocated using malloc.\n");
+ 
+        // Free the memory
+        free(ptr);
+        printf("Malloc Memory successfully freed.\n");
+ 
+        // Memory has been successfully allocated
+        printf("\nMemory successfully allocated using calloc.\n");
+ 
+        // Free the memory
+        free(ptr1);
+        printf("Calloc Memory successfully freed.\n");
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter number of elements: 5
+Memory successfully allocated using malloc.
+Malloc Memory successfully freed.
+
+Memory successfully allocated using calloc.
+Calloc Memory successfully freed.</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="c-realloc-method">C realloc() method</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Reallocation:</strong> The <code>realloc</code> function in C is used to dynamically change the memory allocation of a previously allocated memory block. This allows you to resize the memory block allocated by <code>malloc</code> or <code>calloc</code> during runtime.</li>
+
+
+
+<li><strong>Insufficient Memory:</strong> <code>realloc</code> is particularly useful when the previously allocated memory is insufficient to hold the data or elements you want to store. It enables you to increase or decrease the size of the memory block to accommodate the new requirements.</li>
+
+
+
+<li><strong>Data Preservation:</strong> When you use <code>realloc</code> to increase the size of the memory block, it preserves the data that is already present in the existing memory. In other words, the data from the original memory block is retained in the new, larger memory block. However, any newly allocated memory within the resized block will contain garbage values unless explicitly initialized.</li>
+
+
+
+<li><strong>Efficient Memory Usage:</strong> <code>realloc</code> helps in efficient memory usage by allowing you to adapt the memory allocation to your program&#8217;s needs without unnecessary memory wastage or the risk of buffer overflows.</li>
+</ol>
+
+
+
+<p>Overall, <code>realloc</code> is a powerful tool for managing memory efficiently in C programs, as it gives you the flexibility to adjust memory sizes dynamically to meet changing requirements while retaining existing data.</p>
+
+
+
+<p><strong>Syntax of realloc() in C</strong></p>
+
+
+
+<pre class="wp-block-code"><code>ptr = realloc(ptr, newSize);
+where ptr is reallocated with new size 'newSize'.</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="example-of-realloc-in-c">Example of realloc() in C</h2>
+
+
+
+<pre class="wp-block-code"><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+ 
+    // This pointer will hold the
+    // base address of the block created
+    int* ptr;
+    int n, i;
+ 
+    // Get the number of elements for the array
+    n = 5;
+    printf("Enter number of elements: %d\n", n);
+ 
+    // Dynamically allocate memory using calloc()
+    ptr = (int*)calloc(n, sizeof(int));
+ 
+    // Check if the memory has been successfully
+    // allocated by malloc or not
+    if (ptr == NULL) {
+        printf("Memory not allocated.\n");
+        exit(0);
+    }
+    else {
+// Memory has been successfully allocated
+        printf("Memory successfully allocated using calloc.\n");
+ 
+        // Get the elements of the array
+        for (i = 0; i &lt; n; ++i) {
+            ptr&#91;i] = i + 1;
+        }
+ 
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i &lt; n; ++i) {
+            printf("%d, ", ptr&#91;i]);
+        }
+ 
+        // Get the new size for the array
+        n = 10;
+        printf("\n\nEnter the new size of the array: %d\n", n);
+ 
+        // Dynamically re-allocate memory using realloc()
+        ptr = (int*)realloc(ptr, n * sizeof(int));
+ 
+        // Memory has been successfully allocated
+        printf("Memory successfully re-allocated using realloc.\n");
+ 
+        // Get the new elements of the array
+        for (i = 5; i &lt; n; ++i) {
+            ptr&#91;i] = i + 1;
+        }
+ 
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i &lt; n; ++i) {
+            printf("%d, ", ptr&#91;i]);
+        }
+ 
+        free(ptr);
+    }
+ 
+    return 0;
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter number of elements: 5
+Memory successfully allocated using calloc.
+The elements of the array are: 1, 2, 3, 4, 5, 
+
+Enter the new size of the array: 10
+Memory successfully re-allocated using realloc.
+The elements of the array are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc">FAQ- Dynamic Memory Allocation in C using malloc(), calloc(), free() and realloc()</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698656600752" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is dynamic memory allocation malloc and calloc in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <code>malloc()</code> and <code>calloc()</code> are C functions for dynamic memory allocation.<br />The key difference is that <code>malloc()</code> requires one argument for the total memory size and leaves it uninitialized, while <code>calloc()</code> needs two arguments: the number of elements and their size, and it initializes the memory to zero.</p>
+
+</div>
+</div>
+<div id="faq-question-1698656616554" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. Under which header file are dynamic memory allocation functions such as calloc malloc realloc and free provided?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. To allocate memory dynamically in C, you can use library functions like <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>, and <code>free()</code>. These functions are part of the <code>&lt;stdlib.h></code> header file.</p>
+
+</div>
+</div>
+<div id="faq-question-1698656630790" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is better calloc and malloc?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <br /><code>calloc()</code> zero-initializes memory, good for when initialization is crucial, with a minor performance cost.<br /><code>malloc()</code> leaves memory uninitialized, faster if performance matters and initialization isn&#8217;t needed.<br /><code>calloc()</code> can save you from calling <code>memset()</code> to zero out memory.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

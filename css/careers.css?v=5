@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+.sec-title{
+    padding: 50px 0;
+    background-image: url("../img/careers/people-banner.png");
+    position: relative;
+    isolation: isolate;
+    background-size: cover; 
+}
+.sec-title .bg-cont{
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    background-image: linear-gradient(180deg, #58545BD1 29%, #B482A7 100%);
+}
+.sec-title .head-cont{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+}
+.sec-title .head-cont h2{
+    color: #FFFFFF;
+    font-family: "Palanquin Dark", Sans-serif;
+    font-size: 4.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgb(255 255 255 / 30%);
+    margin-bottom: 15px;
+    max-width: 742px;
+}
+.sec-title .head-cont .bt-line{
+    display: flex;
+    width: 7%;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 25px;
+}
+.sec-title .head-cont h3{
+    color: #ffffff;
+    font-family: "Palanquin", Sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+.sec-title .head-cont .left-cont{
+    display: flex;
+    flex-direction: column;
+}
+.sec-title .head-cont .right-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.sec-title .head-cont .right-cont a{
+    margin-right: 20px;
+}
+.sec-title .head-cont .right-cont a, .sec-title .head-cont .right-cont button{
+    background: #1F51F0 !important;
+    padding: 15px 25px !important;
+    border-radius: 5px;
+}
+.sec-title .head-cont .right-cont a:hover, .sec-title .head-cont .right-cont button:hover{
+   background: #000 !important;
+}
+.sec-title .ic-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
+.sec-title .ic-cont .ic-bx{
+    display: flex;
+    font-size: 40px;
+    color: #fff;
+}
+@media screen and (max-width: 991px) {
+    .sec-title .head-cont{
+        flex-direction: column;
+    }
+    .sec-title .head-cont .left-cont{
+        margin-bottom: 25px;
+    }
+    .sec-title .head-cont .right-cont{
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sec-title .head-cont{
+        align-items: center;
+    }
+    .sec-title .head-cont h2{
+        font-size: 2.09em;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .sec-title .head-cont h3{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .sec-title .head-cont .bt-line{
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .sec-title .head-cont .right-cont{
+        justify-content: center;
+    }
+    .sec-title .head-cont .right-cont a, .sec-title .head-cont .right-cont button{
+        padding: 10px 20px !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    .sec-title .head-cont{
+        padding: 0 10px;
+    }
+    .sec-title .ic-cont .ic-bx{
+        padding-right:10px;
+    }
+}
+
+/*FEATURED PATHS*/
+.sec-feat{
+    padding: 50px 0;
+}
+.sec-feat .head-cont{
+    display: flex;
+    flex-direction: column;
+}
+.sec-feat .head-cont h2{
+    font-family: "Palanquin Dark", Sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+    color: #54595F;
+    margin-bottom: 15px;
+}
+.sec-feat .head-cont p{
+    font-family: "Palanquin", Sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #7A7A7A;
+    margin:0;
+}
+.sec-feat .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3em 0;
+    width:100%;
+}
+.sec-feat .card-container .card{
+    box-shadow: 0px 0px 38px 0px rgb(0 0 0 / 10%);
+    padding: 2em;
+    border-radius: 10px;
+    width: calc(33.33% - 84px);
+    cursor: pointer;
+    margin: 10px;
+}
+.sec-feat .card-container .card:hover{
+    background: #eaeaeb;
+}
+.sec-feat .card-container .card a{
+    font-family: "Palanquin Dark", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 4px;
+    color: #54595F;
+}
+@media screen and (max-width: 991px) {
+    .sec-feat .card-container .card{
+        padding: 1.5em;
+        width: calc(50% - 68px);
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sec-feat .head-cont h2{
+        font-size: 2rem;
+    }
+    .sec-feat .head-cont p{
+        font-size: 0.9em;
+    }
+    .sec-feat .card-container .card{ 
+        width: 100%;
+        margin: 0;
+    }
+    .sec-feat .card-container .card:not(:last-child){
+        margin-bottom:15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sec-feat{
+        padding: 50px 10px;
+    }
+}
+/*CORE VALUES*/
+.sec-core{
+    padding: 50px 0;
+    background-image: url(../img/careers/Screenshot-from-2022-10-21-12-19-56.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-core .sec-head{
+    margin-bottom: 20px;
+}
+.sec-core .sec-head h2{
+    font-size: 3rem;
+    font-family: "Palanquin Dark", Sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    color: #54595f;
+    margin-bottom: 25px;
+}
+.sec-core .sec-head .divi-line{
+    width: 5%;
+    height: 4px;
+    background: #7a7a7a;
+    display: flex;
+}
+.sec-core .row{
+    display:flex;
+    flex-direction: row;
+}
+.sec-core .row .card-outer{
+    width: 20%;
+    padding: 0 10px;
+}
+.sec-core .row .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 11%);
+    border-bottom: 5px solid #7a7a7a;
+    border-radius: 6px;
+    background: #fff;
+}
+.sec-core .row .card .card-bt{
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+}
+.sec-core .row .card .card-bt .line-base{
+    width: 15%;
+    height: 5px;
+    display: flex;
+    background: #54595F;
+    margin-right: 10px; 
+}
+.sec-core .row .card .card-bt p{
+    font-size: 15px;
+    color: #727695;
+    margin: 0;
+}
+.sec-core .row .card .icon-bx{
+    font-size: 35px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.sec-core .row .card .mod-ibx{
+    text-align: left !important;
+}
+.sec-core .row .card h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #54595f;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sec-core .row .card .mod-h3{
+    text-align: left !important;
+    font-weight: 900 !important;
+    line-height: 1.2em;
+    letter-spacing: 4px; 
+}
+@media screen and (max-width: 991px) {
+    .sec-core .sec-head{
+        padding: 0 10px;
+    }
+    .sec-core .row .card h3{
+        font-size: 1.3em;
+    }
+    .sec-core .sec-head h2{
+        font-size: 2.5rem;
+    }
+    .sec-core .sec-head .divi-line{
+        width: 10%;
+    }
+    .sec-core .row{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .sec-core .row .card-outer{
+        width:100%;
+        padding:0;
+    }
+    .sec-core .row .card-outer:not(:last-child){
+        margin-bottom:20px;
+    }
+}
+
+.sec-contact{
+    position:relative;
+    background-image: url(../img/careers/creative-positive-female-leader-talking-about-business-plan-with-students-during-workshop.jpg)!important;
+    background-attachment: fixed;
+    isolation: isolate;
+    margin: 50px 0;
+}
+.sec-contact .bg-contact{
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    opacity: 0.5;
+}
+.sec-contact .mod-head h2{
+    color: #fff; 
+}
+.sec-contact .mod-head .mod-line{
+    width: 6%;
+    height: 6px;
+    background: #fff;
+}
+.sec-contact .mod-head h3{
+    color: #ffffff;
+    font-family: "Palanquin", Sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+.sec-contact .btn-gp{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    align-items: end;
+}
+.sec-contact .btn-gp .btn-ch{
+    border-radius: 25px;
+    color: #54595F;
+    background: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    width: fit-content;
+}
+.sec-contact .btn-gp .btn-ch i{
+    margin-left:5px;
+}
+@media screen and (max-width: 991px) {
+    .sec-contact .mod-head h2{
+        font-weight: 500 !important;
+    }
+    .sec-contact .mod-head h3{
+        font-size: 1.3em;
+    }
+}
+/*Apply Now*/
+.sec-apply{
+    padding: 50px 0;
+    background-image: url(../img/careers/female-tailor-working-with-leather.jpg);
+    background-size: cover;
+    isolation: isolate;
+    position: relative;
+    border: 3px solid #7A7A7A;
+}
+.sec-apply .apply-oly{
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    opacity: 0.5;
+}
+.sec-apply .cont{
+    display: flex;
+    flex-direction: column; 
+    padding:0 95px;
+}
+.sec-apply .cont h3{
+    text-align: left;
+    font-weight: 900;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    margin-bottom:25px;
+}
+.sec-apply .career-pat{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    cursor: pointer;
+    color: #727695;
+    margin-bottom:15px;
+}
+.sec-apply label{
+    font-size: 15px;
+    font-family: "Poppins", Sans-serif;
+    color: #54595F;
+    margin-bottom: 5px;
+}
+.sec-apply .error-msg{
+    color: red !important;
+}
+.sec-apply .cont .input-grp{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 16px 0;
+    border-bottom: 2px solid #D1D8EB;
+    width: calc(100% - 10px);
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.uresu{
+    margin-bottom: 20px;
+}
+.sec-apply .cont .input-grp input{
+    color: #22252F;
+    border: 0;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+    width: calc(100% - 20px);
+    outline: none;
+}
+.sec-apply .cont .input-grp i{
+    margin-right: 15px;
+}
+.sec-apply .cont .file-up .up-file{
+    display: flex;
+    flex-direction: column;
+}
+.sec-apply .cont .file-up .up-file .uresu{
+    margin-bottom: 20px;
+}
+.sec-apply .cont .file-up .up-file .btn-up{
+    background: #14ffe6;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sec-apply .cont .btn-gp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+}
+.sec-apply .cont .btn-gp .btn-apl{
+    padding: 5px 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    width: fit-content; 
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    .sec-apply .cont{
+        padding:0px;
+    }
+    .sec-contact .btn-gp{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec-contact .btn-gp{
+        width: 100%;
+    }
+    .sec-contact .btn-gp .btn-ch{
+        width: 100%;
+        padding: 15px 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .sec-apply .cont{
+        padding:10px;
+    }
+}
+
+
+

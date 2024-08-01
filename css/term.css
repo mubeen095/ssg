@@ -1,0 +1,25 @@
+.term-cont{
+   padding: 20px 10px;
+}
+.term-cont h3{
+   font-weight: 800;
+   margin-top:0;
+   font-size: 1.75rem;
+   color: #252525;
+   margin-bottom: 12px;
+}
+.term-cont p{
+    color: #727695;
+    text-align: justify;
+    font-size: 15px;
+}
+@media screen and (max-width: 576px){
+    .term-cont h3{
+        font-size: 1.5rem;
+    }
+    .term-cont p{
+        font-size: 13px;
+    }
+
+
+}

@@ -1,0 +1,3180 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Python Tutorial</title>
+	<atom:link href="https://www.skillvertex.com/category/python-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Apr 2024 12:03:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>Python Tutorial</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Python List Methods</title>
+		<link>https://www.skillvertex.com/blog/python-list-methods/</link>
+					<comments>https://www.skillvertex.com/blog/python-list-methods/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:03:23 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[Python function]]></category>
+		<category><![CDATA[Python List Methods]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=8139</guid>
+
+					<description><![CDATA[The Python List Method will allow you to built-in methods and will do operations on the Python list/ arrays. Read this article to learn more about Python list Methods. What is Python List Methods? Python consists of a set of built-in methods that will be used on lists. S.no Method Description 1 append() append() will ... <a title="Python List Methods" class="read-more" href="https://www.skillvertex.com/blog/python-list-methods/" aria-label="More on Python List Methods">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><div><div ><a href="#what-is-python-list-methods">What is Python List Methods?</a></div><div ><a href="#how-to-add-elements-to-the-list">How to add Elements to the List?</a></div><div ><a href="#1-python-append-method">1. Python append() method</a></div><div ><a href="#2-python-insert-method">2. Python insert() method</a></div><div ><a href="#3-python-extend-method">3. Python extend() method</a></div><div ><a href="#what-are-the-important-functions-of-the-python-list">What are the important functions of the Python List?</a><div><div ><a href="#1-python-sum-method">1. Python sum() method</a></div><div ><a href="#2-python-count-method">2. Python count() method</a></div><div ><a href="#3-python-index-method">3.Python index() method</a></div><div ><a href="#4-python-min-method">4. Python min() method</a></div><div ><a href="#5-python-max-method">5. Python max() method</a></div><div ><a href="#6-python-sort-method">6. Python sort() method </a></div><div ><a href="#7-python-reverse-method">7. Python reverse() method</a></div></div></div><div ><a href="#conclusion">Conclusion</a></div><div ><a href="#python-list-methods-fa-qs">Python List Methods-FAQs</a></div></div></nav></div>
+
+
+
+<p>The <a href="https://www.skillvertex.com/blog/python-access-list-items/" data-type="post" data-id="8035">Python </a>List Method will allow you to built-in methods and will do operations on the Python list/ arrays. Read this article to learn more about Python list Methods.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-python-list-methods">What is Python List Methods?</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/python-list-comprehension/" data-type="post" data-id="8090">Python </a>consists of a set of <a href="https://www.skillvertex.com/blog/python-built-in-functions/" data-type="post" data-id="7464">built-in method</a>s that will be used on lists.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>S.no</th><th>Method</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><em>append</em>()</td><td>append() will work to add elements to the end of the List.&nbsp;</td></tr><tr><td>2</td><td><em><a href="https://www.skillvertex.com/blog/python-copy-list/" data-type="post" data-id="8109">copy</a></em>()</td><td>Copy() will return a shallow copy of a list</td></tr><tr><td>3</td><td><em>clear</em>()</td><td>clear() method is used for removing all items from the list.&nbsp;</td></tr><tr><td>4</td><td><em>count</em>()</td><td>count() method will count the elements.</td></tr><tr><td>5</td><td><em>extend</em>()</td><td>extend() is used to add each element of an iterable to the end of the List.</td></tr><tr><td>6</td><td><em>index</em>()</td><td>index() will return the lowest index where the element appears.&nbsp;</td></tr><tr><td>7</td><td><em><a href="https://www.skillvertex.com/blog/python-add-list-items/" data-type="post" data-id="8058">insert</a></em>()</td><td>This method will insert a given element at a given index in a list.&nbsp;</td></tr><tr><td>8</td><td><em>pop</em>()</td><td>This will remove and return the last value from the List or the given index value.</td></tr><tr><td>9</td><td><em>remove</em>()</td><td>It will remove the given object from the List.&nbsp;</td></tr><tr><td>10</td><td><em>reverse</em>()</td><td>It will reverse objects of the List in place.</td></tr><tr><td>11</td><td><em>sort</em>()</td><td>Sort() will sort the  List in ascending, descending, or user-defined order.</td></tr><tr><td>12</td><td><em>min</em>()</td><td>min() will calculate the minimum of all the elements of the List</td></tr><tr><td>13</td><td><em>max</em>()</td><td>max will calculates the maximum of all the elements of the List</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="how-to-add-elements-to-the-list">How to add Elements to the List?</h2>
+
+
+
+<p> The built-in  Python methods are used to add the <a href="https://www.skillvertex.com/blog/which-one-is-not-an-element-of-iot/" data-type="post" data-id="3089">element </a>to the list.</p>
+
+
+
+<h2 class="wp-block-heading" id="1-python-append-method">1. Python append() method</h2>
+
+
+
+<p>This method is used to add the element to the end of the <a href="https://www.skillvertex.com/blog/python-list-sort-method/" data-type="post" data-id="8100">list</a>.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: list.append (element)</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data += &#91;value]
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(1)
+custom_list.append(2)
+custom_list.append(3)
+
+print("Custom list after appending elements:", custom_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list after appending elements: &#91;1, 2, 3]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="2-python-insert-method">2. Python insert() method</h2>
+
+
+
+<p>The Python insert() method will allow you to insert the element at the specified position.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax:
+
+list.insert(&lt;position, element)</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def insert(self, index, value):
+        self.data = self.data&#91;:index] + &#91;value] + self.data&#91;index:]
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.insert(0, 1)
+custom_list.insert(1, 2)
+custom_list.insert(1, 3)
+
+print("Custom list after inserting elements:", custom_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list after inserting elements: &#91;1, 3, 2]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="3-python-extend-method">3. Python extend() method</h2>
+
+
+
+<p>The Python extend method will add the items of the iterable to the end of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: List1.extend(List2)</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def extend(self, iterable):
+        self.data += iterable
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.extend(&#91;1, 2, 3])
+custom_list.extend(&#91;4, 5, 6])
+
+print("Custom list after extending elements:", custom_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list after extending elements: &#91;1, 2, 3, 4, 5, 6]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-important-functions-of-the-python-list">What are the important functions of the Python List?</h2>
+
+
+
+<p>Some of the important functions of the Python list are given below:</p>
+
+
+
+<h3 class="wp-block-heading" id="1-python-sum-method">1. Python sum() method</h3>
+
+
+
+<p>The Python sum method will allow you to calculate the sum of the elements of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: sum(List)
+
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data += &#91;value]
+
+    def sum(self):
+        return sum(self.data)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(1)
+custom_list.append(2)
+custom_list.append(3)
+
+print("Custom list:", custom_list)
+print("Sum of elements in custom list:", custom_list.sum())
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list: &#91;1, 2, 3]
+Sum of elements in custom list: 6
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="2-python-count-method">2. Python count() method</h3>
+
+
+
+<p>This method will sum the total occurrence of the given element of the <a href="https://www.skillvertex.com/blog/python-list-sort-method/" data-type="post" data-id="8100">list</a>.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: List.count(element)</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def count(self, value):
+        return self.data.count(value)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(1)
+custom_list.append(2)
+custom_list.append(3)
+custom_list.append(1)  # Adding one more 1
+
+print("Custom list:", custom_list)
+print("Number of occurrences of '1' in custom list:", custom_list.count(1))
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list: &#91;1, 2, 3, 1]
+Number of occurrences of '1' in custom list: 2
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="3-python-index-method">3.Python index() method</h3>
+
+
+
+<p>This method will return the index of the first occurrence. So, the start and end indexes are not the required parameters.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: List.index(element&#91;,start&#91;,end]])</code></pre>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def index(self, value):
+        return self.data.index(value)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(1)
+custom_list.append(2)
+custom_list.append(3)
+
+print("Custom list:", custom_list)
+print("Index of '2' in custom list:", custom_list.index(2))
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list: &#91;1, 2, 3]
+Index of '2' in custom list: 1
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="4-python-min-method">4. Python min() method</h3>
+
+
+
+<p>This method will find the minimum of all the elements of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: min(iterable, *iterables&#91;, key])</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def min(self):
+        return min(self.data)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(3)
+custom_list.append(1)
+custom_list.append(5)
+custom_list.append(2)
+
+print("Custom list:", custom_list)
+print("Minimum value in custom list:", custom_list.min())
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list: &#91;3, 1, 5, 2]
+Minimum value in custom list: 1
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="5-python-max-method">5. Python max() method</h3>
+
+
+
+<p>The Python will calculate the maximum of all the elements of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: max(iterable, *iterables&#91;, key])
+
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def max(self):
+        return max(self.data)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(3)
+custom_list.append(1)
+custom_list.append(5)
+custom_list.append(2)
+
+print("Custom list:", custom_list)
+print("Maximum value in custom list:", custom_list.max())
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list: &#91;3, 1, 5, 2]
+Maximum value in custom list: 5
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="6-python-sort-method">6. Python sort() method </h3>
+
+
+
+<p>This <a href="https://www.skillvertex.com/blog/which-of-the-following-are-methods-traffic-manager-uses-to-pick-endpoints-in-azure/" data-type="post" data-id="3218">method </a>will allow us to sort the given <a href="https://www.skillvertex.com/blog/mern-stack-vs-data-science/" data-type="post" data-id="4251">data </a>structure in ascending order. Whereas, the key and reverse flag won&#8217;t be considered as the necessary <a href="https://www.skillvertex.com/blog/what-are-the-limitations-of-parameters-in-tableau/" data-type="post" data-id="3022">parameter </a>and the reverse_ flag will be set to false when nothing is passed through the sorted().</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: list.sort(&#91;key,&#91;Reverse_flag]])</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def sort(self):
+        self.data.sort()
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(3)
+custom_list.append(1)
+custom_list.append(5)
+custom_list.append(2)
+
+print("Custom list before sorting:", custom_list)
+custom_list.sort()
+print("Custom list after sorting:", custom_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list before sorting: &#91;3, 1, 5, 2]
+Custom list after sorting: &#91;1, 2, 3, 5]
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="7-python-reverse-method">7. Python reverse() method</h3>
+
+
+
+<p>The <a href="https://www.skillvertex.com/blog/how-to-reverse-a-string-in-java/" data-type="post" data-id="728">reverse </a>method will reverse the order of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>Syntax: list. reverse()</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>class CustomList:
+    def __init__(self):
+        self.data = &#91;]
+
+    def append(self, value):
+        self.data.append(value)
+
+    def reverse(self):
+        self.data = self.data&#91;::-1]
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+custom_list = CustomList()
+custom_list.append(1)
+custom_list.append(2)
+custom_list.append(3)
+
+print("Custom list before reversing:", custom_list)
+custom_list.reverse()
+print("Custom list after reversing:", custom_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Custom list before reversing: &#91;1, 2, 3]
+Custom list after reversing: &#91;3, 2, 1]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>Python lists are fundamental data structures that enable the storage and manipulation of collections of elements. For beginners learning Python, grasping basic list methods is crucial. These methods offer essential functionalities for managing lists effectively. </p>
+
+
+
+<p>However, the append() method will allow adding elements to the end of a list, while extend() allows adding multiple elements from another iterable. insert() permits inserting elements at specific positions. For removing elements, students can utilize remove() to delete the first occurrence of a value or pop() to remove and return an element at a given index. </p>
+
+
+
+<h2 class="wp-block-heading" id="python-list-methods-fa-qs">Python List Methods-FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1710419388858" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1.How do I list available methods in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. using the dir() in Python is used to list all the methods of the class.</p>
+
+</div>
+</div>
+<div id="faq-question-1710419396152" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.What are the Python methods?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The three methods of Python include the Instance Method, Class Method, and Static Method.</p>
+
+</div>
+</div>
+<div id="faq-question-1710419406397" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.What is the use of list () method?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.The list() function will convert the iterable such as a string, tuple, or dictionary into the list.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-list-methods/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Merge Two Lists in Python</title>
+		<link>https://www.skillvertex.com/blog/merge-two-lists-in-python/</link>
+					<comments>https://www.skillvertex.com/blog/merge-two-lists-in-python/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:03:12 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Merge Two Lists in Python]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[Python list]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=8127</guid>
+
+					<description><![CDATA[In Python, there are many ways to join, or concatenate, two or more lists in Python. Check out the article below to learn more about Merge Two Lists in Python. What is Python Join Two Lists? Merging a list refers to adding or concatenating one list with another. Also, it refers to adding two lists. ... <a title="Merge Two Lists in Python" class="read-more" href="https://www.skillvertex.com/blog/merge-two-lists-in-python/" aria-label="More on Merge Two Lists in Python">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-python-join-two-lists">What is Python Join Two Lists?</a></li><li ><a href="#how-to-merge-two-lists-in-python-using-method">How to Merge two lists in Python using Method</a></li><li ><a href="#how-to-merge-two-lists-using-the-extend">How to Merge two lists using the extend()</a></li><li ><a href="#how-to-join-two-lists-using-operator-in-python">How to  Join Two Lists Using * Operator in Python?</a></li><li ><a href="#how-to-join-two-lists-using-the-itertools-chain-in-python">How to join two lists using the itertools. chain() in Python?</a></li><li ><a href="#how-to-concatenate-two-lists-using-the-reduce-function-in-python">How to Concatenate two lists using the reduce ()  function in  Python?</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#merge-two-lists-in-python-fa-qs">Merge Two Lists in Python- FAQs</a></li></ul></nav></div>
+
+
+
+<p>In  <a href="https://www.skillvertex.com/blog/python-access-list-items/" data-type="post" data-id="8035">Python</a>, there are many ways to join, or concatenate, two or more lists in Python. Check out the article below to learn more about Merge Two <a href="https://www.skillvertex.com/blog/python-access-list-items/" data-type="post" data-id="8035">Lists </a>in Python.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-python-join-two-lists">What is Python Join Two Lists?</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/c-program-to-merge-contents-of-two-files-into-a-third-file/" data-type="post" data-id="3634">Merging </a>a <a href="https://www.skillvertex.com/blog/python-list-sort-method/" data-type="post" data-id="8100">list </a>refers to adding or concatenating one list with another. Also, it refers to adding two lists. The methods that are used to join the <a href="https://www.skillvertex.com/blog/python-add-list-items/" data-type="post" data-id="8058">Python </a>list are given below:</p>
+
+
+
+<p>a. Using the Naive Method</p>
+
+
+
+<p>b.Using the<a href="https://www.skillvertex.com/blog/assignment-operators-in-python/" data-type="post" data-id="6970"> + operator</a></p>
+
+
+
+<p>c.Using the list comprehension</p>
+
+
+
+<p>d.Using the <a href="https://www.skillvertex.com/blog/python-bitwise-operator/" data-type="post" data-id="6985">extend () method</a></p>
+
+
+
+<p>e.Using the <a href="https://www.skillvertex.com/blog/and-operators-in-c/" data-type="post" data-id="3294">* operator</a></p>
+
+
+
+<p>f.Using the itertools.chains</p>
+
+
+
+<p>g.Merge two List using reduce </p>
+
+
+
+<h2 class="wp-block-heading" id="how-to-merge-two-lists-in-python-using-method">How to Merge two lists in Python using Method</h2>
+
+
+
+<p>The list comprehension will help to accomplish the task of the <a href="https://www.skillvertex.com/blog/python-add-list-items/" data-type="post" data-id="8058">list </a>concatenation. Whereas, the new <a href="https://www.skillvertex.com/blog/python-copy-list/" data-type="post" data-id="8109">list </a>will be created.</p>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code># Method 1: Using extend() method
+def merge_lists_method1(list1, list2):
+    merged_list = list1.copy()  # Make a copy of list1 to preserve original data
+    merged_list.extend(list2)  # Extend the list with elements from list2
+    return merged_list
+
+# Method 2: Using + operator
+def merge_lists_method2(list1, list2):
+    merged_list = list1 + list2  # Concatenate the two lists using the + operator
+    return merged_list
+
+# Example lists
+list1 = &#91;1, 2, 3]
+list2 = &#91;4, 5, 6]
+
+# Output of Method 1
+merged_list_method1 = merge_lists_method1(list1, list2)
+print("Merged list using extend() method:", merged_list_method1)
+
+# Output of Method 2
+merged_list_method2 = merge_lists_method2(list1, list2)
+print("Merged list using + operator:", merged_list_method2)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Merged list using extend() method: &#91;1, 2, 3, 4, 5, 6]
+Merged list using + operator: &#91;1, 2, 3, 4, 5, 6]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-merge-two-lists-using-the-extend">How to Merge two lists using the extend()</h2>
+
+
+
+<p>The extend() is a <a href="https://www.skillvertex.com/blog/c-fopen-function-with-examples/" data-type="post" data-id="3556">function </a>that allows you to extend by <a href="https://www.skillvertex.com/blog/python-loop-lists/" data-type="post" data-id="8077">list </a>in Python and then perform the task. So, this function will do the in-place extension of the first list.</p>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>def merge_lists(list1, list2):
+    merged_list = list1.copy()  # Make a copy of list1 to preserve original data
+    merged_list.extend(list2)  # Extend the list with elements from list2
+    return merged_list
+
+# Example lists
+list1 = &#91;1, 2, 3]
+list2 = &#91;4, 5, 6]
+
+# Merge the lists using extend() method
+merged_list = merge_lists(list1, list2)
+
+# Output the merged list
+print("Merged list using extend() method:", merged_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Merged list using extend() method: &#91;1, 2, 3, 4, 5, 6]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-join-two-lists-using-operator-in-python">How to  Join Two Lists Using * Operator in Python?</h2>
+
+
+
+<p>This method will be performed with the help of the * <a href="https://www.skillvertex.com/blog/increment-and-decrement-operators-in-c/" data-type="post" data-id="2258">operator</a>. It is the new addition to the list concatenation and will work only in <a href="https://www.skillvertex.com/blog/python-history-and-versions/" data-type="post" data-id="6864">Python 3.6+.</a> So,  any no of the list will be concatenated and returned to the new list using the <a href="https://www.skillvertex.com/blog/operators-in-c-set-2-relational-and-logical-operators/" data-type="post" data-id="2202">operator</a>.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>def join_lists(list1, list2):
+    joined_list = &#91;*list1, *list2]  # Concatenate the two lists using the * operator
+    return joined_list
+
+# Example lists
+list1 = &#91;1, 2, 3]
+list2 = &#91;4, 5, 6]
+
+# Join the lists using * operator
+joined_list = join_lists(list1, list2)
+
+# Output the joined list
+print("Joined list using * operator:", joined_list)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Joined list using * operator: &#91;1, 2, 3, 4, 5, 6]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-join-two-lists-using-the-itertools-chain-in-python">How to join two lists using the itertools. chain() in Python?</h2>
+
+
+
+<p>itertools.chain() is a <a href="https://www.skillvertex.com/blog/c-string-functions/" data-type="post" data-id="2675">function </a>in <a href="https://www.skillvertex.com/blog/python-access-list-items/" data-type="post" data-id="8035">Python </a>that combines multiple <a href="https://www.skillvertex.com/blog/python-loop-lists/" data-type="post" data-id="8077">lists </a>into a single iterable (something you can iterate over, like a list). Hence, it doesn&#8217;t create a new list by combining them, instead, it just gives you a way to access all the <a href="https://www.skillvertex.com/blog/which-one-is-not-an-element-of-iot/" data-type="post" data-id="3089">elements </a>from all the lists one after the other without storing them in <a href="https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/" data-type="post" data-id="3174">memory</a>.</p>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>import itertools
+
+# Define the lists
+list1 = &#91;1, 2, 3]
+list2 = &#91;4, 5, 6]
+
+# Use itertools.chain() to join the lists
+joined_list = itertools.chain(list1, list2)
+
+# Output the joined list
+print("Joined list using itertools.chain():", list(joined_list))
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Joined list using itertools.chain(): &#91;1, 2, 3, 4, 5, 6]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-concatenate-two-lists-using-the-reduce-function-in-python">How to Concatenate two lists using the reduce ()  function in  Python?</h2>
+
+
+
+<p>First, we import the reduce function from the functools <a href="https://www.skillvertex.com/blog/c-library-math-h-functions/" data-type="post" data-id="2596">library</a>, which helps us perform <a href="https://www.skillvertex.com/blog/which-part-interprets-program-instructions-and-initiate-control-operations/" data-type="post" data-id="1998">operations </a>on lists. Then, we create two <a href="https://www.skillvertex.com/blog/python-list-sort-method/" data-type="post" data-id="8100">lists</a>, list1, and list2, each containing some <a href="https://www.skillvertex.com/blog/which-one-is-not-an-element-of-iot/" data-type="post" data-id="3089">elements</a>. Next, we combine these lists into a nested list called nested_list. Using the reduce() <a href="https://www.skillvertex.com/blog/static-functions-in-c/" data-type="post" data-id="3038">function</a>, we merge the <a href="https://www.skillvertex.com/blog/python-loop-lists/" data-type="post" data-id="8077">lists </a>within nested_list. </p>
+
+
+
+<p>Within the reduce() function, we use a lambda <a href="https://www.skillvertex.com/blog/c-fopen-function-with-examples/" data-type="post" data-id="3556">function</a>, which works similarly to the mini-function used for a single purpose, to concatenate each list in the <a href="https://www.skillvertex.com/blog/python-nested-loops/" data-type="post" data-id="7259">nested list</a>. Finally, the result of the concatenation is stored in the variable result, which holds the joined list. This joined list is then printed as the final output.</p>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>In Python, merging two lists can be achieved using different methods, such as the extend() method, the + operator, and itertools. chain(), or even the reduce() function from the functools library. Each method offers its way of combining lists, catering to different needs and preferences. </p>
+
+
+
+<p>Whether you&#8217;re simply concatenating lists, chaining their elements together, or reducing them into a single list, Python provides versatile solutions to merge lists efficiently. By understanding these methods, you can choose the one that best fits your specific requirements when working with lists in Python.</p>
+
+
+
+<h2 class="wp-block-heading" id="merge-two-lists-in-python-fa-qs">Merge Two Lists in Python- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1710411469363" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1.How do you merge two lists in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. This symbol will allow you to combine all the items from one list with those from another.</p>
+
+</div>
+</div>
+<div id="faq-question-1710411476803" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.How do I combine two unique lists in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. To merge the two unique lists,  we use the concatenation operator (+) to join them together.</p>
+
+</div>
+</div>
+<div id="faq-question-1710411484898" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. How do you join a list together in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Use the string = &#8216; &#8216;. join(list) to join the list to the string in Python.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/merge-two-lists-in-python/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python Lists</title>
+		<link>https://www.skillvertex.com/blog/python-lists/</link>
+					<comments>https://www.skillvertex.com/blog/python-lists/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:02:52 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Python list]]></category>
+		<category><![CDATA[python loop]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<category><![CDATA[python while]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7938</guid>
+
+					<description><![CDATA[Python consists of the built-in type which is referred to as List. The List literal will be written within the square brackets. The list will work similarly to the strings. It is required to use the len() function and square brackets to access data with the first element. Let us look into the article to ... <a title="Python Lists" class="read-more" href="https://www.skillvertex.com/blog/python-lists/" aria-label="More on Python Lists">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-a-python-list">What is a Python List?</a></li><li ><a href="#what-is-for-and-in">What is FOR and IN?</a></li><li ><a href="#what-is-range">What is Range?</a></li><li ><a href="#what-is-a-while-loop">What is a While Loop?</a></li><li ><a href="#what-is-list-methods">What is List Methods?</a></li><li ><a href="#what-is-list-build-up">What is List Build-Up</a></li><li ><a href="#what-is-list-slice">What is List Slice?</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-list-fa-qs">Python  List &#8211; FAQs</a></li></ul></nav></div>
+
+
+
+<p>Python consists of the built-in type which is referred to as List. The List literal will be written within the square brackets. The list will work similarly to the strings. It is required to use the len() function and square brackets to access data with the first element. Let us look into the article to learn more about <a href="https://www.skillvertex.com/blog/mern-stack-with-python/" data-type="post" data-id="4309">Python </a>List.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-a-python-list">What is a Python List?</h2>
+
+
+
+<p>The list refers to the<a href="https://www.skillvertex.com/blog/data-structures-interview-questions-and-answers/" data-type="post" data-id="3670"> data structure</a> in <a href="https://www.skillvertex.com/blog/mern-stack-vs-python-full-stack/" data-type="post" data-id="4241">Python </a>that will be mutable and will be an ordered sequence of <a href="https://www.skillvertex.com/blog/which-one-is-not-an-element-of-iot/" data-type="post" data-id="3089">elements</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-for-and-in">What is FOR and IN?</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/mern-stack-vs-python-full-stack/" data-type="post" data-id="4241">Pythons </a>for and it will be useful and are used in the <a href="https://www.skillvertex.com/blog/mern-stack-vs-python/" data-type="post" data-id="4258">Python </a>lists. The *for construct &#8212; for <a href="https://www.skillvertex.com/blog/variable-length-arguments-for-macros/" data-type="post" data-id="3327">var </a>in the list will be the easy way to see each element in the list.</p>
+
+
+
+<pre class="wp-block-code"><code># Define a list of numbers
+numbers = &#91;1, 2, 3, 4, 5]
+
+# Use a for loop to iterate over each number in the list
+for num in numbers:
+    # Calculate the square of each number
+    square = num ** 2
+    
+    # Print the result
+    print(f"The square of {num} is: {square}")
+</code></pre>
+
+
+
+<p>The in-construct will be the simple way to test if the element is visible in the list&#8211; value in the collection&#8211; and will test whether the value in the collection will return True or False.</p>
+
+
+
+<pre class="wp-block-code"><code>The square of 1 is: 1
+The square of 2 is: 4
+The square of 3 is: 9
+The square of 4 is: 16
+The square of 5 is: 25
+</code></pre>
+
+
+
+<p>The for/ in constructs are mostly used in the Python code and will work on data types other than the list. It is important to important to memorize the <a href="https://www.skillvertex.com/blog/python-syntax/" data-type="post" data-id="6924">syntax</a>. It is possible to use the for/ in to work on the <a href="https://www.skillvertex.com/blog/c-string-functions/" data-type="post" data-id="2675">string</a>. The <a href="https://www.skillvertex.com/blog/array-of-strings-in-c/" data-type="post" data-id="2641">string </a>will take the place of chars and will print all the <a href="https://www.skillvertex.com/blog/character-arithmetic-in-c-and-c/" data-type="post" data-id="1876">chars </a>in the string.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-range">What is Range?</h2>
+
+
+
+<p>In Python, the range() <a href="https://www.skillvertex.com/blog/static-functions-in-c/" data-type="post" data-id="3038">function </a>helps us create a series of numbers that we can use in a loop. There are two common ways to use it:</p>
+
+
+
+<ol class="wp-block-list">
+<li>range(n): This makes a series of numbers starting from 0 up to (but not including) n.</li>
+</ol>
+
+
+
+<pre class="wp-block-code"><code>for i in range(5):
+    print(i)
+# Output: 0, 1, 2, 3, 4
+</code></pre>
+
+
+
+<p>2. <strong>range(a,b)</strong>: This will make the series that will begin from a and go up to b.</p>
+
+
+
+<pre class="wp-block-code"><code>for j in range(2, 6):
+    print(j)
+# Output: 2, 3, 4, 5
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-a-while-loop">What is a While Loop?</h2>
+
+
+
+<p>Python consists of the standard <a href="https://www.skillvertex.com/blog/python-while-loop/" data-type="post" data-id="7236">while-loop</a>, <a href="https://www.skillvertex.com/blog/break-statement-in-c/" data-type="post" data-id="2014">break</a>, and <a href="https://www.skillvertex.com/blog/python-continue-statement/" data-type="post" data-id="7246">continue statements</a> that will operate for<a href="https://www.skillvertex.com/blog/macros-and-its-types-in-c-c/" data-type="post" data-id="3274"> C++ </a>and Java. So, this will alter the course of the innermost loop. The above for/ in loop will work to solve the common case of iterating over every element in the list. Thus, the while <a href="https://www.skillvertex.com/blog/do-while-loop-in-c/" data-type="post" data-id="2291">loop </a>will provide you control over the index numbers. Check the loop  that is  given below:</p>
+
+
+
+<pre class="wp-block-code"><code>  ## Access every 3rd element in a list
+  i = 0
+  while i &lt; len(a):
+    print(a&#91;i])
+    i = i + 3</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-list-methods">What is List Methods?</h2>
+
+
+
+<p>The list of methods that are commonly used is given below:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>list.append(elem):</strong></li>
+</ol>
+
+
+
+<ul class="wp-block-list">
+<li>Adds a single element to the end of the list.</li>
+
+
+
+<li>Remember: It changes the original list and doesn&#8217;t give you a new one.</li>
+</ul>
+
+
+
+<p>   2.<strong>list.insert(index, elem):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Puts an element at a specific spot in the list.</li>
+
+
+
+<li>Pushes other elements to make room for the new one.</li>
+</ul>
+
+
+
+<p>    3. <strong>list.extend(list2):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Adds all elements from another list (list2) to the end of the original list.</li>
+
+
+
+<li>You can also use <code>+</code> or <code>+=</code> for a similar result.</li>
+</ul>
+
+
+
+<p>   4. <strong>list.index(elem):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Finds where a particular element is in the list.</li>
+
+
+
+<li>Be careful: It might cause an error if the element isn&#8217;t there. Use <code>in</code> to check first.</li>
+</ul>
+
+
+
+<p>   5.<strong>list.remove(elem):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Locates and deletes the first occurrence of a specific element in the list.</li>
+
+
+
+<li>An error pops up if the element isn&#8217;t found.</li>
+</ul>
+
+
+
+<p>   6. <strong>list.sort():</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Put the list in order from smallest to largest.</li>
+
+
+
+<li>But usually, people prefer to use sorted().</li>
+</ul>
+
+
+
+<p>  7. <strong>list.reverse():</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Turns the list around, flipping the order of elements.</li>
+
+
+
+<li>It changes the original list; no new list is made.</li>
+</ul>
+
+
+
+<p>  8. <strong>list.pop(index):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Takes out and gives you the element at a certain position.</li>
+
+
+
+<li>If you don&#8217;t say where it takes out and gives you the last one.</li>
+
+
+
+<li>Think of it as the opposite of append().</li>
+</ul>
+
+
+
+<p>Thus, we can analyze the methods on the list object. Whereas, the lens () is referred to as a function that will consider the list as an argument.</p>
+
+
+
+<p><strong>Example</strong>:</p>
+
+
+
+<pre class="wp-block-code"><code>
+
+def print_list(my_list):
+    """
+    Display the elements of a list.
+    """
+    print("List elements:")
+    for item in my_list:
+        print(item)
+
+# Define an empty list
+my_list = &#91;]
+
+# Use the append() method to add elements to the list
+my_list.append("apple")
+my_list.append("banana")
+my_list.append("orange")
+
+# Display the original list
+print("Original List:")
+print_list(my_list)
+
+# Use the insert() method to add an element at a specific index
+my_list.insert(1, "grape")
+
+# Display the list after insertion
+print("\nList after insertion:")
+print_list(my_list)
+
+# Use the extend() method to add multiple elements to the list
+more_fruits = &#91;"kiwi", "melon"]
+my_list.extend(more_fruits)
+
+# Display the list after extension
+print("\nList after extension:")
+print_list(my_list)
+
+# Use the remove() method to remove a specific element
+my_list.remove("banana")
+
+# Display the list after removal
+print("\nList after removal:")
+print_list(my_list)
+
+# Use the pop() method to remove and return an element at a specific index
+popped_item = my_list.pop(2)
+
+# Display the list after popping an element
+print(f"\nList after popping {popped_item}:")
+print_list(my_list)
+
+</code></pre>
+
+
+
+<p>Note: The above methods cannot return the modified list but will modify the original list.</p>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<pre class="wp-block-code"><code>Original List:
+List elements:
+apple
+banana
+orange
+
+List after insertion:
+List elements:
+apple
+grape
+banana
+orange
+
+List after extension:
+List elements:
+apple
+grape
+banana
+orange
+kiwi
+melon
+
+List after removal:
+List elements:
+apple
+grape
+orange
+kiwi
+melon
+
+List after popping banana:
+List elements:
+apple
+grape
+kiwi
+melon
+
+</code></pre>
+
+
+
+<ul class="wp-block-list">
+<li>&#8216;Print list&#8217;  is a method that will take the list ( &#8220;my list&#8221;) as the parameter and provide each in the list as the output.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li>An empty list my_list is defined.</li>
+
+
+
+<li>The append() method is used to add elements to the list.</li>
+
+
+
+<li>The print_list() method is called twice to display the original and modified lists.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="what-is-list-build-up">What is List Build-Up</h2>
+
+
+
+<p>In List build-up, we can analyze that the pattern is to begin the list as an empty list, and use append() or extend() afterward to add the elements. Let us look into the code below:</p>
+
+
+
+<pre class="wp-block-code"><code>list = &#91;]          ## Start as the empty list
+  list.append('a')   ## Use append() to add elements
+  list.append('b')</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-list-slice">What is List Slice?</h2>
+
+
+
+<p>In List Slice, the slice will operate on the list and will work similarly to the strings. It will function to alter the sub-parts of the list.</p>
+
+
+
+<pre class="wp-block-code"><code>  list = &#91;'a', 'b', 'c', 'd']
+  print(list&#91;1:-1])   ## &#91;'b', 'c']
+  list&#91;0:2] = 'z'    ## replace &#91;'a', 'b'] with &#91;'z']
+  print(list)         ## &#91;'z', 'c', 'd']</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>In conclusion, understanding Python lists is like gaining a valuable skill for organizing and managing collections of data in programming. Imagine a list as a versatile container capable of holding various items, acting as a dynamic tool to keep track of information. Adding elements is simplified with the append() method, while the insert(index, item) method allows precise placement of items within the list. For adding multiple elements swiftly, the extend() method proves handy. </p>
+
+
+
+<p> In essence, a Python list is a powerful and flexible tool, and as you delve deeper into programming, you&#8217;ll uncover even more functionalities that make lists an indispensable part of your coding toolkit.</p>
+
+
+
+<h2 class="wp-block-heading" id="python-list-fa-qs">Python  List &#8211; FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1709796048745" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1.What are lists in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. A list is referred to as the data structure in Python that is a mutable, or changeable, ordered sequence of elements.</p>
+
+</div>
+</div>
+<div id="faq-question-1709796054936" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.How to create a Python list?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Python list can be created using the len() function and square brackets [] to access data with the first element at index 0.</p>
+
+</div>
+</div>
+<div id="faq-question-1709796061303" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is a list data method?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Python list method will create the list from the iterable construct.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-lists/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python String Exercise</title>
+		<link>https://www.skillvertex.com/blog/python-string-exercise/</link>
+					<comments>https://www.skillvertex.com/blog/python-string-exercise/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:02:41 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Introduction To Python Tutorial]]></category>
+		<category><![CDATA[python programming]]></category>
+		<category><![CDATA[Python string]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7933</guid>
+
+					<description><![CDATA[Python string exercises are necessary for a beginner to understand the program and to have regular practice. Check out the article to know more about Python String Excercise. What is the Python String? In Python, you can make words or sentences by using either single quotes (&#8216;) or double quotes (&#8220;). So, &#8216;hello&#8217; and &#8220;hello&#8221; ... <a title="Python String Exercise" class="read-more" href="https://www.skillvertex.com/blog/python-string-exercise/" aria-label="More on Python String Exercise">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-the-python-string">What is the Python String?</a></li><li ><a href="#what-are-the-examples-of-python-strings">What are the examples of Python Strings?</a><ul><li ><a href="#example-1">Example 1</a></li><li ><a href="#example-2">Example 2:</a></li><li ><a href="#example-3">Example 3:</a></li></ul></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-string-exercise-fa-qs">Python String Exercise-FAQs</a></li></ul></nav></div>
+
+
+
+<p>Python string exercises are necessary for a beginner to understand the program and to have regular practice. Check out the article to know more about Python String Excercise.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-python-string">What is the Python String?</h2>
+
+
+
+<p>In Python, you can make words or sentences by using either single quotes (&#8216;) or double quotes (&#8220;). So, &#8216;hello&#8217; and &#8220;hello&#8221; mean the same thing. It&#8217;s like choosing between two different types of containers for your words in <a href="https://www.skillvertex.com/blog/python-interview-questions/" data-type="post" data-id="3614">Python</a>. </p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-examples-of-python-strings">What are the examples of Python Strings?</h2>
+
+
+
+<p>Let us look into the Python  program provided below:</p>
+
+
+
+<h3 class="wp-block-heading" id="example-1">Example 1</h3>
+
+
+
+<p>Python Program to find the number of vowels in the given string.</p>
+
+
+
+<pre class="wp-block-code"><code>def count_vowels(input_string):
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for char in input_string:
+        if char in vowels:
+            count += 1
+
+    return count
+
+# Example usage:
+input_string = "Hello, World!"
+result = count_vowels(input_string)
+print(f'The number of vowels in "{input_string}" is: {result}')
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>The number of vowels in "Hello, World!" is: 3
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-2">Example 2:</h3>
+
+
+
+<p>Check this example to illustrate how the <a href="https://www.skillvertex.com/blog/c-program-to-merge-contents-of-two-files-into-a-third-file/" data-type="post" data-id="3634">Python Program</a> will convert the string with the binary digits to an integer.</p>
+
+
+
+<pre class="wp-block-code"><code>def binary_to_decimal(binary_string):
+    decimal_value = int(binary_string, 2)
+    return decimal_value
+
+# Example usage:
+binary_string = "1101"
+decimal_result = binary_to_decimal(binary_string)
+print(f'The decimal equivalent of binary "{binary_string}" is: {decimal_result}')
+</code></pre>
+
+
+
+<p> Output</p>
+
+
+
+<pre class="wp-block-code"><code>The decimal equivalent of binary "1101" is: 13
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-3"><strong>Example 3</strong>:</h3>
+
+
+
+<p>The example below has provided the Python Program to drop all digits from the <a href="https://www.skillvertex.com/blog/python-string-methods/" data-type="post" data-id="7928">string</a>.</p>
+
+
+
+<pre class="wp-block-code"><code>def remove_digits(input_string):
+    result_string = ''.join(char for char in input_string if not char.isdigit())
+    return result_string
+
+# Example usage:
+input_string = "Hello123World456"
+result = remove_digits(input_string)
+print(f'The string without digits: "{result}"')
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>The string without digits: "HelloWorld"
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>To conclude, navigating through the Python String Exercise will equip you with valuable skills in handling text effortlessly. From understanding the basics of string manipulation to mastering various methods, you&#8217;ve laid a strong foundation for your coding journey. </p>
+
+
+
+<h2 class="wp-block-heading" id="python-string-exercise-fa-qs">Python String Exercise-FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1709718718433" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. How to write a string in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Some of the common ways to work with strings in Python are by Creating strings and String Formatting. Strings can be made using the &#8221; character and formatting will done with the + method or format () method.</p>
+
+</div>
+</div>
+<div id="faq-question-1709718726356" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.What is the string manipulation task in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Altering case, concatenating, slicing, searching and formatting are the string manipulation tasks in  Python.</p>
+
+</div>
+</div>
+<div id="faq-question-1709718735709" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.In which language is Python written?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. C Programming language</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-string-exercise/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python String Methods</title>
+		<link>https://www.skillvertex.com/blog/python-string-methods/</link>
+					<comments>https://www.skillvertex.com/blog/python-string-methods/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:02:28 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Python Functions]]></category>
+		<category><![CDATA[python programming]]></category>
+		<category><![CDATA[Python String Methods]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7928</guid>
+
+					<description><![CDATA[Python String Methods Python consists of built-in methods that will be used on the strings. They will manipulate the strings. However, the string method won&#8217;t change the original string instead it will return the new string along with the changed attributes. Let us look into this article to learn more about Python String Methods. What ... <a title="Python String Methods" class="read-more" href="https://www.skillvertex.com/blog/python-string-methods/" aria-label="More on Python String Methods">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#python-string-methods">Python String Methods</a></li><li ><a href="#what-is-python-string">What is Python String?</a></li><li ><a href="#what-are-the-python-string-methods">What are the Python String Methods?</a></li><li ><a href="#list-of-python-string-methods"> List of  Python  String Methods</a></li><li ><a href="#what-are-the-examples-for-changing-the-cases-of-python-strings">What are the examples for changing the Cases of Python  Strings?</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-string-method-fa-qs">Python String Method- FAQs</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="python-string-methods">Python String Methods</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/which-of-the-following-is-a-bad-python-variable-name/" data-type="post" data-id="2650">Python </a>consists of built-in methods that will be used on the strings. They will manipulate the strings. However, the <a href="https://www.skillvertex.com/blog/array-of-strings-in-c/" data-type="post" data-id="2641">string</a> method won&#8217;t change the original string instead it will return the new string along with the changed attributes. Let us look into this article to learn more about Python String Methods.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-python-string">What is Python String?</h2>
+
+
+
+<p>Python string consists of the <a href="https://www.skillvertex.com/blog/escape-sequence-in-c/" data-type="post" data-id="1912">sequence </a>of the <a href="https://www.skillvertex.com/blog/character-arithmetic-in-c-and-c/" data-type="post" data-id="1876">Unicode characters</a> that will be enclosed in the quotation marks. Hence, you can find Python string methods below.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-python-string-methods">What are the Python String Methods?</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/python-functions/" data-type="post" data-id="7272">Python functions</a> will change the case of the strings. Check out the Python String Methods  provided below:</p>
+
+
+
+<p>a. <strong>lower()</strong>-It will convert all the uppercase characters in a string to the lowercase.</p>
+
+
+
+<p>b.<strong>upper(): </strong>This string method in Python will turn all the lowercase characters in a string into the uppercase.</p>
+
+
+
+<p>c.<strong>title()</strong>: It will change the string to the title case.</p>
+
+
+
+<p>d.<strong>swapcase()</strong>: It will swap the cases of all the characters in the string.</p>
+
+
+
+<p>e.<strong>capitalize()</strong>: capitalize will convert the first character of the string to the uppercase.</p>
+
+
+
+<h2 class="wp-block-heading" id="list-of-python-string-methods"> List of  Python  String Methods</h2>
+
+
+
+<p>Let us look into the table below to learn more about the Python String Methods list.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Function Name&nbsp;</th><th>Description</th></tr></thead><tbody><tr><td>capitalize()</td><td>Capitalize will Change the first character of the string to a capital (uppercase) letter.</td></tr><tr><td>center()</td><td>This string method will pad the string with the specified character.</td></tr><tr><td>casefold()</td><td>It will implement careless string matching.</td></tr><tr><td>encode()</td><td>encount will encode the string with the particular encoded scheme.</td></tr><tr><td>count()</td><td>This string method in Python will return the number of occurrences of the substring in the string.</td></tr><tr><td>endswith()</td><td>This find() will return the lowest index of the substring if it is found</td></tr><tr><td>expandtabs()</td><td>This string method will Specify the amount of space to be substituted with the “\t” symbol in the string.</td></tr><tr><td>find()</td><td>This find() will returns the lowest index of the substring if it is found</td></tr><tr><td>format()</td><td>This string method will format the string for printing it to the console.</td></tr><tr><td>format_map()</td><td>It will format the specified value in the strings with the dictionary.</td></tr><tr><td>index()</td><td>Format specified values in a string using a dictionary.</td></tr><tr><td>isalnum()</td><td>This string method will Check if all the characters in a given string are either alphanumeric or not.</td></tr><tr><td>isalpha()</td><td><strong>isalpha()</strong>  will returns “True” if all characters in the string are alphabet.</td></tr><tr><td>isdecimal()</td><td><strong>isdecimal()</strong> will return true if  every characters in a string are decimal</td></tr><tr><td>isdigit()</td><td>It will returns “True” if all characters in the string are digits</td></tr><tr><td>isidentifier()</td><td>It will Check whether a string is a valid identifier or not</td></tr><tr><td>islower()</td><td><strong>islower()</strong> will check if all characters in the string are lowercase.</td></tr><tr><td>isnumeric()</td><td><strong>Isnumeric</strong> will return “True”  when the string characters are numeric.</td></tr><tr><td>isprintable()</td><td>It will returns “True”  when the characters in the string are either  printable or the string is empty</td></tr><tr><td>isspace()</td><td><strong>isspace() </strong>will Returns “True” if all characters in the string are whitespace characters</td></tr><tr><td>istitle()</td><td>It will return “True” if the string is title-cased.</td></tr><tr><td>isupper()</td><td>It will check if all the characters in the string are uppercase.</td></tr><tr><td>join()</td><td><strong>Join() </strong>will return a concatenated String.</td></tr><tr><td>ljust()</td><td>It will the left align with the string according to the width provided.</td></tr><tr><td>lower()</td><td><strong>lower() </strong>will change all the uppercase characters in a string into lowercase.</td></tr><tr><td>lstrip()</td><td>It will return the string with the leading characters that need to be removed.</td></tr><tr><td>maketrans()</td><td>Replace all occurrences of a substring with another substring</td></tr><tr><td>partition()</td><td>Splits the string at the first occurrence of the separator&nbsp;</td></tr><tr><td>replace()</td><td>This Python String Method will replace all occurrences of a substring with another substring.</td></tr><tr><td>rfind()</td><td>It will return the highest index of the substring.</td></tr><tr><td>rindex()</td><td>This <strong>rindex() </strong>will return with the highest index of the substring inside the string.</td></tr><tr><td>rjust()</td><td>This will right align the string according to the width required.</td></tr><tr><td>rpartition()</td><td>This string method will split the given string into three parts.</td></tr><tr><td>rsplit()</td><td>Split the string from the right by the specified separator</td></tr><tr><td>rstrip()</td><td><strong>r strip()</strong> will remove the trailing characters</td></tr><tr><td>splitlines()</td><td>This <strong>splitlines() </strong>will split the lines at line boundaries.</td></tr><tr><td>startswith()</td><td>This method will return “True” if the string begins with the given prefix.</td></tr><tr><td>strip()</td><td>It will return the string with both the  leading and trailing characters.</td></tr><tr><td>swapcase()</td><td>Converts all uppercase characters to lowercase and vice versa</td></tr><tr><td>title()</td><td>This will Convert string to title case</td></tr><tr><td>translate()</td><td><strong>translate ()</strong> will modify the string according to the given translation mappings</td></tr><tr><td>upper()</td><td>It will turn every lowercase character in a string into an uppercase</td></tr><tr><td>zfill()</td><td>It will return a copy of the string with ‘0’ characters padded to the left side of the string</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-examples-for-changing-the-cases-of-python-strings">What are the examples for changing the Cases of Python  Strings?</h2>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<p>Let us look into the example provided below for changing the case of the  Python string.</p>
+
+
+
+<pre class="wp-block-code"><code># Define a sample string
+sample_string = "Hello, World!"
+
+# 1. len(): Get the length of the string
+length = len(sample_string)
+print(f"Length of the string: {length}")
+
+# 2. upper(): Convert the string to uppercase
+uppercase_string = sample_string.upper()
+print(f"Uppercase string: {uppercase_string}")
+
+# 3. lower(): Convert the string to lowercase
+lowercase_string = sample_string.lower()
+print(f"Lowercase string: {lowercase_string}")
+
+# 4. capitalize(): Capitalize the first character of the string
+capitalized_string = sample_string.capitalize()
+print(f"Capitalized string: {capitalized_string}")
+
+# 5. count(): Count the occurrences of a substring in the string
+substring_count = sample_string.count("l")
+print(f"Count of 'l' in the string: {substring_count}")
+
+# 6. replace(): Replace a substring with another substring
+replaced_string = sample_string.replace("Hello", "Hi")
+print(f"String after replacement: {replaced_string}")
+
+# 7. split(): Split the string into a list of substrings based on a delimiter
+split_string = sample_string.split(",")
+print(f"String after split: {split_string}")
+
+# 8. strip(): Remove leading and trailing whitespaces from the string
+whitespace_string = "    Hello, World!    "
+stripped_string = whitespace_string.strip()
+print(f"String after stripping whitespaces: {stripped_string}")
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Length of the string: 13
+Uppercase string: HELLO, WORLD!
+Lowercase string: hello, world!
+Capitalized string: Hello, world!
+Count of 'l' in the string: 3
+String after replacement: Hi, World!
+String after split: &#91;'Hello', ' World!']
+String after stripping whitespaces: Hello, World!</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>To conclude, a Python string is a sequence of characters enclosed by quotation marks. This article has also listed the various Python string methods and will help the students to improve their knowledge and skills in Python String Methods.</p>
+
+
+
+<h2 class="wp-block-heading" id="python-string-method-fa-qs">Python String Method- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1709708883233" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q1. What is a string method in Python?</h3>
+<div class="rank-math-answer ">
+
+<p>Ans. This Python string method consists of the in-built Python function that will be performed on the lists.</p>
+
+</div>
+</div>
+<div id="faq-question-1709708893869" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q2. What is __ str __ in Python?</h3>
+<div class="rank-math-answer ">
+
+<p>Ans. The _str_ method will return the human-readable, informal, or string representation of this method.</p>
+
+</div>
+</div>
+<div id="faq-question-1709708902572" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q3.What is a string-to-string method?</h3>
+<div class="rank-math-answer ">
+
+<p>Ans. The string-to-string method is an in-built method in Java that will return the value that is provided to the string object.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<p></p>
+<div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-string-methods/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python Escape Characters</title>
+		<link>https://www.skillvertex.com/blog/python-escape-characters/</link>
+					<comments>https://www.skillvertex.com/blog/python-escape-characters/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:02:13 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Python characters]]></category>
+		<category><![CDATA[Python escape characters]]></category>
+		<category><![CDATA[python tutorial]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7695</guid>
+
+					<description><![CDATA[Python&#160;Escape Characters An escape sequence is considered as a sequence of characters that is used inside the character or string. It is further converted into a character or series of characters. Read this article to learn more about Python Escape Character. What is an Escape Character in Python? A sequence is a set of two ... <a title="Python Escape Characters" class="read-more" href="https://www.skillvertex.com/blog/python-escape-characters/" aria-label="More on Python Escape Characters">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#python-escape-characters">Python Escape Characters</a></li><li ><a href="#what-is-an-escape-character-in-python">What is an Escape Character in Python?</a></li><li ><a href="#what-is-the-list-of-escape-sequences-in-python">What is the List of Escape Sequences in Python?</a></li><li ><a href="#what-are-the-examples-used-to-illustrate-escape-single-quotes-in-python">What are the examples used to illustrate Escape single quotes in Python?</a></li><li ><a href="#what-is-an-n-escape-sequence-in-python">What is an n Escape Sequence in  Python?</a></li><li ><a href="#what-is-the-backlash-escape-sequence-in-python">What is the Backlash Escape Sequence in Python?</a></li><li ><a href="#what-is-the-python-escape-sequence-for-space">What is the Python escape sequence for  Space?</a></li><li ><a href="#what-is-the-backspace-escape-sequence-in-python">What is the  Backspace Escape Sequence in Python?</a></li><li ><a href="#what-is-the-python-escape-sequence-for-hexa-value">What is the Python escape sequence for Hexa value?</a></li><li ><a href="#what-is-the-python-escape-sequence-for-octal-value">What is the Python escape sequence for Octal value?</a></li><li ><a href="#how-to-remove-the-python-escape-sequence">How to remove the Python escape sequence?</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-escape-characters-fa-qs">Python Escape Characters- FAQs</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="python-escape-characters">Python&nbsp;Escape Characters</h2>
+
+
+
+<p>An escape sequence is considered as a sequence of characters that is used inside the character or string. It is further converted into a character or series of <a href="https://www.skillvertex.com/blog/character-arithmetic-in-c-and-c/" data-type="post" data-id="1876">characters</a>. Read this article to learn more about Python Escape Character.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-an-escape-character-in-python">What is an Escape Character in Python?</h2>
+
+
+
+<p>A sequence is a set of two or more characters. Whereas,  in <a href="https://www.skillvertex.com/blog/escape-sequence-in-c/" data-type="post" data-id="1912">Escape</a>, the sequence will begin with the backlash(//)  and other characters in the set follow that backlash.</p>
+
+
+
+<p>However, an escape sequence is referred to as the sequence of characters that are used inside the character or string. It won&#8217;t represent itself whereas it will be turned into another character. Hence, the escape sequence will be created with two things: first is a backlash (\\) and the second refers to the set of one or more characters with the backlash(\\).</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-list-of-escape-sequences-in-python">What is the List of Escape Sequences in Python?</h2>
+
+
+
+<p>Escape characters will be divided into non-printable characters when the backlash precedes them.</p>
+
+
+
+<p>The list of Escape sequences in <a href="https://www.skillvertex.com/blog/python-arbitrary-arguments/" data-type="post" data-id="7307">Python</a> is given below:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Code </td><td>Description</td></tr><tr><td>\&#8217;</td><td>Single quotation</td></tr><tr><td>\n</td><td>New Line</td></tr><tr><td>\\</td><td>Backlash</td></tr><tr><td>\t</td><td>Tab</td></tr><tr><td>\r</td><td>Carriage return</td></tr><tr><td>\b</td><td>Backspace</td></tr><tr><td>\f</td><td>Form feed</td></tr><tr><td>\xhhh</td><td>Hexadecimal equivalent</td></tr><tr><td>\ooo</td><td>Octal equivalent</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-examples-used-to-illustrate-escape-single-quotes-in-python">What are the examples used to illustrate Escape single quotes in Python?</h2>
+
+
+
+<p>Using the single quote inside the <a href="https://www.skillvertex.com/blog/compare-string-in-c/" data-type="post" data-id="961">string </a>directly, thus the string will be closed inside the pair of single quotes. Hence, the interpreter will get confused and will produce an error output.</p>
+
+
+
+<pre class="wp-block-code"><code>original_string = "This is a string with a single quote: 'Hello World'"
+escaped_string = original_string.replace("'", "\\'")
+
+print("Original String:", original_string)
+print("Escaped String:", escaped_string)
+</code></pre>
+
+
+
+<p>In the example above, the replace method is used to replace each occurrence of a single quote (&#8216;) with the escaped sequence (&#8216;\\&#8217;).</p>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Original String: This is a string with a single quote: 'Hello World'
+Escaped String: This is a string with a single quote: \'Hello World\'
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-an-n-escape-sequence-in-python">What is an n Escape Sequence in  Python?</h2>
+
+
+
+<p>&#8221;\n&#8221; tells the interpreter to print some characters in the new line separately. Check out the example given below:</p>
+
+
+
+<pre class="wp-block-code"><code>def generate_sequence(n):
+    sequence = &#91;i for i in range(1, n + 1)]
+    return sequence
+
+# Replace '10' with your desired value of n
+n = 10
+result_sequence = generate_sequence(n)
+
+print(f"The sequence up to {n} is: {result_sequence}")
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>The sequence up to 10 is: &#91;1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-backlash-escape-sequence-in-python">What is the Backlash Escape Sequence in Python?</h2>
+
+
+
+<p>The character that consists of the backlash (\) method that is followed by the letter or by the combination of digits are known as escape sequences.</p>
+
+
+
+<p>Check out this example given below:</p>
+
+
+
+<pre class="wp-block-code"><code>escaped_string = "This is a backslash: \\"
+print(escaped_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>This is a backslash: \
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-python-escape-sequence-for-space">What is the Python escape sequence for  Space?</h2>
+
+
+
+<p>This Python escape sequence for space will allow us to add tab space between the words. Hence, this escape sequence will provide the tab space between the words of characters using the &#8221;\t&#8221;.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code># Using \s escape sequence
+escaped_string = "Hello\sWorld"
+print(escaped_string)
+
+# Using space character directly
+space_string = "Hello World"
+print(space_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Hello World
+Hello World
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-backspace-escape-sequence-in-python">What is the  Backspace Escape Sequence in Python?</h2>
+
+
+
+<p>The escape sequence will help to remove the space between the words. Check out the example given below</p>
+
+
+
+<pre class="wp-block-code"><code># Using \b escape sequence
+escaped_string = "Hello\bWorld"
+print(escaped_string)
+
+# Without escape sequence
+normal_string = "Hello\bWorld"
+print(normal_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>HelloWorld
+HelloWorld
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-python-escape-sequence-for-hexa-value">What is the Python escape sequence for Hexa value?</h2>
+
+
+
+<p>We will use &#8221;\xhh&#8221;, where the hh is referred to as the unique Hexa <a href="https://www.skillvertex.com/blog/how-to-pass-an-array-by-value-in-c/" data-type="post" data-id="2638">value </a>of the alphabet</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code># Using \xhh escape sequence
+hex_value = "\x48\x65\x6C\x6C\x6F"
+print("String with hex values:", hex_value)
+
+# Converting hex values to characters
+decoded_string = bytes.fromhex(hex_value&#91;2:]).decode('utf-8')
+print("Decoded String:", decoded_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>String with hex values: Hello
+Decoded String: Hello
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-python-escape-sequence-for-octal-value">What is the Python escape sequence for Octal value?</h2>
+
+
+
+<p>In Python escape sequence for an octal value, they use &#8221;\ooo&#8221; and the ooo is the unique octal value of the alphabet.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code># Using \ooo escape sequence
+octal_value = "\110\145\154\154\157"
+print("String with octal values:", octal_value)
+
+# Converting octal values to characters
+decoded_string = bytes.fromhex(octal_value&#91;1:]).decode('utf-8')
+print("Decoded String:", decoded_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>String with octal values: Hello
+Decoded String: Hello
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-remove-the-python-escape-sequence">How to remove the Python escape sequence?</h2>
+
+
+
+<p>Python escape sequence will be removed from the left to right of the argument string. Hence, it will use the string. strip () <a href="https://www.skillvertex.com/blog/python-functions/" data-type="post" data-id="7272">function</a>.</p>
+
+
+
+<pre class="wp-block-code"><code>def remove_escape_sequences(input_string):
+    # Encode the string to bytes and then decode it
+    decoded_string = input_string.encode('utf-8').decode('unicode_escape')
+    return decoded_string
+
+# Example usage
+original_string = "This is a string with escape sequences: \\n\\t\\'"
+removed_escape_string = remove_escape_sequences(original_string)
+
+print("Original String:", original_string)
+print("String with Escape Sequences Removed:", removed_escape_string)
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Original String: This is a string with escape sequences: \n\t\'
+String with Escape Sequences Removed: This is a string with escape sequences: \n	'
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>Escape characters help manage the formatting and representation of special characters within strings, enabling more flexible and readable code. This article will allow the students to improve their knowledge and skills of the escape characters. It has also provided a list of the escape sequences in Python.</p>
+
+
+
+<h2 class="wp-block-heading" id="python-escape-characters-fa-qs">Python&nbsp;Escape Characters- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1709624677646" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1.What are the escape characters in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. An escape character is the backslash \ that is followed by the character that is needed to be inserted.</p>
+
+</div>
+</div>
+<div id="faq-question-1709624683893" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What does \\ do in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The \\ that you will type  in the source code is a special syntax that consists of a single backslash in the actual string</p>
+
+</div>
+</div>
+<div id="faq-question-1709624691354" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.What is escaping a character?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The escape character indicates the character that won&#8217;t be able to be represented in the literal form.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-escape-characters/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python Comments: Importance and Types</title>
+		<link>https://www.skillvertex.com/blog/python-comments/</link>
+					<comments>https://www.skillvertex.com/blog/python-comments/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:01:48 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[Python Comments]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7009</guid>
+
+					<description><![CDATA[Python Comments Python Comments in lines are considered as the lines of code that will be neglected by the interpreter while the program is executed. Therefore, comments will improve the readability of the code and could enable the programmers to understand the code. This article has listed the Python Comments and their types. What are ... <a title="Python Comments: Importance and Types" class="read-more" href="https://www.skillvertex.com/blog/python-comments/" aria-label="More on Python Comments: Importance and Types">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#python-comments">Python Comments</a></li><li ><a href="#what-are-the-types-of-comments-in-python">What are the Types of Comments in Python?</a></li><li ><a href="#what-are-the-examples-for-comments-in-python">What are the Examples for Comments in Python</a></li><li ><a href="#why-are-comments-used-in-python">Why are Comments used in Python?</a></li><li ><a href="#what-are-the-types-of-comments-in-python-1">What are the Types of Comments in Python</a><ul><li ><a href="#1-single-line-comments">1. Single -Line Comments</a></li><li ><a href="#2-multi-line-mentions">2. Multi-Line Mentions</a></li><li ><a href="#3-string-literals">3. String Literals</a></li><li ><a href="#4-docstring">4. Docstring</a></li></ul></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-comments-fa-qs">Python Comments- FAQs</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="python-comments">Python Comments</h2>
+
+
+
+<p>Python Comments in lines are considered as the lines of code that will be neglected by the interpreter while the program is executed.</p>
+
+
+
+<p>Therefore, comments will improve the readability of the code and could enable the programmers to understand the code.  This article has listed the Python Comments and their types.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-types-of-comments-in-python">What are the Types of Comments in Python?</h2>
+
+
+
+<p>The three types of comments in Python are:</p>
+
+
+
+<p>a. Single-line Comments</p>
+
+
+
+<p>b. Multiline Comments</p>
+
+
+
+<p>c. String Literals</p>
+
+
+
+<p>d. Docstring  Comments</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-examples-for-comments-in-python">What are the Examples for Comments in Python</h2>
+
+
+
+<p>The example below will tell us that the<a href="https://www.skillvertex.com/blog/python-membership-operator/" data-type="post" data-id="6992"> Python</a> comments are neglected by the Python Interpreter during the <a href="https://www.skillvertex.com/blog/python-program-to-print-hello-world/" data-type="post" data-id="6880">program</a> execution.</p>
+
+
+
+<pre class="wp-block-code"><code># sample comment 
+name = "Skillvertex"
+print(name) </code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-code"><code>Skillvertex</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="why-are-comments-used-in-python">Why are Comments used in Python?</h2>
+
+
+
+<p>Comments play a vital role in <a href="https://www.skillvertex.com/blog/which-programming-language-is-best-for-getting-job/" data-type="post" data-id="34">programming</a>, languages and every language has several ways of using comments.</p>
+
+
+
+<p>Several uses of comments in <a href="https://www.skillvertex.com/blog/python-bitwise-operator/" data-type="post" data-id="6985">Python </a>are the following:</p>
+
+
+
+<p>a. Improve the code readability</p>
+
+
+
+<p>b. Explains code to others</p>
+
+
+
+<p>c.  Helps to analyze the code if known for some time</p>
+
+
+
+<p>d. Note down the steps and the requirements for the <a href="https://www.skillvertex.com/blog/c-library-math-h-functions/" data-type="post" data-id="2596">function</a></p>
+
+
+
+<p>e. Sharing the<a href="https://www.skillvertex.com/blog/how-to-work-with-unicode-in-python/" data-type="post" data-id="6901"> code</a> with fellow <a href="https://www.skillvertex.com/blog/what-is-the-future-of-python-developer/" data-type="post" data-id="2090">developers</a></p>
+
+
+
+<p>f. Collaboration with multiple people</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-types-of-comments-in-python-1">What are the Types of Comments in Python</h2>
+
+
+
+<p>The different types of comments and their relevance are provided below:</p>
+
+
+
+<h3 class="wp-block-heading" id="1-single-line-comments">1. <strong>Single -Line Comments</strong></h3>
+
+
+
+<p>Python single-line comments will begin with the hashtag symbol and no white space is required. # will be needed until the end of the line. However, if the comment has gone beyond one line, it is necessary to put a hashtag on the next line and this will be carried on to the Python Comment.</p>
+
+
+
+<p>Hence, python single-line comments will be very beneficial for providing short explanations for variables, functions, declarations, and expressions. Refer to the code snippet below to understand the single-line comment.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code># Print “Skillvertex !” to console 
+print("Skillvertex") </code></pre>
+
+
+
+<p> Output</p>
+
+
+
+<pre class="wp-block-code"><code>Skillvertex</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="2-multi-line-mentions"><strong>2. Multi-Line Mentions</strong></h3>
+
+
+
+<p>Python won&#8217;t give the option for the multiline comments. So, there are several ways to write multiline comments.</p>
+
+
+
+<p>a) Multiline comments using multiple hashtags (#)</p>
+
+
+
+<p>It is possible to use the multiple hashtag # for writing multiline comments in  Python.  Each line will be denoted as a single-line comments</p>
+
+
+
+<pre class="wp-block-code"><code># Python program to demonstrate 
+# multiline comments 
+print("Multiline comments")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Multiline comments
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="3-string-literals">3. String Literals</h3>
+
+
+
+<p>Python will neglect the string literals and won&#8217;t be assigned to a variable.  Thus, it is possible to use the string literals as Python  Comments.</p>
+
+
+
+<p>a. Single-line comments with the  string literals</p>
+
+
+
+<p>While executing the code, there won&#8217;t be any output, and use the strings with the triple quotes (&#8221;&#8221;&#8221;)  as the multiline comments</p>
+
+
+
+<pre class="wp-block-code"><code>'This will be ignored by Python'
+</code></pre>
+
+
+
+<p>b. Multiline Comments using the string literals</p>
+
+
+
+<pre class="wp-block-code"><code>""" Python program to demonstrate 
+ multiline comments"""
+print("Multiline comments")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Multiline comments
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="4-docstring">4. Docstring</h3>
+
+
+
+<p>Python Docstring is referred to as the <a href="https://www.skillvertex.com/blog/python-literals/" data-type="post" data-id="6953">string literals</a> along with the triple quotes and will be shown right after the function.  Hence, it functions to associate documentation and will be written with the help of <a href="https://www.skillvertex.com/blog/python-syntax/" data-type="post" data-id="6924"> Python modules</a>, classes, and methods.</p>
+
+
+
+<p>Hence, it will be added below the functions, modules, or classes to describe what they do.  The docstring will be created and then will be accessible through the &nbsp;__doc__ attribute.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>def multiply(a, b): 
+    """Multiplies the value of a and b"""
+    return a*b 
+  
+  
+# Print the docstring of multiply function 
+print(multiply.__doc__) </code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Multiplies the value of a and b
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>In conclusion, comments in Python are like helpful notes you write in your code to explain things to yourself and others. They don&#8217;t affect how the program runs, but they make your code easier to understand. </p>
+
+
+
+<h2 class="wp-block-heading" id="python-comments-fa-qs">Python Comments- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1707733325649" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. How do you comment on a paragraph in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.  Triple quotes are used while writing a paragraph in the Python comments.</p>
+
+</div>
+</div>
+<div id="faq-question-1707733336253" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What are multiline comments?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Multiline comments are applicable in the large text descriptions of code or to comment out the chunks of code while debugging applications.</p>
+
+</div>
+</div>
+<div id="faq-question-1707733349883" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is a set in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The set is referred to as the data type in Python to save several items in a single variable.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-comments/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Precedence and Associativity of Operators in Python</title>
+		<link>https://www.skillvertex.com/blog/precedence-and-associativity-of-operators-in-python/</link>
+					<comments>https://www.skillvertex.com/blog/precedence-and-associativity-of-operators-in-python/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:01:34 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[arithmetic operator]]></category>
+		<category><![CDATA[logical operator]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[Python operator]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=7005</guid>
+
+					<description><![CDATA[The arithmetic operator will take precedence over the logical operator. Initially, python will check the arithmetic operators. Relational operators will be checked next. At the end, logical operators will be evaluated. Therefore, if multiple operators are present in an expression, then the higher precedence will be checked first. However, the associativity will be given more ... <a title="Precedence and Associativity of Operators in Python" class="read-more" href="https://www.skillvertex.com/blog/precedence-and-associativity-of-operators-in-python/" aria-label="More on Precedence and Associativity of Operators in Python">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-operator-precedence-in-python">What is Operator Precedence in Python?</a></li><li ><a href="#precedence-of-python-operators">Precedence of Python Operators</a></li><li ><a href="#precedence-of-logical-operators-in-python">Precedence of logical operators in Python</a></li><li ><a href="#associativity-of-the-python-operators">Associativity of the Python Operators</a></li><li ><a href="#operators-precedence-and-associativity-in-python">Operators&#8217; Precedence and Associativity in Python</a></li><li ><a href="#what-are-non-associative-operators">What are non-associative operators?</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#precedence-and-associativity-of-operators-in-python-fa-qs">Precedence and Associativity of Operators in Python- FAQs</a></li></ul></nav></div>
+
+
+
+<p>The arithmetic operator will take precedence over the <a href="https://www.skillvertex.com/blog/python-logical-operators/" data-type="post" data-id="6978">logical operator</a>.  Initially, python will check the<a href="https://www.skillvertex.com/blog/python-arithmetic-operators/" data-type="post" data-id="6958"> arithmetic operators</a>.  Relational operators will be checked next.  At the end,  logical operators will be evaluated. </p>
+
+
+
+<p>Therefore, if multiple operators are present in an expression, then the higher precedence will be checked first. However, the associativity will be given more importance while considering the order of evaluation in the operator. Let us look into this article to learn more about the precedence and Associativity of operators in Python.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-operator-precedence-in-python">What is Operator Precedence in Python?</h2>
+
+
+
+<p>In Python,  an expression is of <a href="https://www.skillvertex.com/blog/python-variables/" data-type="post" data-id="6932">variables</a>, <a href="https://www.skillvertex.com/blog/operators-in-c/" data-type="post" data-id="1918">operators</a>, and <a href="https://www.skillvertex.com/blog/how-to-pass-an-array-by-value-in-c/" data-type="post" data-id="2638">values</a>. The <a href="https://www.skillvertex.com/blog/how-does-a-python-interpreter-works/" data-type="post" data-id="6895">Python interpreter </a>will come across an expression that has various operations and that will be evaluated with the ordered hierarchy. This process is defined as operator precedence.</p>
+
+
+
+<p>The table below has provided all the operators from the highest precedence to the lowest precedence.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th><strong><em>Precedence</em></strong></th><th><strong><em>Operators</em></strong></th><th><strong><em>Description</em></strong></th><th><strong><em>Associativity</em></strong></th></tr></thead><tbody><tr><td>1</td><td>()</td><td>Parentheses</td><td>Left to right</td></tr><tr><td>2</td><td>x[index],&nbsp;x[index:index]</td><td>Subscription, slicing</td><td>Left to right</td></tr><tr><td>3</td><td>await x</td><td>Await expression</td><td>N/A</td></tr><tr><td>4</td><td>**</td><td>Exponentiation</td><td>Right to left</td></tr><tr><td>5</td><td>+x,&nbsp;-x,&nbsp;~x</td><td>Positive, negative, bitwise NOT</td><td>Right to left</td></tr><tr><td>6</td><td>*,&nbsp;@,&nbsp;/,&nbsp;//,&nbsp;%</td><td>Multiplication, matrix, division, floor division, remainder</td><td>Left to right</td></tr><tr><td>7</td><td><a href="https://www.skillvertex.com/blog/python-operators/" data-type="post" data-id="6937"><strong>+</strong>,&nbsp;<strong>–</strong></a></td><td>Addition and subtraction</td><td>Left to right</td></tr><tr><td>8</td><td>&lt;&lt;,&nbsp;&gt;&gt;</td><td>Shifts</td><td>Left to right</td></tr><tr><td>9</td><td>&amp;</td><td>Bitwise AND</td><td>Left to right</td></tr><tr><td>10</td><td><strong>^</strong></td><td>Bitwise XOR</td><td>Left to right</td></tr><tr><td>11</td><td><strong>|</strong></td><td>Bitwise OR</td><td>Left to right</td></tr><tr><td>12</td><td>in,&nbsp;not in,&nbsp;is,&nbsp;is not,&nbsp;&lt;,&nbsp;&lt;=,&nbsp;&gt;,&nbsp;&gt;=,&nbsp;!=,&nbsp;==</td><td>Comparisons, membership tests, identity tests</td><td>Left to Right</td></tr><tr><td>13</td><td>not x</td><td>Boolean NOT</td><td>Right to left</td></tr><tr><td>14</td><td>and</td><td>Boolean AND</td><td>Left to right</td></tr><tr><td>15</td><td>or</td><td>Boolean OR</td><td>Left to right</td></tr><tr><td>16</td><td>if-else</td><td>Conditional expression</td><td>Right to left</td></tr><tr><td>17</td><td>lambda</td><td>Lambda expression</td><td>N/A</td></tr><tr><td>18</td><td><strong>:=</strong></td><td>Assignment expression (walrus operator)</td><td>Right to left</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="precedence-of-python-operators">Precedence of Python Operators</h2>
+
+
+
+<p>It is commonly used in the expression that has more than one operator with different precedence for identifying which operator will be required to do first.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>10 + 20 * 30
+</code></pre>
+
+
+
+<p> output</p>
+
+
+
+<pre class="wp-block-code"><code>10 + 20 * 30 is calculated as 10 + (20 * 30)
+and not as (10 + 20) * 30</code></pre>
+
+
+
+<p><strong>Python code for the above example</strong></p>
+
+
+
+<p># Precedence of &#8216;+&#8217; &amp; &#8216;*&#8217;</p>
+
+
+<div class="gb-container gb-container-464787a9">
+
+<p>expr =10+20*30</p>
+
+</div>
+
+
+<p>print(expr)</p>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>610</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="precedence-of-logical-operators-in-python">Precedence of logical operators in Python</h2>
+
+
+
+<p>The if block will be run in the code provided below even though the age is 0.  The precedence of <a href="https://www.skillvertex.com/blog/python-logical-operators/" data-type="post" data-id="6978">logical</a> &#8220;<strong><a href="https://www.skillvertex.com/blog/and-operators-in-c/" data-type="post" data-id="3294">and</a></strong>&#8221; will be greater than the logical &#8220;<strong><a href="https://www.skillvertex.com/blog/python-identity-operator/" data-type="post" data-id="6997">or</a></strong>&#8220;.</p>
+
+
+
+<p># Precedence of &#8216;or&#8217; &amp; &#8216;and&#8217;</p>
+
+
+
+<p>name =&#8221;Alex&#8221;</p>
+
+
+
+<p>age =0</p>
+
+
+
+<p>ifname ==&#8221;Alex&#8221;orname ==&#8221;John&#8221;andage &gt;=2:</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8220;Hello! Welcome.&#8221;<code>)</code></p>
+
+
+
+<p>else<code>:</code></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8220;Good Bye!!&#8221;<code>)</code></p>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Hello! Welcome.
+</code></pre>
+
+
+
+<p>Another way to execute the &#8216;<a href="https://www.skillvertex.com/blog/c-ifelse-statement/" data-type="post" data-id="2270">else</a>&#8216; block is the use of parenthesis (). It will be considered as their precedence and the highest among all the <a href="https://www.skillvertex.com/blog/python-membership-operator/" data-type="post" data-id="6992">operators</a>.  </p>
+
+
+
+<pre class="wp-block-code"><code># Precedence of 'or' &amp; 'and'
+name = "John"
+age = 0
+ 
+if (name == " John" or name == " Albert") and age &gt;= 2:
+    print("Hello! Welcome.")
+else:
+    print("Good Bye!!")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<p>Good Bye!!</p>
+
+
+
+<h2 class="wp-block-heading" id="associativity-of-the-python-operators">Associativity of the Python Operators</h2>
+
+
+
+<p>The expression has two or more <a href="https://www.skillvertex.com/blog/python-comparison-operators/" data-type="post" data-id="6966">operators</a> with the same precedence, and then the operator associativity will determine it as either to be left or reft or from right to left.</p>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<p>&#8216;*&#8217; and &#8216; /&#8217;   consist of the same precedence and the associativity will be from Left to Right in the code below.</p>
+
+
+
+<pre class="wp-block-code"><code># Left-associative operators
+a = 10 + 5 - 2  # Addition and subtraction are left-associative
+print(a)  # Output: 13
+
+b = 2 * 3 / 2  # Multiplication and division are left-associative
+print(b)  # Output: 3.0
+
+# Right-associative operators (only one example in Python, exponentiation)
+c = 2 ** 3 ** 2  # Exponentiation is right-associative
+print(c) 
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>13
+3.0
+512</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="operators-precedence-and-associativity-in-python">Operators&#8217; Precedence and Associativity in Python</h2>
+
+
+
+<p>In <a href="https://www.skillvertex.com/blog/python-unicode-system/" data-type="post" data-id="6949">Python</a>, Operators&#8217; precedence and Associativity are considered the two important characteristics of operators that will be used to check the order of subexpression in the absence of brackets.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>100 + 200 / 10 - 3 * 10
+
+100 + 200 / 10 - 3 * 10 is calculated as 100 + (200 / 10) - (3 * 10)
+and not as (100 + 200) / (10 - 3) * 10
+</code></pre>
+
+
+
+<p><strong> Python code for the example above </strong></p>
+
+
+
+<pre class="wp-block-code"><code>expression = 100 + 200 / 10 - 3 * 10
+print(expression)</code></pre>
+
+
+
+<p> Output</p>
+
+
+
+<pre class="wp-block-code"><code>90.0
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-are-non-associative-operators">What are non-associative operators?</h2>
+
+
+
+<p>In Python, most of the operators have associativity and this indicates that it can be used to evaluate from left to right or right to left and have the same precedence.  </p>
+
+
+
+<p>Therefore, few operators are considered as non- associative and this means that they cannot be chained together.</p>
+
+
+
+<pre class="wp-block-code"><code>a = 5
+b = 10
+c = 15
+ 
+a = b = (a &lt; b) += (b &lt; c)</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>a = b= (a &lt; b) += (b &lt; c)
+                   ^^
+SyntaxError: invalid syntax</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>To conclude, this article has listed about the operator precedence and associativity in Python. Moreover, several examples are also provided for a better understanding of the operator&#8217;s precedence. This can allow the students to improve their knowledge and skills regarding the topic.</p>
+
+
+
+<h2 class="wp-block-heading" id="precedence-and-associativity-of-operators-in-python-fa-qs">Precedence and Associativity of Operators in Python- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1707720693440" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. Is Python right associative?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The associativity will be either from left to right or right to left.</p>
+
+</div>
+</div>
+<div id="faq-question-1707720700285" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is precedence in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. It denotes the order of precedence. Python has divided the operators into several categories such as  Arithmetic operators and assignment operators.</p>
+
+</div>
+</div>
+<div id="faq-question-1707720708699" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.  What is the highest precedence?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.  Parentheses will have the highest precedence. Higher precedence operators will be performed before the lower precedence operations.  </p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/precedence-and-associativity-of-operators-in-python/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python Identity Operator</title>
+		<link>https://www.skillvertex.com/blog/python-identity-operator/</link>
+					<comments>https://www.skillvertex.com/blog/python-identity-operator/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:01:22 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[Python Identity Operator]]></category>
+		<category><![CDATA[Python Operators]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=6997</guid>
+
+					<description><![CDATA[The Python Identity operator will compare the objects by checking if the object belongs to the same memory location. Read this article to learn more about Python Identity Operator. What is Python Identity Operator Python operator consists of two operators such as &#8216;is&#8216;and &#8216;is not&#8216;. Both the values will be returned with the Boolean values. ... <a title="Python Identity Operator" class="read-more" href="https://www.skillvertex.com/blog/python-identity-operator/" aria-label="More on Python Identity Operator">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-python-identity-operator">What is Python Identity Operator</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-identity-operator-fa-qs"> Python Identity Operator- FAQs</a></li></ul></nav></div>
+
+
+
+<p> The <strong>Python Identity</strong> <a href="https://www.skillvertex.com/blog/python-logical-operators/" data-type="post" data-id="6978">operator</a> will compare the objects by checking if the object belongs to the same memory location. Read this article to learn more about Python  Identity Operator.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-python-identity-operator">What is Python Identity Operator</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/python-literals/" data-type="post" data-id="6953">Python </a>operator consists of two <a href="https://www.skillvertex.com/blog/python-operators/" data-type="post" data-id="6937">operators </a>such as &#8216;<strong>is</strong>&#8216;and &#8216;<strong>is not</strong>&#8216;. Both the values will be returned with the<a href="https://www.skillvertex.com/blog/python-booleans/" data-type="post" data-id="7030"> Boolean values</a>. The in-operators will check if the value comes true only if the operand object shares the same memory location.</p>
+
+
+
+<p>Furthermore, the memory location of the object will be achieved with the help of the &#8221;<strong>id()</strong>&#8221; function. Whereas, if both the<a href="https://www.skillvertex.com/blog/python-variables/" data-type="post" data-id="6932"> variables</a> id() are the same, then the in operator will return with the True.</p>
+
+
+
+<pre class="wp-block-code"><code># Identity Operator - 'is'
+x = &#91;1, 2, 3]
+y = &#91;1, 2, 3]
+z = x
+
+# 'is' operator checks if both variables refer to the same object in memory
+print(x is y)  # False, because x and y refer to different objects
+print(x is z)  # True, because x and z refer to the same object
+
+# Identity Operator - 'is not'
+print(x is not y)  # True, because x and y do not refer to the same object
+print(x is not z)  # False, because x and z refer to the same object</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>False
+True
+True
+False</code></pre>
+
+
+
+<p>However, list and tuple will do<a href="https://www.skillvertex.com/blog/python-operators/" data-type="post" data-id="6937"> operations</a> very differently. The example given below contains two lists such as  &#8221;a&#8221; and &#8221;b&#8221;  with the same items and the id() varies.</p>
+
+
+
+<pre class="wp-block-code"><code>a=&#91;1,2,3]
+b=&#91;1,2,3]
+print ("id(a), id(b):", id(a), id(b))
+print ("a is b:", a is b)
+print ("b is not a:", b is not a)</code></pre>
+
+
+
+<p> Output</p>
+
+
+
+<pre class="wp-block-code"><code>id(a), id(b): 1552612704640 1552567805568
+a is b: False
+b is not a: True</code></pre>
+
+
+
+<p>The list or tuple has memory locations of individual items only and not the items themselves. Thus,  &#8221;a &#8221; consists of an address of  10,20, or 30 integer objects that are located in a particular location and will be different from the of  &#8221;b&#8221;.</p>
+
+
+
+<p> Output</p>
+
+
+
+<pre class="wp-block-code"><code>140734682034984 140734682035016 140734682035048
+140734682034984 140734682035016 140734682035048</code></pre>
+
+
+
+<p>Here, the &#8216;is&#8217; operator will return with a false value even if it contains the same numbers. This happens due to the two different locations of a  and b.</p>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>To conclude, this article will improve our knowledge of the Python Identity Operator. It has also provided examples of the &#8221;is&#8221; and  &#8221;is not&#8221; operators.</p>
+
+
+
+<h2 class="wp-block-heading" id="python-identity-operator-fa-qs"> Python Identity Operator- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1707481450804" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is an identity operator in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Python  Identity operator is considered as the special comparison operator to find  if the two variables have the same object in the memory.</p>
+
+</div>
+</div>
+<div id="faq-question-1707481460278" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is the symbol for the identity operator?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <sub>d</sub> will stand for  the identity function and I   for the identity matrix</p>
+
+</div>
+</div>
+<div id="faq-question-1707481468824" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is ID in Python for example?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The id method will return a unique integer number for every unique value it will be worked with.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-identity-operator/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python Membership Operator</title>
+		<link>https://www.skillvertex.com/blog/python-membership-operator/</link>
+					<comments>https://www.skillvertex.com/blog/python-membership-operator/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2024 12:01:13 +0000</pubDate>
+				<category><![CDATA[Python Tutorial]]></category>
+		<category><![CDATA[Python Membership Operator]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=6992</guid>
+
+					<description><![CDATA[The membership operators in Python will allow us to know if an item is available in the given container-type object. Let us look at this article to learn more about Python Membership Operator What is a Python Membership Operator? Python will provide two membership operators for checking the membership value. It will check for membership ... <a title="Python Membership Operator" class="read-more" href="https://www.skillvertex.com/blog/python-membership-operator/" aria-label="More on Python Membership Operator">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-a-python-membership-operator">What is a Python Membership Operator?</a></li><li ><a href="#what-is-in-operator">What is In operator?</a></li><li ><a href="#what-is-not-in-the-operator">What is NOT in the operator?</a></li><li ><a href="#what-is-an-identity-operator">What is an Identity Operator?</a></li><li ><a href="#what-is-operator">What &#8216;is&#8217; operator</a></li><li ><a href="#what-is-is-not-operator">What is &#8216;Is not&#8217; operator</a></li><li ><a href="#conclusion">Conclusion</a></li><li ><a href="#python-membership-operator-fa-qs">Python Membership Operator- FAQs</a></li></ul></nav></div>
+
+
+
+<p>The membership operators in<a href="https://www.skillvertex.com/blog/python-type-casting/" data-type="post" data-id="6943"> Python</a> will allow us to know if an item is available in the given container-type object. Let us look at this article to learn more about Python Membership Operator</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-a-python-membership-operator">What is a Python Membership Operator?</h2>
+
+
+
+<p><a href="https://www.skillvertex.com/blog/assignment-operators-in-python/" data-type="post" data-id="6970">Python</a> will provide two <strong>membership operators</strong> for checking the membership value. It will check for membership in a <a href="https://www.skillvertex.com/blog/what-does-0-mean-in-this-python-string/" data-type="post" data-id="3237">string</a>, list, or tuples sequence.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-in-operator">What is <strong>In operato</strong>r?</h2>
+
+
+
+<p>The in-operator will monitor whether a <a href="https://www.skillvertex.com/blog/character-arithmetic-in-c-and-c/" data-type="post" data-id="1876">character</a> or substring will be present in the sequence.  So, this operator will be considered true only if it can find the specified element, or else it will be false.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>'S' in 'Skillvertex'   # Checking 'S' in String
+True
+'s' in 'Skillvertex'   #Checking 's' in string since Python is case-sensitive,returns False
+False
+'Skill' in &#91;'Skill','Vertex']   #Checking 'Skill' in list of strings
+True
+10 in &#91;10000,1000,100,10]        #Checking 10 in list of integers
+True
+dict1={1:'Skill,2:'For',3:'Skill'}     # Checking 3 in keys of dictionary
+3 in dict1
+True</code></pre>
+
+
+
+<p><strong>Python Program to  find the common member is provided below</strong></p>
+
+
+
+<pre class="wp-block-code"><code># Membership operator example
+fruits = &#91;'apple', 'banana', 'orange', 'grape']
+
+# Using 'in' operator
+search_fruit = 'banana'
+if search_fruit in fruits:
+    print(f"{search_fruit} is present in the list.")
+else:
+    print(f"{search_fruit} is not present in the list.")
+
+# Using 'not in' operator
+search_fruit = 'kiwi'
+if search_fruit not in fruits:
+    print(f"{search_fruit} is not present in the list.")
+else:
+    print(f"{search_fruit} is present in the list.")
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>banana is present in the list.
+kiwi is not present in the list.</code></pre>
+
+
+
+<p>Now, the Python<a href="https://www.skillvertex.com/blog/python-program-to-print-hello-world/" data-type="post" data-id="6880"> Program </a>below will use the same example without an operator.</p>
+
+
+
+<pre class="wp-block-code"><code># Membership operator example without using <a href="https://www.skillvertex.com/blog/python-comparison-operators/" data-type="post" data-id="6966">operators</a>
+fruits = &#91;'apple', 'banana', 'orange', 'grape']
+
+# Without using 'in' operator
+search_fruit = 'banana'
+found = False
+for fruit in fruits:
+    if fruit == search_fruit:
+        found = True
+        break
+if found:
+    print(f"{search_fruit} is present in the list.")
+else:
+    print(f"{search_fruit} is not present in the list.")
+
+# Without using 'not in' operator
+search_fruit = 'kiwi'
+not_found = True
+for fruit in fruits:
+    if fruit == search_fruit:
+    not_found = False
+        break
+if not_found:
+    print(f"{search_fruit} is not present in the list.")
+else:
+    print(f"{search_fruit} is present in the list.")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>banana is present in the list.
+kiwi is not present in the list.
+</code></pre>
+
+
+
+<p>The execution speed of the in-operator will mainly depend on the target object type. The average time complexity of the in operator for the list is 0(n). Hence, it will get slow due to the number of elements increasing.</p>
+
+
+
+<p>Moreover, the average time complexity of the in-operator for sets is  0(1). Hence, it won&#8217;t rely on the number of elements.</p>
+
+
+
+<p>Whereas in dictionaries, the keys in the dictionary are unique values such as set. It is possible to repeat the value as similar to the list. So, the   &#8216;in&#8217; for values () will be executed as similar to the lists.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-not-in-the-operator">What is <strong><strong>NOT in the operator</strong></strong>?</h2>
+
+
+
+<p>This <strong>NOT in operator </strong>can run the program to get the true value if it can&#8217;t find the variable in the specified sequence or else, it will be declared as false.</p>
+
+
+
+<p>Take a look at the Python Program to illustrate the not-in operator.</p>
+
+
+
+<pre class="wp-block-code"><code># Membership operator 'not in' example with output
+fruits = &#91;'apple', 'banana', 'orange', 'grape']
+
+# Using 'not in' operator
+search_fruit = 'kiwi'
+if search_fruit not in fruits:
+    print(f"{search_fruit} is not present in the list.")
+else:
+    print(f"{search_fruit} is present in the list.")
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>kiwi is not present in the list.
+</code></pre>
+
+
+
+<p>This example mentions that the not-in operator will be used to evaluate the value such as kiwi is not present in the list of fruits.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-an-identity-operator">What is an Identity Operator?</h2>
+
+
+
+<p>The<strong> identity operator</strong> functions to compare the objects as both the objects are the same data type and will share the same memory location.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-operator">What <strong>&#8216;is&#8217; operator</strong></h2>
+
+
+
+<p>This <strong>&#8216;is&#8217; operator </strong>will be used to check if the value can come true, only if the <a href="https://www.skillvertex.com/blog/python-variables/" data-type="post" data-id="6932">variable</a> on either side of the operator points to the same object or else it will be false.</p>
+
+
+
+<pre class="wp-block-code"><code># Using 'is' operator for membership-like testing
+fruits = &#91;'apple', 'banana', 'orange', 'grape']
+
+# Object to test for membership
+search_fruit = 'banana'
+
+# Check using 'is' operator
+is_member = any(fruit is search_fruit for fruit in fruits)
+
+if is_member:
+    print(f"{search_fruit} is in the list.")
+else:
+    print(f"{search_fruit} is not in the list.")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>banana is in the list.
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="what-is-is-not-operator">What is &#8216;Is not&#8217; operator</h2>
+
+
+
+<p>This &#8216;<strong>Is not&#8217; operator </strong>will check if the values come true,  only if both variables are not in the same <a href="https://www.skillvertex.com/blog/which-is-not-an-ado-net-dataadapter-object/" data-type="post" data-id="2225">object</a>.</p>
+
+
+
+<pre class="wp-block-code"><code># Using 'is not' operator for membership-like testing
+fruits = &#91;'apple', 'banana', 'orange', 'grape']
+
+# Object to test for non-membership
+search_fruit = 'kiwi'
+
+# Check using 'is not' operator
+is_not_member = all(fruit is not search_fruit for fruit in fruits)
+
+if is_not_member:
+    print(f"{search_fruit} is not in the list.")
+else:
+    print(f"{search_fruit} is in the list.")</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>kiwi is not in the list.
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>To conclude, in Python membership operators (in and not in)  will allow us to check if something is part of a group,  such as looking if a specific word is in a list.</p>
+
+
+
+<p> If it&#8217;s on the list, it will give us True, otherwise False. On the other hand,<code> </code>not in does the opposite; it gives us True if the thing is not in the group, and False.  This article has also discussed the different operators of the membership operator. Those operators include &#8216;<strong>In&#8217; </strong>operator, <strong>&#8216;not in&#8217;</strong> operator, and several other identity operators.</p>
+
+
+
+<h2 class="wp-block-heading" id="python-membership-operator-fa-qs">Python Membership Operator- FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1707478574822" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is membership testing in Python?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans.  Membership testing is used to check if the collection of list  has a specific item such as list , set or dictionary.</p>
+
+</div>
+</div>
+<div id="faq-question-1707478586088" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. <strong> How many operators are in Python?</strong></h4>
+<div class="rank-math-answer ">
+
+<p>Ans. There are seven different operators in Python. Those operators are arithmetic, assignment, comparison, logical, identity, membership, and boolean operators. </p>
+
+</div>
+</div>
+<div id="faq-question-1707478601486" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is a tuple example?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. The Tuplr is referred to as an ordered as the uniqueness in order will define the tuple. Examples of Tuple  are  a<sub>1</sub> equals b<sub>1</sub>, a<sub>2</sub> equals b<sub>2</sub>, a<sub>3</sub> equals b<sub>3</sub> </p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/python-membership-operator/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

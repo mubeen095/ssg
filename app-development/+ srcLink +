@@ -1,0 +1,1530 @@
+
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <link rel="canonical" href="https://www.skillvertex.com/" />
+        <title>App Development Course | Get Certified with Skillvertex</title>
+        <meta name="description" content="Become a certified App Development expert & boost your profile for career growth. Get mentorship from Industry experts, build profile with projects, &amp; placement assistance">
+        <meta name="keywords" content="Skillvertex, Upskilling, Skilling, upskill, upskilling courses">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/pl2024/sk-landingpages/css/home.css?v=1">
+        <link rel="stylesheet" href="/pl2024/css/common.css">
+        <link rel="stylesheet" href="/pl2024/css/pi.css">
+        <link rel="stylesheet" href="/pl2024/landingpages/css/landing.css?v=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="https://www.skillvertex.com/favicon.png" type="image/png">
+       <link href="/css/owl.carousel.min.css" rel="stylesheet">
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-75YXC7208Y"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-75YXC7208Y'); </script>
+
+    </head>
+<body>
+ <!--   <header class='header'>
+        <div class='header-container'>
+            <a href='' class='logo-bx'><img src='https://i.ibb.co/Wf4yjnG/Course-Landing-Page-SV-1-1.png' alt=''></a>
+            <div class='mid-content'>
+                <div class='btn-courses'>
+                    <span class='course-txt'>Courses</span>
+                </div>
+                <div class='courses-content-container'></div>
+                <div class='menu-container'>
+                    <a href='' class='menu-items'>Coding Labs</a>
+                    <a href='' class='menu-items'>Tech SV</a>
+                    <a href='' class='menu-items'>Bulk Pages</a>
+                    <a href='' class='menu-items'>Blogs</a>
+                </div>
+             </div>
+             <div class='left-container'>
+                    <button class='btn-login'>Login</button>
+                    <span class='ham-menu' style="display: none;"><img src='' alt=''></span>
+                </div>
+ 
+        </div>
+    </header>-->
+            
+    <header class='header'>
+        <div class='header-container'>
+            <span class='ham-menu'><i class="fa-solid fa-bars"></i></span>
+            <a href='/' class='logo-bx'><img src='/pl2024/img/logo.png' alt=''></a>
+            <div class='mid-content'>
+                <div class='btn-courses'>
+                    <button class='course-txt'>Courses
+                    <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class='courses-content-container'>
+                    <h2>Browse by Category</h2>
+                    <div class='main-container'>
+                        <div class='left-container'>
+                                                                <div class='menu-items menu-active' id='cddmenu-0'>
+                                    <span>Tech Courses</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                                                <div class='menu-items ' id='cddmenu-1'>
+                                    <span>Non-Tech Courses</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                                    </div>
+                        <div class='right-items'>
+                                                            <div class='cdd-0 common-right'>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/full-stack-development/');" class='card'>
+                                        <h3>Full Stack Development</h3>
+                                        <p>Unlock the power of Full Stack Development with hands-on projects and real-world applications, enhancing problem-solving skills and paving the way for innovative solutions.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>6 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>12 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Khan Shabaz, Abhiraj Kulaar</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/e-commerce-Developer-bootcamp/');" class='card'>
+                                        <h3>E-commerce Developer Bootcamp</h3>
+                                        <p>Learn to design, develop, and deploy high-performing E-commerce websites that captivate customers and increase conversions.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>2 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>12 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Khan Shabaz</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/machine-learning/');" class='card'>
+                                        <h3>Machine Learning</h3>
+                                        <p>Harness the power of algorithms, unlock data insights, and shape the innovations with Machine Learning Program.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>9 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Akash Maurya</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/cyber-security/');" class='card'>
+                                        <h3>Cyber Security</h3>
+                                        <p>Build a strong foundation for Digital Safety by mastering Cyber Security</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>9 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Rohit Mukhergee</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/artificial-intelligence/');" class='card'>
+                                        <h3>Artificial Intelligence</h3>
+                                        <p>Master the fundamentals and cutting-edge applications through our comprehensive course designed for aspiring AI enthusiasts.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>6 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Soumya Agarwal</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/python/');" class='card'>
+                                        <h3>Python</h3>
+                                        <p>Explore Python language's versatility and learn to code efficiently</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>25 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Abhishek Raj Permani, Akash Maurya</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/web-development/');" class='card'>
+                                        <h3>Web Development</h3>
+                                        <p>Unlock your web development potential by mastering React, build dynamic websites, and launch your tech career today.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>11 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Khan Shabaz</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/data-science/');" class='card'>
+                                        <h3>Data Science</h3>
+                                        <p>Learn to decode patterns, predict trends, crunch data through the comprehensive course on Data Science.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>13 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Akash Maurya, Deloitte</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/app-development/');" class='card'>
+                                        <h3>App Development</h3>
+                                        <p>Build your skillset for app development by covering from concept to code.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>10 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Sangyan Bhagi</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/data-structure/');" class='card'>
+                                        <h3>Data Structures</h3>
+                                        <p>Become placement ready for MAANG companies by mastering Data Structures and Algorithms</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>13 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Utkarsh Singh</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/java/');" class='card'>
+                                        <h3>JAVA</h3>
+                                        <p>Skill up by learning from fundamental to advanced applications of Java.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>8 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Khan Shabaz</div>
+                                                                                    </div>
+                                    </div>
+                                                                    </div>
+                                                            <div class='cdd-1 common-right'>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/digital-marketing/');" class='card'>
+                                        <h3>Digital Marketing</h3>
+                                        <p>Get ready for marketing in the digital age &amp; strategize for the Modern Businesses.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>22 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Hitesh S S</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/human-resources/');" class='card'>
+                                        <h3>HR</h3>
+                                        <p>Learn the science of human resources management to elevate the efficiency of the organization.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>17 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Kritika Wadhwani</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/finance/');" class='card'>
+                                        <h3>Finance</h3>
+                                        <p>Understand the ways to strategize for the financial fitness of the organization.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>16 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Shubham Swaraj</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/internet-of-things/');" class='card'>
+                                        <h3>IoT &amp; Robotics</h3>
+                                        <p>Learn the science behind the integration of the physical &amp; virtual world through IoT and Robotics.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>8 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Soumya Agarwal</div>
+                                                                                    </div>
+                                    </div>
+                                                                        <div onclick="window.open('https://www.skillvertex.com/embedded-system/');" class='card'>
+                                        <h3>Embedded System</h3>
+                                        <p>Gain the knowledge to design &amp; build smart devices for tomorrow.</p>
+                                        <div class='row'>
+                                        <div class='left-content'><span class='img-bx'><img src='/pl2024/img/clock.svg' alt=''></span>3 months</div>
+                                        <div class='right-content'><span class='img-bx'><img src='/pl2024/img/man-right.svg' alt=''></span>7 modules</div>
+                                        </div>
+                                        <div class='bt-row'>
+                                                                                            <span>Mentored by :</span>
+                                                <div class='cotent-card'><span class='img-bx'></span>Abu Turab Kazmi</div>
+                                                                                    </div>
+                                    </div>
+                                                                    </div>
+                                                    </div>
+                    </div>
+                </div>
+                <div class='menu-container'>
+                    <div class='placement-test-container' style=''>
+                        <p>Placement Tests <sup style='color:red;'>NEW</sup> <i class="fa-solid fa-chevron-down"></i></p>
+                        <div class='hidden-placement-content' style='display:none;'>
+                            <a href='https://www.skillvertex.com/tcs-nqt-mock-test/'>TCS NQT</a>
+                            <a href='https://www.skillvertex.com/tcs-bps-mock-test/'>TCS BPS</a>
+                            <a href='https://www.skillvertex.com/infosys-mock-test/'>Infosys Mock</a>
+                        </div>
+                    </div>
+
+                    <a href='/coding-hub/' class='menu-items'>Coding HUB</a>
+                    <a target="_blank" href='/blog/' class='menu-items'>Blog</a>
+                </div>
+             </div>
+             <div class='left-container'>
+                    <button class='btn-login btn-start-now'>Sign Up</button>
+                    <span class='ham-menu'><img src='/img/common/hamb.png' alt=''></span>
+                </div>
+ 
+        </div>
+    </header>
+
+
+<div class="dark-overlay"></div>
+<div class='mob-menu'>
+    <div class='mob-header'>
+        <span>MENU</span><i class="fa-solid fa-xmark close-login"></i>
+    </div>
+    <div class='mob-menu-content'>
+        <a href='/coding-hub/' class='mob-menu-items'>Coding HUB</a>
+        <a target="_blank" href='/blog/' class='mob-menu-items'>Blog</a>
+    </div>
+    <button class="btn-login btn-start-now">Sign Up</button>
+</div>
+
+
+<div class='mob-course'>
+    <div class='course-head'>
+        <span>COURSES</span><i class="fa-solid fa-xmark close-login"></i>
+    </div>
+    <div class='course-list'>
+         
+        <div class='course-item'>
+        <div class='outer-item'><span>Popular Courses</span><i class="fa-solid fa-chevron-down"></i></div>
+            <div class='hidden-course-list'>
+                        <a href='https://www.skillvertex.com/full-stack-development/' target="_blank" class='course-content'>Full Stack Development</a>
+                        <a href='https://www.skillvertex.com/web-development/' target="_blank" class='course-content'>Web Development</a>
+                        <a href='https://www.skillvertex.com/digital-marketing/' target="_blank" class='course-content'>Digital Marketing</a>
+                        <a href='https://www.skillvertex.com/python/' target="_blank" class='course-content'>Python</a>
+                        <a href='https://www.skillvertex.com/finance/' target="_blank" class='course-content'>Finance</a>
+                        <a href='https://www.skillvertex.com/machine-learning/' target="_blank" class='course-content'>Machine Learning</a>
+                        </div>
+        </div>
+           
+        <div class='course-item'>
+        <div class='outer-item'><span>Tech Courses</span><i class="fa-solid fa-chevron-down"></i></div>
+            <div class='hidden-course-list'>
+                        <a href='https://www.skillvertex.com/full-stack-development/' target="_blank" class='course-content'>Full Stack Development</a>
+                        <a href='https://www.skillvertex.com/e-commerce-Developer-bootcamp/' target="_blank" class='course-content'>E-commerce Developer Bootcamp</a>
+                        <a href='https://www.skillvertex.com/machine-learning/' target="_blank" class='course-content'>Machine Learning</a>
+                        <a href='https://www.skillvertex.com/cyber-security/' target="_blank" class='course-content'>Cyber Security</a>
+                        <a href='https://www.skillvertex.com/artificial-intelligence/' target="_blank" class='course-content'>Artificial Intelligence</a>
+                        <a href='https://www.skillvertex.com/python/' target="_blank" class='course-content'>Python</a>
+                        <a href='https://www.skillvertex.com/web-development/' target="_blank" class='course-content'>Web Development</a>
+                        <a href='https://www.skillvertex.com/data-science/' target="_blank" class='course-content'>Data Science</a>
+                        <a href='https://www.skillvertex.com/app-development/' target="_blank" class='course-content'>App Development</a>
+                        <a href='https://www.skillvertex.com/data-structure/' target="_blank" class='course-content'>Data Structures</a>
+                        <a href='https://www.skillvertex.com/java/' target="_blank" class='course-content'>JAVA</a>
+                        </div>
+        </div>
+           
+        <div class='course-item'>
+        <div class='outer-item'><span>Non-Tech Courses</span><i class="fa-solid fa-chevron-down"></i></div>
+            <div class='hidden-course-list'>
+                        <a href='https://www.skillvertex.com/digital-marketing/' target="_blank" class='course-content'>Digital Marketing</a>
+                        <a href='https://www.skillvertex.com/human-resources/' target="_blank" class='course-content'>HR</a>
+                        <a href='https://www.skillvertex.com/finance/' target="_blank" class='course-content'>Finance</a>
+                        <a href='https://www.skillvertex.com/internet-of-things/' target="_blank" class='course-content'>IoT &amp; Robotics</a>
+                        <a href='https://www.skillvertex.com/embedded-system/' target="_blank" class='course-content'>Embedded System</a>
+                        </div>
+        </div>
+        </div>
+</div>
+    <div class='wrapper'><!--Wrapper -->
+<section class='sec-lp-hero' id='sec-hero'>
+            <div class='outer-section'>
+                <div class='right-container'>
+                <h2>App Development: Design Mobile Applications</h2>
+                <span>An opportunity to bind your coding skills, creativeness and analytical thinking to build solutions for real world problems.<div class=logos-container><span class=content-container>Certified By: <span class=ibm style=margin-left:10px><img src=/landingpages/iit/iitg/img/Apple.png alt=&apos;&apos;></span></span></div></span>
+                <h3 class='amt-txt' style='display:none;'>Course Fee: ₹86,000</h3>
+                    <p class='amt-subtitle' style='display:none;'>EMI options available</p>
+                                        <div class='btn-grp'>
+                    <button onclick="window.open('https://www.skillvertex.com/pl2024/sk-landingpages/files/APP-DEVELOPMENT-CURRICULUM.finalai.pdf','_blank')">Download Brochure</button>
+                    </div>
+                                    </div>
+               <div class='left-container'>
+               <span class='img-bx'></span>
+                    <div class='form-outer'> 
+                    <h4>Become a App Developer today!</h4>
+                        <label class='error-mesg'></label>
+                        <input type='text' name='name' placeholder='Full Name' id='sk-name'>
+                        <input type='text' name='phone' placeholder='Mobile Number' id='sk-mobile'>
+                        <input type='text' name='email' placeholder='Email Id' id='sk-mail'>
+                    <div class='btn-grp' style='justify-content: center;'>
+                    <button class='btn-skill-up'>Upskill Now</button>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>  
+    <section class='sec-strip'>
+        <div class='sec-padding'>
+            <div class='main-container'>
+                                            <div class='card'>
+                                <span class='main-txt'>3 Months</span>
+                                <span class='sub-txt'>Program Duration</span>
+                            </div>
+                                                        <div class='card'>
+                                <span class='main-txt'>Apple</span>
+                                <span class='sub-txt'>Certification</span>
+                            </div>
+                                                        <div class='card'>
+                                <span class='main-txt'>365 Days</span>
+                                <span class='sub-txt'>Coding HUB Access</span>
+                            </div>
+                                                        <div class='card'>
+                                <span class='main-txt'>3-5</span>
+                                <span class='sub-txt'>Course Credits</span>
+                            </div>
+                                                        <div class='card'>
+                                <span class='main-txt'>3</span>
+                                <span class='sub-txt'>Industry Projects</span>
+                            </div>
+                                                        <div class='card'>
+                                <span class='main-txt'>1:1</span>
+                                <span class='sub-txt'>Career support</span>
+                            </div>
+                                        </div>
+        </div>
+    </section>
+
+<section class="sec-why-skill"><!-- Why Skill Vertex -->
+    <div class="sec-padding">
+        <h2>Why choose SkillVertex?</h2>
+        <p>Seize the future: Secure your career with SkillVertex&apos;s cutting-edge resources and transformative learning experiences.</p>
+        <div class="main-container">
+            <div class="left-content">
+                <span class="why-skill-img"><img src="https://www.skillvertex.com/courses/codingpractice/upfiles/entrepreneur-1.png" alt=""></span>
+            </div>
+            <div class="right-content">
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/graduated.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>50K&plus;</p>
+                            <span>Students Graduated</span>
+                        </div>
+                    </div>
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/mentoring.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>30&plus;</p>
+                            <span>Industry Mentors</span>
+                        </div>
+                    </div>
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/placement_percentage.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>IIT Guwahati</p>
+                            <span>E&ICT Academy Certification</span>
+                        </div>
+                    </div>
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/career_support.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>Global Cretification</p>
+                            <span>IBM, Cisco, Apple, Meta</span>
+                        </div>
+                    </div>
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/hiring_partners.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>5L -12L</p>
+                            <span>Salary Range</span>
+                        </div>
+                    </div>
+                                    <div class="card">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/pl2024/img/whysv/coding_ques.png" alt=""></span>
+                        <div class="card-txt">
+                            <p>500&plus;</p>
+                            <span>Coding Questions</span>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</section>
+<section class='sec-who-should-apply'>
+    <div class='sec-padding'>
+        <h2>Who should apply for this course?</h2>
+        <div class='main-outer'>
+            <div class='left-content'>
+                <ul>
+                                            <li class='list-txt'>
+                            <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/tick.png' alt=''></span>
+                            <span><b>Students and Recent Graduates</b> intending to bridge the gap between academic knowledge and practical skills.</span>
+                        </li>
+                                            <li class='list-txt'>
+                            <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/tick.png' alt=''></span>
+                            <span><b>Working Professionals</b> looking to enhance career prospects and stay updated with industry trends.</span>
+                        </li>
+                                            <li class='list-txt'>
+                            <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/tick.png' alt=''></span>
+                            <span><b>Career Changers and Professionals on break</b> intending to pivot to new industries by acquiring relevant skills.</span>
+                        </li>
+                                            <li class='list-txt'>
+                            <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/tick.png' alt=''></span>
+                            <span><b>Freelancers and Entrepreneurs</b> interested in expanding expertise for business growth and innovation.</span>
+                        </li>
+                                    </ul>
+            </div>
+            <div class='right-content'>
+                <span class='who-should-apply-img'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/who-should-apply-img.png' alt=''></span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class='sec-curriculum'>
+    <div class='sec-padding'>
+        <div class='outer-container'>
+            <div class='left-content'>
+                <h2 class='sec-title'>Program Details</h2>
+                <p class='sec-subtitle'>The rising demand for Android Apps has made Android Development a top career choice, with big organizations actively seeking skilled developers.</p>
+                <div class='row'>
+                <div class="card"><h6 class="main-txt">3</h6><span class="sub-txt">Industry Projects</span></div><div class="card"><h6 class="main-txt">40&plus;</h6><span class="sub-txt">Hours of Program</span></div><div class="card"><h6 class="main-txt">10&plus;</h6><span class="sub-txt">Assignments & Mock Tests</span></div><div class="card"><h6 class="main-txt">10</h6><span class="sub-txt">Modules</span></div>                </div>
+                <div class="curriculum-column">
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Introduction To Android Development</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Android Apps Development Tool<br>&bull; Google SDK<br>&bull; Install And Set Up Android Development Platform<br>&bull; Install and Set Up Android IDE For Programming<br>&bull; Install and Set Up Java Environment</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Kotlin Fundamentals</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Environment Setup<br>&bull; Syntax<br>&bull; Fundamentals Of Code<br>&bull; Data Handling<br>&bull; Control Flow<br>&bull; Functions<br>&bull; Collections<br>&bull; Objects and Classes<br>&bull; Error and Exception Handling</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Build Your First App</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Android Studio<br>&bull; Hello World Program<br>&bull; Building Interactive UI<br>&bull; Text Views<br>&bull; Scrolling Views</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Activities And Intents</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Activities<br>&bull; Intents<br>&bull; Activity Lifecycle<br>&bull; Activity State<br>&bull; Implicit Intents</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>User Interaction</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Types Of Layout<br>&bull; Clickable Images<br>&bull; Menus<br>&bull; Pickers<br>&bull; User Navigation<br>&bull; Recycler View</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Delightful User Experience</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Drawables<br>&bull; Styles<br>&bull; Themes<br>&bull; Android Material Design<br>&bull; Cards<br>&bull; Colors</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Android Architecture Components</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; View Model<br>&bull; Live Data<br>&bull; Introduction To Room View Model</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Introduction To API Calling</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; API Calling Using Retrofit<br>&bull; Create An application Using Retrofit<br>&bull; Retrofit With MVVM Architecture</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Introduction To ViewBinding</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Use Of View Binding In Android Arojects<br>&bull; View Binding vs findViewById()</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                            <div class="curriculum-box">
+                            <div class="curriculum-question">
+                                <p>Introduction To Firebase</p>
+                                <span class="curriculum-indicator"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="curriculum-answer" style="display: none;">
+                                <p>&bull; Firebase Login/Sign Up<br>&bull; Firebase Realtime Ratabase Operations<br>&bull; Firebase Storage</p>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                                       
+                    <div class='btn-grp'>                                                  
+                    <button class='btn-download' onclick="window.open('https://www.skillvertex.com/pl2024/sk-landingpages/files/APP-DEVELOPMENT-CURRICULUM.finalai.pdf','_blank')">Download Brochure</button>
+                    </div>
+                    
+                </div>
+            </div>
+                        <div class='right-container ytcard' data-url='Fv2_arfp6DY'>
+                <iframe class="listen-ytiframe" src="https://www.youtube.com/embed/Fv2_arfp6DY" title="YouTube video player" allowfullscreen></iframe>
+                <!--span class='img-bx'><img src='.' alt=''></span>
+                <span class='play-btn'><i class="fa-regular fa-circle-play"></i></span-->
+            </div>
+                    </div>
+    </div>
+</section>
+ 
+<section class="sec-project">
+   <div class="sec-padding">
+      <h2>Real-World Industry Projects</h2>
+      <p>Get exposure to a compilation of industry-standard projects to showcase the practical application of your skill sets to build & boost your project portfolio.</p>
+      <div class="owl-slider">
+         <div class="card-container owl-carousel owl-loaded owl-drag" id="carousel">
+            <div class="owl-stage-outer owl-height" style="height: 387px;">
+               <div class="owl-stage" style="width: 2319px; transform: translate3d(0px, 0px, 0px); transition: all 3.2s ease 0s;">
+                                       <div class="owl-item active" style="width: 386.5px;">
+                        <div class="card item">
+                           <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/to-do-list.jpg' alt=''></span>
+                           <span>To-Do List App</span>
+                           <p>Learn foundational app development skills with a Simple To-Do List app, where learners gain hands-on experience in UI design, data management, basic interactivity, advanced functionality, user engagement strategies, and effective project collaboration, forming a solid basis for further exploration and success in mobile app development.</p>
+                           <a href='#sec-hero' class="btn-project-read">Start Now</a>
+                        </div>
+                     </div>
+                                       <div class="owl-item active" style="width: 386.5px;">
+                        <div class="card item">
+                           <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/contact-management-application.jpg' alt=''></span>
+                           <span>Contact Management Application</span>
+                           <p>Developing proficiency in Android app development by creating a Contact Management application with Room Database, including hands-on experience in implementing features for inserting, updating, and deleting contact information, enhancing skills in database operations and user interface interaction.</p>
+                           <a href='#sec-hero' class="btn-project-read">Start Now</a>
+                        </div>
+                     </div>
+                                       <div class="owl-item active" style="width: 386.5px;">
+                        <div class="card item">
+                           <span class='img-bx'><img src='https://www.skillvertex.com/courses/codingpractice/upfiles/movie-explorer-app.jpg' alt=''></span>
+                           <span>Movie Explorer App</span>
+                           <p>Mastering Android app development with hands-on experience, learners will create a Movie Explorer application using Retrofit, MVVM architecture, and API integration, gaining expertise in network requests, UI design, and architectural patterns for building responsive and feature-rich Android applications.</p>
+                           <a href='#sec-hero' class="btn-project-read">Start Now</a>
+                        </div>
+                     </div>
+                                 </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+                  
+<section class='sec-certificate'>
+    <div class='sec-padding'>
+                <h2 class='sec-title' style=" color: #0B0F10; font-feature-settings: 'clig' off, 'liga' off; font-family: DM Sans; font-size: 48px; font-style: normal; font-weight: 700; line-height: 46px; margin-bottom: 30px; ">Ceritificate</h2>
+        <div class='outer-container'>
+            <div class='left-container' style='width:50%'>
+                <div class='right-container certi-open' style='width:100%;'>
+                <div class="overlay" id="certificate-overlay">
+                    <div class="overlay-content">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/landingpages/iit/img/zoom-in.png" alt=""></span>
+                        <p>Click here to zoom</p>
+                    </div>
+                </div>
+                <span class='certi-bx'>
+                <img src='https://www.skillvertex.com/courses/codingpractice/upfiles/khan-shabhaz-(head-of-product-&-operations).png' alt=''>
+                </span>
+            </div>
+
+                <ul style='margin-top: 15px;'>
+                                            <li class='list-txt'>Gain course credits & fast-track your success in college.</li>
+                                    </ul>
+
+            </div>
+            <div class='left-container' style='width:50%'>
+            <div class='right-container certi-open' style='width:100%;flex-direction:column;'>
+                <div class="overlay" id="certificate-overlay">
+                    <div class="overlay-content">
+                        <span class="img-bx"><img src="https://www.skillvertex.com/landingpages/iit/img/zoom-in.png" alt=""></span>
+                        <p>Click here to zoom</p>
+                    </div>
+                </div>
+                <span class='certi-bx'>
+                <img src='https://www.skillvertex.com/courses/codingpractice/upfiles/apple.png' alt=''>
+                </span>
+            </div>
+            <ul style='display: flex; flex-direction: column; gap: 20px; list-style: none;margin-top: 15px;'>
+                                            <li class='list-txt' style='display: flex; align-items: center; flex-direction: row; color: var(--neutral-600, #6F6C90); font-family: DM Sans; font-size: 18px; font-style: normal; font-weight: 400; line-height: 30px; gap: 5px;'>Increase the chances of getting your CV shortlisted by MNCs.</li>
+                                    </ul>
+
+
+                    </div>
+                    </div>
+    </div>
+</section>
+<section class='sec-course-highlights sec-course-highlights-1'>
+        <div class='sec-padding'>
+        <h2 class='sec-title'>Program Fee</h2>
+            <div class='highlights-container' style='display:none;'>
+                <div class='first-row'>
+                <div class='list-content'><span class='img-bx'><img src='img/TICK.png' alt=''></span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+                <div class='list-content'><span class='img-bx'><img src='img/TICK.png' alt=''></span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+                </div>
+                <div class='second-row'>
+                <div class='list-content'><span class='img-bx'><img src='img/TICK.png' alt=''></span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+                <div class='list-content'><span class='img-bx'><img src='img/TICK.png' alt=''></span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+                </div>
+            </div>
+            <div class='outer-container'>
+            <div class='enroll-container' style='flex-direction: column;'>
+                <div class='txt-container'>
+                <h5>App Development</h5>
+                <p>Enhance your profile, and get mentorship, project opportunities, & placement assistance.</p>
+                <span>₹5700 (Incl. Taxes)</span>
+                </div>
+                <div class='btn-grp'>
+                    <!--button class='btn-enroll'>Enroll Now</button-->
+                    <a onclick="ccapaynow('skv001', 5700);" class='btn-enroll'>Enroll Now</a>                         
+                                        <div class='btn-grp'>
+                    <button class='btn-call' onclick="window.open('https://www.skillvertex.com/pl2024/sk-landingpages/files/APP-DEVELOPMENT-CURRICULUM.finalai.pdf','_blank')">Download Brochure</button>
+                    </div>
+                                    </div>
+            </div>
+            <div class='enroll-container' style='flex-direction: column;background: linear-gradient(90deg, rgba(44,194,165,1) 0%, rgba(37,163,185,1) 36%, rgba(37,139,234,1) 74%, rgba(15,98,254,1) 100%);'>                          
+                <div class='txt-container'>
+                <h5>Apple Certification Exam</h5>
+                <p>Become a Apple Certified App Development expert & boost your profile for career growth. </p>
+                <span>₹4500 (Incl. Taxes)</span>
+                </div>
+                <div class='btn-grp'>
+                    <!--button class='btn-enroll' style='color: rgba(37,139,234,1);'>Enroll Now</button-->
+                    <a href='#sec-hero' class='btn-enroll' style='color: rgba(37,139,234,1);'>Enroll Now</a>                         
+                                        <div class='btn-grp'>
+                    <button class='btn-call' onclick="window.open('https://www.skillvertex.com/pl2024/sk-landingpages/files/APP-DEVELOPMENT-CURRICULUM.finalai.pdf','_blank')">Download Brochure</button>
+                    </div>
+                                    </div>
+            </div>
+            </div>
+
+                   </div>
+    </section>
+<section class="sec-mentors">
+    <div class="sec-padding">
+        <h2>Our Mentor</h2>
+        <p>Learn from seasoned professionals with extensive experience in the domain to gain invaluable guidance and support at every stage of your journey.</p>
+        <div class='testi-row owl-slider'>
+        <div class="card-container mentor-row owl-carousel" id="carousel1">
+                            <div class="mentor-card item">
+                    <div class="card-footer">
+                        <div class="f-left">
+                            <span><img src="https://www.skillvertex.com/courses/codingpractice/upfiles/img-20231011-wa0008---sangyan-bhagi.jpg" alt=""></span>
+                        </div>
+                        <div class="f-right">
+                            <h4>Sangyan Bhagi </h4>
+                            <h5>Android Developer </h5>
+                                                        <a class="linked-card" href="https://www.linkedin.com/in/sangyanb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                                    </div>
+                    </div>
+                    <p>Experienced Android Developer with a proven track record of 3 years, dedicated to guiding aspiring developers in mastering Android app development and navigating the intricacies of mobile technology.</p>
+                </div>
+                    </div>
+        </div>
+    </div>
+</section>
+<section class="sec-faqs learn"><!--FAQs -->
+        <div class="container">
+            <h2 class="sec-header">FAQs</h2>
+            <div class="col"><!--col-->
+                                          <div class="faq-group"><!--faq-group-->
+                                <div class="faq-question">
+                                <h4>who is eligible for certificate?</h4>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="faq-answer" style="display: none;">
+                                <p>IBM offers certification programs suitable for a diverse range of individuals including<br>&bull; Students and recent graduates<br>&bull; Working professionals<br>&bull; Freelancers and entrepreneurs</p>
+                                </div>
+                            </div><!--faq-group-->
+                                                <div class="faq-group"><!--faq-group-->
+                                <div class="faq-question">
+                                <h4>How will I get this certificate?</h4>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="faq-answer" style="display: none;">
+                                <p>Skillvertex Certificate: after submitting your final projects, you can expect to receive the certificate within two weeks.<br>&bull; Apple certificate: there is an examination to get an Apple certificate.</p>
+                                </div>
+                            </div><!--faq-group-->
+                                                <div class="faq-group"><!--faq-group-->
+                                <div class="faq-question">
+                                <h4>What is the validity of certificate?</h4>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="faq-answer" style="display: none;">
+                                <p>Earn our certification and enjoy lifetime validation of your expertise, ensuring your credentials remain current and valuable throughout your career.</p>
+                                </div>
+                            </div><!--faq-group-->
+                                                <div class="faq-group"><!--faq-group-->
+                                <div class="faq-question">
+                                <h4>Is it possible to pursue this program simultaneously with my college studies?</h4>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="faq-answer" style="display: none;">
+                                <p>Absolutely! Our program is designed to be flexible, allowing students to adapt it to their timetables. We recommend dedicating 7-10 hours per week to the course.</p>
+                                </div>
+                            </div><!--faq-group-->
+                                                <div class="faq-group"><!--faq-group-->
+                                <div class="faq-question">
+                                <h4>What advantages can I gain from having industry mentors?</h4>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="faq-answer" style="display: none;">
+                                <p>Industry mentors are seasoned professionals from well-established companies with demonstrated expertise in specific domains. They serve as your ideal mentors to assist you in making informed decisions about your career path in the industry.</p>
+                                </div>
+                            </div><!--faq-group-->
+                                            </div><!--col-->
+        </div>
+        </section>
+
+<div id="ytvideosModal" class="modal ytvideosModal"><!--yt modal-->
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="modal-card-body" id="ytvideos-iframearea" style='padding:0;'>
+                </div>
+            </div>
+            <button id="ytvideos-close" class="modal-close is-large ytvideos-close"></button>
+       </div>
+<div class="modal modal-obls" id="modal-certificate">
+    <div class="modal-background"></div>
+    <div class="modal-content modal-certifiacte-content" style="max-width: initial !important;overflow: hidden;">
+       <div class="obls-group obls-certificate-group" id="obls-ceritificate" style="max-width: initial !important;">
+            <button class="modal-close is-large modal-obls-close" aria-label="close"></button>
+            <span class="cerificate-img-modal"><img src="https://images.oliveboard.in/header-images/uploaded/1694599520.502.png" alt=""></span>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<section class="sec-footer sec-bg-grey" id="sec-footer">
+   <div class="sec-padding">
+         <div class="footer-row">
+            <div class="card">
+               <!-- card -->
+               <div class="card-inner">
+               <a href="" class="logo-foot"><img src="/pl2024/img/logo.png" alt=""></a> 
+                  <h5 class="ob-address" style="font-family: 'DM Sans';font-size: 12px;">5th Main Road, 14th B Cross Rd, Sector 6, HSR Layout, Bengaluru, Karnataka 560102,<br>support@skillvertex.com,<br>+91 9538128016</h5>
+               </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+               <!-- card -->
+               <div class="card-inner">
+               <h4 class="footer-tab"><span class="footer-tab-text" style="font-weight: 700;">Tech Courses</span><span class="footer-tab-indicator">+</span></h4>
+                  <div class="footer-group">
+                        <a target="_blank" href="https://www.skillvertex.com/full-stack-development/">Full Stack Development</a>
+                        <a target="_blank" href="https://www.skillvertex.com/machine-learning/">Machine Learning</a>
+                        <a target="_blank" href="https://www.skillvertex.com/artificial-intelligence/">Artificial Intelligence</a>
+                        <a target="_blank" href="https://www.skillvertex.com/python/">Python</a>
+                        <a target="_blank" href="https://www.skillvertex.com/data-science/">Data Science</a>
+                        <a target="_blank" href="https://www.skillvertex.com/web-development/">Web Development</a>
+                        <a target="_blank" href="https://www.skillvertex.com/cyber-security/">Cyber Security</a>
+                        <a target="_blank" href="https://www.skillvertex.com/data-structure/">DSA</a>
+                        <a target="_blank" href="https://www.skillvertex.com/app-development/">App Development</a>
+                        <a target="_blank" href="https://www.skillvertex.com/java/">Java</a>
+                        <a target="_blank" href="https://www.skillvertex.com/e-commerce-Developer-bootcamp/">E-commerce Developer Bootcamp</a>
+                              </div>
+               </div>
+            </div>
+            <div class="card">
+               <!-- card -->
+               <div class="card-inner">
+               <h4 class="footer-tab"><span class="footer-tab-text" style="font-weight: 700;">Non-Tech Courses</span><span class="footer-tab-indicator">+</span></h4>
+                  <div class="footer-group">
+                        <a target="_blank" href="https://www.skillvertex.com/internet-of-things/">IoT & Robotics</a>
+                        <a target="_blank" href="https://www.skillvertex.com/embedded-system/">Embedded System</a>
+                        <a target="_blank" href="https://www.skillvertex.com/digital-marketing/">Digital Marketing</a>
+                        <a target="_blank" href="https://www.skillvertex.com/finance/">Finance</a>
+                        <a target="_blank" href="https://www.skillvertex.com/human-resources/">HR</a>
+                              </div>
+               </div>
+            </div>
+            <div class="card">
+               <!-- card -->
+               <div class="card-inner">
+               <h4 class="footer-tab"><span class="footer-tab-text" style="font-weight: 700;">Blog</span><span class="footer-tab-indicator">+</span></h4>
+                  <div class="footer-group">
+                        <a target="_blank" href="https://www.skillvertex.com/blog/category/computer-science/">Computer Science</a>
+                        <a target="_blank" href="https://www.skillvertex.com/blog/category/management/">Management</a>
+                        <a target="_blank" href="https://www.skillvertex.com/blog/category/other-courses/">Other Courses</a>
+                        <a target="_blank" href="https://www.skillvertex.com/blog/category/interview-prep/">Interview Prep</a>
+                        <a target="_blank" href="https://www.skillvertex.com/blog/category/internship/">Internships</a>
+                              </div>
+               </div>
+            </div>
+            <div class="card">
+               <!-- card -->
+               <div class="card-inner">
+               <h4 class="footer-tab"><span class="footer-tab-text" style="font-weight: 700;">Useful Links</span><span class="footer-tab-indicator">+</span></h4>
+                  <div class="footer-group">
+                        <a target="_blank" href="/about-us/">About Us</a>
+                        <a target="_blank" href="/contact-us/">Contact Us</a>
+                        <a target="_blank" href="/privacy-policy/">Privacy Policy</a>
+                        <a target="_blank" href="/terms/">Terms &amp; Conditions</a>
+                        <a target="_blank" href="/careers/">Careers</a>
+                              </div>
+               </div>
+            </div>
+            <!-- card -->
+         </div>
+         <div class="footer1-row">
+            <div class="col">
+               <p class="p12">© 2024, All right reserved Oliveboard Pvt. Ltd</p>
+            </div>
+            <div class="col"><a target="_blank" href="https://www.facebook.com/skillvertex.in/"><img src="/pl2024/img/socials/ic-facebook.svg" alt=""></a><a target="_blank" href="https://www.instagram.com/skillvertex.in/?hl=en"><img src="/pl2024/img/socials/ic-instagram.svg" alt=""></a><a target="_blank" href="https://twitter.com/skillvertex_"><img src="/pl2024/img/socials/ic-twitter.svg" alt=""></a><a target="_blank" href="https://www.youtube.com/channel/UCCxnA7q7X-EztT4IpNBz4ZQ"><img src="/pl2024/img/socials/ic-youtube.svg" alt=""></a></div>
+         </div>
+      </div>
+</section>
+      </div>
+<div class="modal modal-obls" id="modal-signup">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+       <div class="obls-group" id="obls-group1">
+	   <button class="modal-close is-large modal-obls-close" aria-label="close"></button>
+           <div class="obls-blk">
+                <div class="sign-form">
+                    <h2>Sign Up</h2>
+                    <h3 id="modalguidemsg1"></h3>
+                    <label class="errormsg">
+                                            </label>
+                    <div class="formcontrol-group email-grp">
+                        <i class="fa-regular faa-marg fa-envelope"></i>
+                        <input id="email" type="email" name="email" class="formcontrol signup" placeholder="Email ID" required>
+                    </div>
+                    <div class="formcontrol-group mobile-grp">
+                        <i class="fa-solid faa-marg fa-mobile-button"></i>
+                        <input id="mobile" type="text" name="phone" class="formcontrol signup" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="formcontrol-group passw-grp">
+                        <i class="fa-solid faa-marg fa-lock"></i>
+                        <input id="passw" type="password" name="password" class="formcontrol signup" placeholder="Password" required>
+                    </div>
+		    <div class="verify-form">
+		    	<label class="lbl-err"></label>
+		        <div class="formcontrol-group">
+			    <input id="otp" type="tel" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" name="otp" class="formcontrol verify" placeholder="OTP (4 digits)" required>
+		    </div>
+            <a id="reg-resend" class="resend fp" style='justify-content: flex-start;'>Resend OTP</a>
+		    <a id="submit-otp" class="btn-green">Submit</a>
+		</div>
+                    <a id="btn-sign" class="btn-green">Sign Up</a>
+                    <p class="obls-footer">Already a user ?<button type="button" class="btn btn-xs btn-switch-obls" id="btn-login">Sign In</button></p>
+                </div>
+		<div class="fp-form">
+		    <h2 class="fr-title">Reset Password</h2>
+		    <label class="frp-err"></label>
+		    <div class="formcontrol-group frp-gp">
+			<i class="fa-solid faa-marg fa-user"></i>
+                        <input id="fnumber" type="number" name="mobile" class="formcontrol fpwd" placeholder="Mobile Number" required="">
+                    </div>
+		    <div class="btn-otpgrp">
+		    <a id="btn-fpcl" class="btn-green">Cancel</a>
+		    <a id="btn-fp" class="btn-green">Generate OTP</a>
+                    </div>
+		    <div class="otp-grp">
+		    <div class="formcontrol-group">
+			    <input id="fotp" type="tel" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" name="otp" class="formcontrol votp" placeholder="OTP (4 digits)" required="">
+		    </div>
+		    <a id="btn-fotp" class="btn-green">Submit</a>
+		</div>
+		</div>
+	      <div class="new-passw">
+		    <div class="formcontrol-group">
+                        <input id="pass-n" type="password" name="password" class="formcontrol rpassw" placeholder="Password" required="">
+                    </div>
+                        <a id="login-resend" class="resend fp">Resend OTP</a>
+		    <a id="new-pass" class="btn-green">Submit</a>
+		</div>
+                <div class="Login-form">
+                    <h2>Sign In</h2>
+                    <label class="err-msg"></label>
+                    <div class="formcontrol-group">
+			<i class="fa-solid faa-marg fa-user"></i>
+                        <input id="uemail" type="text" name="email" class="formcontrol login" placeholder="Email or Mobile Number" required>
+                    </div>
+                    <div class="formcontrol-group">
+                        <i class="fa-solid faa-marg fa-lock"></i>
+                        <input id="upassw" type="password" name="password" class="formcontrol login" placeholder="Password" required>
+                    </div>
+		    <a class="reset-fp fp">Forgot Password?</a>
+                    <a id="bt-login" class="btn-green">Sign In</a>
+                    <p class="obls-footer">New User ?<button type="button" class="btn btn-xs btn-switch-obls" id="btn-register">Sign Up</button></p>
+                </div>
+                <div class="OTPLogin-form" style="display:none;">
+                    <h2>Sign In</h2>
+                    <h3 id="modalguidemsg2"></h3>
+                    <label class="err-msg"></label>
+                    <div class="formcontrol-group email-grp">
+                        <i class="fa-solid faa-marg fa-user"></i>
+                        <input id="otploginmobile" type="text" name="otploginmobile" class="formcontrol login" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="verify-form">
+                        <label class="lbl-err"></label>
+                        <div class="formcontrol-group">
+                            <input id="otplogin" type="tel" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" name="otp" class="formcontrol verify" placeholder="OTP (4 digits)" required>
+                        </div>
+                        <a id="reg-resend2" class="resend fp" style='justify-content: flex-start;'>Resend OTP</a>
+                        <a id="submit-otplogin" class="btn-green">Submit</a>
+                    </div>
+                </div>
+
+           </div> 
+        </div> 
+    </div>
+</div>
+
+<script src="https://www.skillvertex.com/js/static/jquery.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/pl2024/js/common.js?v=2"></script>
+<script src="/js/slider.js?v=1"></script>
+<script>
+var redurl = 'https://www.skillvertex.com/courses/?fc=1';
+var reftag = '____/app-development/+%20srcLink%20+';
+$(document).ready(function(){
+    drpFunct1();                                
+});
+$(".close-login").click(function(){
+    $(".mob-menu").animate({left: '-400px'}, 500);
+    $(".mob-course").animate({right: '-400px'}, 500);
+    //$(".mob-menu").hide();
+    $(".dark-overlay").hide();
+});
+
+$(".course-item").click(function () {
+    var target = $(this).data("target");
+    var icon = $(this).find(".fa-solid");
+    $(this).children('.hidden-course-list').slideToggle();
+    icon.toggleClass("flipped");
+});
+
+function drpFunct1() {
+    if (window.innerWidth >= 992) {
+        $(".btn-courses").hover(function(){
+            $(".courses-content-container").toggle();
+            $(".btn-courses").find(".fa-solid").toggleClass('fa-chevron-up fa-chevron-down');
+        });
+    }else{
+        $(".btn-courses").click(function(){
+            $(".mob-course").css('visibility','visible');
+            $(".mob-course").animate({right: '0'}, 500);
+            $(".dark-overlay").show();
+        });
+    }
+}
+$(".courses-content-container").hover(function(){
+    $(".btn-courses").find(".fa-solid").toggleClass('fa-chevron-up fa-chevron-down');
+});
+$(".faq-group").click(function () {
+            if($(this).hasClass("in")){
+                $(this).find(".faq-answer").slideUp("slow");
+                $(this).removeClass("in");
+                $(this).removeClass("active");
+            }
+            else{
+                $(this).addClass("in");
+                $(this).addClass("active");
+                $(this).find(".faq-answer").slideDown("slow");
+            }
+            $(this).find(".fa-solid").toggleClass('fa-plus');
+            $(this).find(".fa-solid").toggleClass('fa-minus');
+        });
+$(".ham-menu").click(function(){
+    //$(".mob-menu").show();
+    $(".mob-menu").animate({left: '0'}, 500);
+    $(".dark-overlay").show();
+    $(".mob-menu").css('visibility','visible');
+});
+ $(".btn-start-now").on("click", function(){
+        $("#modal-signup").addClass("is-active");
+    });
+
+ $(".courses-content-container .menu-items").mouseenter(function () {
+            $(".courses-content-container .menu-items").removeClass("menu-active");
+
+            $(this).addClass("menu-active");
+            $(".right-items > div").hide();
+            var groupid = $(this).attr("id").split("-")[1];
+            $(".cdd-" + groupid).show();
+        });
+     $('#sk-name, #sk-mail, #sk-mobile').on('keypress', function(e) {
+        if (e.which == 13) {
+            $('.btn-skill-up').click();
+        }
+    });
+
+     $('#otp').on('keypress', function(e) {
+        if (e.which == 13) {
+            $('#submit-otp').click();
+        }
+    });
+     $('#otplogin').on('keypress', function(e) {
+        if (e.which == 13) {
+            $('#submit-otplogin').click();
+        }
+    });
+
+$(".curriculum-question").on("click", function () {
+   $(this).siblings(".curriculum-answer").slideToggle("slow");
+   if ($(this).hasClass("in")) {
+      $(this).find(".curriculum-indicator").html("<i class='fa-solid fa-chevron-right'></i>");
+   } else {
+      $(this).find(".curriculum-indicator").html("<i class='fa-solid fa-chevron-up'></i>");
+   }
+   $(this).toggleClass("in");
+});
+/* yt video */
+    $(document).on("click",".ytcard", function(){
+                $("#ytvideosModal").addClass("is-active");
+                        var yturl = $(this).attr("data-url");
+                        $("#ytvideos-iframearea").html('<iframe src="https://www.youtube.com/embed/'+ yturl +'" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="about-ytmodal"></iframe>')
+
+        onYouTubeIframeAPIReady();
+    });
+    $(document).on("click",".ytvideos-close", function(){
+        $("#ytvideos-iframearea").html("");
+        $("#ytvideosModal").removeClass("is-active");
+    });
+    var ls_player;
+    var tag = document.createElement('script');
+    var initTime = '';
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady(){
+      ls_player = new YT.Player('youtubeiframe', {events: {'onReady': "onYouTubePlayerReady"}});
+    }
+
+    function onYouTubePlayerReady() {
+        calytvidesheight();
+    }
+    function calytvidesheight(){
+        var videow = $('#ytvideos-iframearea').width();
+        var videoh = (videow/16) * 9;
+        $('.youtubeiframe').height(videoh +'px');
+    } 
+
+$(".modal-close").click(function(){
+    $(".modal").removeClass('is-active');
+});
+
+    $(document).on("click",".certi-open", function(){
+        var srcLink = $(this).find(".certi-bx img").attr("src");
+        $("#modal-certificate").addClass('is-active');
+        $(".cerificate-img-modal").html("<img src="+ srcLink +" alt=''>")
+    });
+
+var anchor = $("#reg-resend");
+var anchor2 = $("#reg-resend2");
+$(".btn-skill-up").click(function(){
+    $(".btn-skill-up").html('Please wait...');
+   var fname = $("#sk-name").val();
+    var email = $("#sk-mail").val();
+    var mobile = $("#sk-mobile").val();
+
+    if(email !='' && mobile !='' && fname !='') {
+     var efilter = /^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*?)\s*;?\s*)+/;
+     var pfilter = /^\d{10}$/;
+	 if(!efilter.test(email)){
+         $('.error-mesg').css('display','flex');
+         $('.error-mesg').css('color','red');
+	     $('.error-mesg').html('Enter Valid Email Address'); 
+         $(".btn-skill-up").html('Upskill Now');
+	}
+	 else if(!pfilter.test(mobile)){
+         $('.error-mesg').css('display','flex');
+         $('.error-mesg').css('color','red');
+	     $('.error-mesg').html('Enter Valid Phone Number (10 digits)');
+         $(".btn-skill-up").html('Upskill Now');
+	 }
+     else{
+         var url = "/cgi/landingpages/skillup.cgi";
+         var data = {}
+         data['fname'] = fname;
+         data['email'] = email;
+         data['mobile'] = mobile;
+         data['reftag'] = reftag;
+         data['page'] = 'app-development';
+         $("#btn-start").attr("disabled", "disabled");
+         modalback = false;
+	     $.post(url, data, function(result){
+         $(".btn-skill-up").html('Upskill Now');
+		     $('.errormsg').html('');
+	         $('.error-mesg').html('');
+             if(result["action"] == "registration"){
+                 $('#modal-signup').addClass('is-active');
+                 $("#modalguidemsg1").text("Please enter the OTP sent to " + result["mobile"]);
+
+                 $("#email").val(result["email"]);
+                 $("#mobile").val(result["mobile"]);
+                 $("#passw").val(result["password"]);
+
+                 $("#email").attr("disabled", true);
+                 $("#mobile").attr("disabled", true);
+                 $("#passw").attr("disabled", true);
+
+                 $(".verify-form").css("display","block");
+                 $("#btn-sign").css("display","none");
+                 $(".email-grp").css("background-color","aliceblue");
+                 $(".mobile-grp").css("background-color","aliceblue");
+                 $(".passw-grp").css("background-color","aliceblue");
+
+                 $(".email-grp").css("display","none");
+                 $(".mobile-grp").css("display","none");
+                 $(".passw-grp").css("display","none");
+
+                 $("#otp").focus()
+                 anchor.addClass('disabled'); // Apply disabled class
+
+                 // Enable the anchor tag after 60 seconds
+                 setTimeout(function() {
+                     anchor.removeClass('disabled'); // Remove disabled class
+                 }, 60000);
+
+                 // Start a 60-second countdown timer
+                 var countdown = 60;
+                 var timer = setInterval(function() {
+                     countdown--;
+                     if (countdown <= 0) {
+                         clearInterval(timer);
+                         anchor.html("Resend OTP"); // Reset the anchor tag text
+                     } else {
+                         anchor.html("Resend OTP (" + countdown + "s)"); // Update the anchor tag text with countdown
+                     }
+                 }, 1000);
+             }else if(result["action"] == "login"){
+                 $('#modal-signup').addClass('is-active');
+                 $("#modalguidemsg2").text("Please enter the OTP sent to " + result["mobile"]);
+                 $('.sign-form').css('display','none');
+                 $('.OTPLogin-form').css('display','block');
+                 $(".verify-form").css("display","block");
+                 $('#otploginmobile').val(result["mobile"]);
+                 $("#otploginmobile").attr("disabled", true);
+
+                 $(".email-grp").css("background-color","aliceblue");
+                 $(".email-grp").css("display","none");
+                 $('#otplogin').focus();
+                 anchor2.addClass('disabled'); // Apply disabled class
+
+                 // Enable the anchor tag after 60 seconds
+                 setTimeout(function() {
+                     anchor2.removeClass('disabled'); // Remove disabled class
+                 }, 60000);
+
+                 // Start a 60-second countdown timer
+                 var countdown = 60;
+                 var timer = setInterval(function() {
+                     countdown--;
+                     if (countdown <= 0) {
+                         clearInterval(timer);
+                         anchor2.html("Resend OTP"); // Reset the anchor tag text
+                     } else {
+                         anchor2.html("Resend OTP (" + countdown + "s)"); // Update the anchor tag text with countdown
+                     }
+                 }, 1000);
+             }
+         });
+	}
+    }
+    else{
+         $('.error-mesg').css('display','flex');
+         $('.error-mesg').css('color','red');
+	    $('.error-mesg').html('Fields cannot be empty');
+         $(".btn-skill-up").html('Upskill Now');
+    }
+    });
+$("#submit-otplogin").on("click", function(){
+    $("#submit-otplogin").html("Please wait...");
+    var otp = $("#otplogin").val();
+    var mobile = $("#otploginmobile").val();
+    var ofilter = /^\d{6}$/;
+    var ostatus = ofilter.test(otp);
+    modalback = false;
+    $('.lbl-err').html("");
+    if(otp != ''){
+        var url = "/cgi/otplogin.cgi";	
+        var data = {};
+        data["mobile"] = mobile;
+        data["userotp"] = otp;
+        $('.lbl-err').html("");
+        $.post(url, data, function(result){
+           var result = result.trim();
+           if(result == "1"){
+                $('.lbl-err').html("");
+                window.location.href = redurl;
+           }else{
+            $("#submit-otplogin").html("Submit");
+            $('.lbl-err').html("Enter Valid OTP");
+           }
+        });
+    }
+    else{
+        $("#submit-otplogin").html("Submit");
+        $('.lbl-err').html('Please Enter OTP');
+    }
+});
+
+/*OTP validation*/
+$("#submit-otp").on("click", function(){
+    $("#submit-otp").html("Please wait...");
+    var otp = $("#otp").val();
+    var mobile = $("#mobile").val();
+    var email = $("#email").val();
+    var passw = $("#passw").val();
+    $(".lbl-err").css("display","block");
+    var ofilter = /^\d{6}$/;
+    var ostatus = ofilter.test(otp);
+    modalback = false;
+    if(otp != ''){
+	var url = "/cgi/otpregister.cgi";	
+
+	var data = {};
+	data["mobile"] = mobile;
+	data["userotp"] = otp;
+	data["email"] = email;
+	data["passw"] = passw;
+    data["reftag"] = reftag;
+        console.log(data);
+	$.post(url, data, function(result){
+	   var result = result.trim();
+	   if(result == "1"){
+		    $("#email").val('');
+		    $('#mobile').val('');
+    		    $("#passw").val('');
+    		    $("#otp").val('');
+		    $('.lbl-err').html('');
+		    $("#submit-otp").html("Submit");
+    		    $("#modal-signup").removeClass("is-active");
+		    window.location.href = redurl;
+           }
+	   else{
+		$("#submit-otp").html("Submit");
+		$('.lbl-err').html("Enter Valid OTP");
+           }
+	})
+    }
+    else{
+	$("#submit-otp").html("Submit");
+	$('.lbl-err').html('Please Enter OTP');
+    }
+});
+$(".footer-tab").on("click", function() {
+    if ($(this).hasClass("in")) {
+        $(this).next(".footer-group").removeClass("fg-active");
+        $(this).children(".footer-tab-indicator").html('&plus;');
+        $(this).removeClass("in");
+    } else {
+        $(this).next(".footer-group").addClass("fg-active");
+        $(this).children(".footer-tab-indicator").html('&minus;');
+        $(this).addClass("in");
+    }
+});
+
+$(document).ready(function(){
+    var faqcheck = $(".sec-faqs .sec-header").html();
+    if(faqcheck === ''){
+        $(".sec-faqs").hide();
+    }
+});
+$(".placement-test-container").click(function(){
+    $(this).find(".fa-solid").toggleClass('fa-chevron-up');
+    $(this).find(".fa-solid").toggleClass('fa-chevron-down');
+    $(".hidden-placement-content").toggle();
+});
+
+
+</script>
+<script>
+
+function showcc(cval)
+{
+    $('#hcc'+ cval).hide();
+    $('#code' + cval).show();
+}
+
+
+function redeemcoupon(cval,amount)
+{
+    $('#msg' + cval).html('&nbsp;');
+    $('#redeem' + cval).text('Please Wait.');
+    var ccode = $("input[name=ccode" + cval +"]").val();;
+    var url = 'checkcoupon.php';
+
+    var params = {};
+    params['code'] = ccode;
+    params['planid'] = cval;
+
+    $.post(url,params, function(data) {
+          eval(data);
+          if(resp[0] == "0")
+          {
+              /*invalid Code*/
+                $('#redeem' + cval).text('Redeem');
+                $('#msg' + cval).text('[Invalid Code]');
+                $('#msg' + cval).css('color','red');
+          }
+          else
+          {
+                $('#msg' + cval).text('Coupon Redeemed!');
+                $('#msg' + cval).css('color','green');
+
+                $('#a' + cval).text(resp[0]);
+                $('#c' + cval).text(ccode);
+                $('#code' + cval).hide();
+
+                $('#final' + cval).html('You Pay: <span class="lined-amt"><del><span class="lined-rupee">&#8377;</span>' + amount + '</del></span> &nbsp;<span class="pamt-rupee">&#8377;</span>' + resp[0]);
+                $('#final' + cval).show();
+                $('#pnocc' + cval).hide();
+                $('#p' + cval).show();
+          }
+    });
+}
+
+    function ccapaynowcoupon(planid,amount)
+    {
+        var totalamount = $('#a' + planid).text();
+        var coupon = $('#c' + planid).text();
+
+
+        $('#totalamount').html(totalamount);
+        $('#actamt').html(parseInt(totalamount));
+        $('#planid').html(planid);
+        $('#ccode').html(coupon);
+        $('#inamount').html(amount);
+        $("#piModal").show();
+    }
+
+    function ccapaynow(planid,amount)
+    {
+        $('#totalamount').html(amount);
+        $('#actamt').html(parseInt(amount));
+        $('#planid').html(planid);
+        $('#inamount').html(amount);
+        $("#piModal").show();
+    }
+
+</script>
+
+<!-- Hello -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://s3-ap-southeast-1.amazonaws.com/sg.oliveboard.in/static/js/jquery.min.js"></script>
+
+    <div id="blackbg" style="display: none;" ><span><p>Please wait while we process your request....</p><img class="load-gif" height="32" src="https://s3-ap-southeast-1.amazonaws.com/sg2.oliveboard.in/static/images/loader.gif" /></span></div>
+     
+            <!--modal -->
+            <div id="piModal" class="piModal">
+              <!-- Modal content -->
+              <div class="pi-dialog">
+                  <div class="pi-content">
+                    
+                    <div class="pi-body">
+                        <span id="piClose" class="piclose">&times;</span>
+                        <div class="details">
+                            <div class="details-inner">
+                                <div class="detailsgroup">
+                                    <div class="cpcol contact">
+                                        <div class="contact-inner">
+                                            <div class="cheader">
+                                                <h3>Contact Details</h3>
+                                            </div>
+                                            <p id="errmsg">&nbsp;</p>
+                                            <div class="ccontent">
+                                                <div class="form-group">
+                                                    <span class="inicons"><span class="inicons-inner"><span class="liimg liimg-name">&nbsp;</span></span></span>
+                                                    <input type="text" required="" value="" name="name" id="uname" class="form-control" aria-required="true" placeholder="Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="inicons"><span class="inicons-inner"><span class="liimg liimg-mail">&nbsp;</span></span></span>
+                                                    <input type="text" required="" value="" name="email" id="puemail" class="form-control" aria-required="true" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="inicons"><span class="inicons-inner"><span class="liimg liimg-phone">&nbsp;</span></span></span>
+                                                    <input required="" value="" name="monum" id="uphone" class="form-control" aria-required="true" type="mobile" placeholder="Enter 10 digit Mobile No" maxlength="10">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="inicons"><span class="inicons-inner"><span class="liimg liimg-location">&nbsp;</span></span></span>
+                                                    <input required="" value="" name="pincode" id="upincode" class="form-control" aria-required="true" type="text" placeholder="Pin Code">
+                                                </div>
+                                             </div>
+                                            <div class="payfooter">
+                                                
+                                                <div class="total-group">
+                                                    <p>Total Amount</p>
+                                                    <h3><span class="rupeesymbol">&#8377;</span><span id="totalamount"></span></h3>
+                                                    <p style="line-height:12px;display:none" id="totalamountcashback"></p>
+                                                    <span id="actamt" style="display:none"></span>
+                                                    <span id="planid" style="display:none"></span>
+                                                    <span id="batchid" style="display:none">240805</span>
+                                                    <span id="ccode" style="display:none"></span>
+                                                    <span id="inamount" style="display:none"></span>
+                                                </div>
+                                                <button type="button" class="btn-proceed" onclick="proceed();">Proceed to Payment</button>
+                                            </div>
+                                            <div class="borbottom ">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+              </div>
+
+            </div><!-- /.modal -->
+        <script src="/buy/js/rzpyprelog.js?v=5"></script>
+</body>
+</html>

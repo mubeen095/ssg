@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>What is a Memory Leak? How can we avoid it?</title>
+	<atom:link href="https://www.skillvertex.com/tag/what-is-a-memory-leak-how-can-we-avoid-it/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:38:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>What is a Memory Leak? How can we avoid it?</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is a Memory Leak? How can we avoid it?</title>
+		<link>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/</link>
+					<comments>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:38:49 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[What is a Memory Leak? How can we avoid it?]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3174</guid>
+
+					<description><![CDATA[What is a Memory Leak? How can we avoid it? A memory leak occurs when a program fails to release allocated memory, leading to reduced system performance and potential crashes. This is especially problematic for long-running processes like servers that never restart, as leaks accumulate over time, degrading performance and stability. Preventing memory leaks requires ... <a title="What is a Memory Leak? How can we avoid it?" class="read-more" href="https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/" aria-label="More on What is a Memory Leak? How can we avoid it?">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#what-is-a-memory-leak-how-can-we-avoid-it">What is a Memory Leak? How can we avoid it?</a></li><li ><a href="#example-of-memory-leak">Example of Memory Leak</a></li><li ><a href="#how-to-avoid-memory-leak">How to avoid Memory Leak</a><ul><li ><a href="#example-program-to-release-memory-allocated-in-heap-to-avoid-memory-leak">Example: Program to Release Memory Allocated in Heap to Avoid Memory Leak</a></li><li ><a href="#example-program-to-check-whether-the-memory-is-freed-or-not">Example: Program to Check Whether the Memory is Freed or Not</a></li></ul></li><li ><a href="#faq-what-is-a-memory-leak-how-can-we-avoid-it">FAQ- What is a Memory Leak? How can we avoid it?</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="what-is-a-memory-leak-how-can-we-avoid-it">What is a Memory Leak? How can we avoid it?</h2>
+
+
+
+<p>A memory leak occurs when a program fails to release allocated memory, leading to reduced system performance and potential crashes. This is especially problematic for long-running processes like servers that never restart, as leaks accumulate over time, degrading performance and stability. Preventing memory leaks requires careful memory management in programming, with some languages offering automatic memory handling to reduce this issue.</p>
+
+
+
+<h2 class="wp-block-heading" id="example-of-memory-leak">Example of Memory Leak</h2>
+
+
+
+<pre class="wp-block-code"><code>
+/* Function with memory leak */
+#include &lt;stdlib.h&gt;
+ 
+void f()
+{
+    int* ptr = (int*)malloc(sizeof(int));
+ 
+    /* Do some work */
+ 
+    /* Return without freeing ptr*/
+    return;
+}</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="how-to-avoid-memory-leak">How to avoid Memory Leak</h2>
+
+
+
+<p>In order to avoid the leak, memory should always be free from them, when it is not necessary.</p>
+
+
+
+<h3 class="wp-block-heading" id="example-program-to-release-memory-allocated-in-heap-to-avoid-memory-leak">Example: Program to Release Memory Allocated in Heap to Avoid Memory Leak</h3>
+
+
+
+<pre class="wp-block-code"><code>/* Function without memory leak */
+#include &lt;stdlib.h&gt;
+ 
+void f()
+{
+    int* ptr = (int*)malloc(sizeof(int));
+ 
+    /* Do some work */
+ 
+    /* Memory allocated by malloc is released */
+    free(ptr);
+    return;
+}</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="example-program-to-check-whether-the-memory-is-freed-or-not">Example: Program to Check Whether the Memory is Freed or Not</h3>
+
+
+
+<pre class="wp-block-code"><code>
+
+// C++ Program to check whether the memory is allocated or not 
+// if allocated free it
+ 
+#include &lt;iostream&gt;
+using namespace std;
+ 
+int main()
+{
+    int* ptr = new int;
+   
+    if (ptr == NULL)
+        cout &lt;&lt; "Memory Is Insuffficient\n";
+    else {
+        delete ptr;
+        cout &lt;&lt; "Memory Freed\n";
+    }
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Memory Freed
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-what-is-a-memory-leak-how-can-we-avoid-it">FAQ- What is a Memory Leak? How can we avoid it?</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698665985097" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. Why is there a memory leak?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. A memory leak occurs when a computer program fails to release memory that is no longer needed, preventing that memory from being used for other purposes and essentially wasting it.</p>
+
+</div>
+</div>
+<div id="faq-question-1698665997514" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. How is memory leak detected?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Built-in or external tools like profilers, debuggers, or heap analyzers can help monitor and analyze memory usage and allocation. These tools reveal crucial information about how much memory your program is using, where it&#8217;s allocated, and how it evolves over time. This data can be invaluable for identifying and diagnosing memory leaks.</p>
+
+</div>
+</div>
+<div id="faq-question-1698666006074" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. Can a memory leak cause damage?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Memory leaks can indeed lead to software becoming unresponsive or malfunctioning, but they do not cause physical or permanent damage to the hardware. Memory leaks are strictly a software issue, and their primary impact is on system performance and stability, causing applications to slow down and potentially fail.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/what-is-a-memory-leak-how-can-we-avoid-it/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

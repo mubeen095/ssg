@@ -1,0 +1,352 @@
+
+  *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+.piModal {
+  display: none;
+  position: fixed;
+  z-index: 44444;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.4);
+  /* Add Animation */
+  /* The Close Button */ }
+  .piModal .pi-dialog {
+    margin: 10% auto;
+    width: 50%; }
+  .piModal .pi-content {
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: medium none;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; }
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+  .piModal .piclose {
+    color: #b7b7b7;
+    float: right;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    z-index: 1030;}
+  .piModal .piclose:hover,
+  .piModal .piclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+  
+  .piModal .pi-body {
+    position: relative;
+    }
+
+    .details {
+  width: 100%;
+  position: relative; }
+  .details .details-inner {
+    position: relative;
+    }
+    .details .details-inner .detailsgroup {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-content: stretch;
+      align-content: stretch;
+      align-items: stretch; }
+      .details .details-inner .detailsgroup .cpcol {
+        flex: 0 1 auto;
+        position: relative; }
+      .details .details-inner .detailsgroup .contact {
+        width: 100%;
+        border:none; }
+        .details .details-inner .detailsgroup .contact .contact-inner {
+          background: #FFF;
+          box-shadow: 0 5px 20px 0 rgba(20, 50, 75, 0.17);
+          position: relative;
+          padding-top: 20px; }
+          .details .details-inner .detailsgroup .contact .contact-inner .borbottom {
+            clear: both;
+            width: 100%;
+            height: 8px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: -4px;
+            background-image: url("../img/pi-sprite.png"); 
+            background-position: 0px -129px;}
+          .details .details-inner .detailsgroup .contact .contact-inner .cheader {
+            width: 100%;
+            float: left;
+            position: relative;
+            padding: 0px 30px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .cheader h3 {
+              font-size: 20px;
+              margin: 0px;
+              padding: 0px;
+              margin-bottom: 5px;
+              color: #57a7fc;
+              font-weight: 600;
+              line-height: 28px;
+              font-family: Arial, Helvetica, sans-serif; }
+          .details .details-inner .detailsgroup .contact .contact-inner .ccontent {
+            float: left;
+            width: 100%;
+            position: relative;
+            clear: both;
+            padding: 0px 15px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .form-group {
+              margin-bottom: 12px;
+              width: 50%;
+              display: inline-block;
+              float: left;
+              position: relative;
+              padding: 0px 15px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .form-control {
+              background-color: #FFF;
+              border-radius: 3px;
+              box-shadow: 0px 1px 4px 0px rgba(255, 255, 255, 0.17);
+              font-size: 14px;
+              color: #000;
+              font-weight: 300;
+              height: auto;
+              padding: 6px 6px 6px 60px;
+              width: 100%;
+              line-height: 24px;
+              outline: none;
+              border: 1px solid #98c8ff; }
+              .details .details-inner .detailsgroup .contact .contact-inner .ccontent  .billingstate{
+                background-color: #FFF;
+                border-radius: 3px;
+                box-shadow: 0px 1px 4px 0px rgba(255, 255, 255, 0.17);
+                font-size: 14px;
+                color: #000;
+                font-weight: 300;
+                height: auto;
+                padding: 6px 6px 6px 60px;
+                width: 100%;
+                line-height: 24px;
+                outline: none;
+                border: 1px solid #98c8ff;
+                height: 38px;  
+              }
+              .details .details-inner .detailsgroup .contact .contact-inner .ccontent  .billingstate option{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                background: transparent;
+                color: #000;
+                padding: 8px 16px;
+                display: block;
+                line-height: 20px;
+                border-bottom: 1px solid #f5f5f5;
+                text-transform: uppercase;
+                cursor: pointer;
+              }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .inicons {
+              display: flex;
+              justify-content: center;
+              position: absolute;
+              height: 36px;
+              width: 36px;
+              left: 16px;
+              top: 1px;
+              background-color: #edf6ff;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .inicons-inner {
+              display: flex;
+              flex-direction: column;
+              justify-content: center; }
+              .liimg{
+                display: inline-block;
+                background: url("../img/pi-sprite.png") no-repeat center center;
+                width: 22px;
+                height: 24px;
+              }
+              .liimg-name{
+                background-position: 0px 0px;
+              }
+              .liimg-mail{
+                background-position: 0px -27px;
+              }
+              .liimg-phone{
+                background-position: 0px -58px;
+              }
+              .liimg-location{
+                background-position: 0px -93px;
+              }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent #ustate {
+              cursor: pointer;
+              padding-right: 20px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .downarrow {
+              display: block;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid #333;
+              position: absolute;
+              top: 20px;
+              right: 25px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent #stateslist {
+              position: absolute;
+              top: 100%;
+              display: none;
+              float: left; }
+            .details .details-inner .detailsgroup .contact .contact-inner .ccontent .stateslist {
+              background: #FFF;
+              margin: 0px;
+              right: 15px;
+              border-color: #edf6ff;
+              padding: 0px;
+              border-collapse: collapse;
+              z-index: 1030;
+              width: calc(100% - 74px);
+              box-shadow: 0 4px 16px 0 rgba(20, 50, 75, 0.1);
+              text-align: left;
+              max-height: 240px;
+              overflow-y: auto; }
+              .details .details-inner .detailsgroup .contact .contact-inner .ccontent .stateslist li {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                background: transparent;
+                color: #000;
+                padding: 8px 16px;
+                display: block;
+                line-height: 20px;
+                border-bottom: 1px solid #f5f5f5;
+                text-transform: uppercase;
+                cursor: pointer; }
+              .details .details-inner .detailsgroup .contact .contact-inner .ccontent .stateslist li:hover {
+                background: #333;
+                color: #FFF; }
+          .details .details-inner .detailsgroup .contact .contact-inner .payfooter {
+            position: relative;
+            clear: both;
+            text-align: right;
+            background: #f5f5f5;
+            padding: 20px 30px; }
+            .details .details-inner .detailsgroup .contact .contact-inner .payfooter .total-group, .details .details-inner .detailsgroup .contact .contact-inner .payfooter .btn-proceed {
+              display: inline-block; }
+            .details .details-inner .detailsgroup .contact .contact-inner .payfooter .btn-proceed {
+              font-family: Arial, Helvetica, sans-serif;
+              text-align: center;
+              padding: 10px 20px;
+              font-size: 14px;
+              font-weight: 600;
+              border-radius: 3px;
+              outline: 0;
+              border: none;
+              text-decoration: none;
+              background: #ff502d;
+              color: #FFF;
+              cursor: pointer;
+              box-shoadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.17);
+              line-height: 28px;
+              vertical-align: top; }
+            .details .details-inner .detailsgroup .contact .contact-inner .payfooter .total-group {
+              position: relative;
+              margin-right: 30px;
+              padding: 0px;
+              vertical-align: top;
+              text-align: left; }
+              .details .details-inner .detailsgroup .contact .contact-inner .payfooter .total-group p {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: 300; }
+              .details .details-inner .detailsgroup .contact .contact-inner .payfooter .total-group h3 {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                color: #000; }
+
+#errmsg {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0px;
+  padding: 0px;
+  color: #ff502d;
+  clear: both;
+  padding: 0px 30px; }
+
+@media only screen and (max-width: 767px) {
+  .piModal .pi-dialog {
+    width:95%;
+  }
+  .details .details-inner .detailsgroup .contact {
+    width: 100%; }
+  .details .details-inner .detailsgroup .contact .contact-inner .cheader {
+    padding: 0px 15px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .ccontent .form-group {
+    width: 100%;
+    padding: 0px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .payfooter {
+    padding: 20px 14px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .payfooter .btn-proceed {
+    padding: 8px 16px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .payfooter .total-group {
+    margin-right: 10px;
+    float: left; }
+  .details .details-inner .detailsgroup .contact .contact-inner .ccontent .inicons {
+    left: 1px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .ccontent .downarrow {
+    right: 10px; }
+  .details .details-inner .detailsgroup .contact .contact-inner .ccontent .stateslist {
+    right: 0px;
+    width: calc(100% - 44px);
+    max-height: 144px; }
+  #errmsg {
+    padding: 0px 15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+ 
+  .details .details-inner .detailsgroup .contact .contact-inner .ccontent .form-group {
+    width: 50%; } }

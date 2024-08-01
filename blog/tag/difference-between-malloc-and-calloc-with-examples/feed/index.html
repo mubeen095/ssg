@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Difference Between malloc() and calloc() with Examples</title>
+	<atom:link href="https://www.skillvertex.com/tag/difference-between-malloc-and-calloc-with-examples/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:38:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>Difference Between malloc() and calloc() with Examples</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Difference Between malloc() and calloc() with Examples</title>
+		<link>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/</link>
+					<comments>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:38:35 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Difference Between malloc() and calloc() with Examples]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3153</guid>
+
+					<description><![CDATA[Difference Between malloc() and calloc() with Examples The two functions such as malloc () and calloc() are library functions that can allocate dynamically. Dynamic refers to the memory that is allocated during the run time(execution of the program) from the heap segment. Initialization malloc() will allocate a memory block of the provided size(in bytes) and ... <a title="Difference Between malloc() and calloc() with Examples" class="read-more" href="https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/" aria-label="More on Difference Between malloc() and calloc() with Examples">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#difference-between-malloc-and-calloc-with-examples">Difference Between malloc() and calloc() with Examples</a></li><li ><a href="#initialization">Initialization</a></li><li ><a href="#return-value">Return Value</a></li><li ><a href="#difference-between-malloc-and-calloc-in-c">Difference between malloc() and calloc() in C</a></li><li ><a href="#faq-difference-between-malloc-and-calloc-with-examples">FAQ- Difference Between malloc() and calloc() with Examples</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="difference-between-malloc-and-calloc-with-examples">Difference Between malloc() and calloc() with Examples</h2>
+
+
+
+<p>The two functions such as malloc () and calloc() are library functions that can allocate dynamically. Dynamic refers to the memory that is allocated during the run time(execution of the program) from the heap segment.</p>
+
+
+
+<h2 class="wp-block-heading" id="initialization">Initialization</h2>
+
+
+
+<p>malloc() will allocate a memory block of the provided size(in bytes) and then it can return a pointer to the beginning of the block. Malloc() won&#8217;t initialize the memory. Whereas, if you attempt to read from the allocated memory without even initializing it, then it can show undefined behavior. This meant the value that you read will be garbage values.</p>
+
+
+
+<p>The <code>calloc()</code> function in C and C++ is used to allocate memory for an array of elements and initializes all the bytes in the allocated memory to zero. It takes two arguments: the number of elements to allocate memory for and the size of each element in bytes. <code>calloc()</code> then returns a pointer to the allocated memory block.</p>
+
+
+
+<p>Because <code>calloc()</code> initializes all the bytes to zero, if you try to read the values from the allocated memory without explicitly assigning values to them, you will indeed get 0 or equivalent representations for the data type you are using. This behavior is different from the <code>malloc()</code> function, which allocates memory but does not initialize it, so the values in the memory block may contain arbitrary data.</p>
+
+
+
+<p><strong>Parameters</strong></p>
+
+
+
+<p>The malloc() function in C and C++ takes a single argument, which is the number of bytes to allocate. It returns a pointer to a block of memory that is large enough to store the specified number of bytes. <code>malloc()</code> does not initialize the memory it allocates, which means the contents of the allocated memory are undefined, and you need to explicitly initialize it if needed.</p>
+
+
+
+<p>calloc() indeed takes two arguments:</p>
+
+
+
+<ol class="wp-block-list">
+<li>The number of blocks or elements to be allocated.</li>
+
+
+
+<li>The size of each block or element in bytes.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="return-value">Return Value</h2>
+
+
+
+<p>Both malloc() and calloc() return a pointer to the allocated memory block on successful allocation. If the allocation fails for any reason, they return a <code>NULL</code> pointer to indicate failure. It&#8217;s important to check the returned pointer to ensure that the allocation was successful before attempting to use the allocated memory.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C code that demonstrates the difference
+// between calloc and malloc
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+    // Both of these allocate the same number of bytes,
+    // which is the amount of bytes that is required to
+    // store 5 int values.
+ 
+    // The memory allocated by calloc will be
+    // zero-initialized, but the memory allocated with
+    // malloc will be uninitialized so reading it would be
+    // undefined behavior.
+    int* allocated_with_malloc = malloc(5 * sizeof(int));
+    int* allocated_with_calloc = calloc(5, sizeof(int));
+ 
+    // As you can see, all of the values are initialized to
+    // zero.
+    printf("Values of allocated_with_calloc: ");
+    for (size_t i = 0; i &lt; 5; ++i) {
+        printf("%d ", allocated_with_calloc&#91;i]);
+    }
+    putchar('\n');
+
+    // This malloc requests 1 terabyte of dynamic memory,
+    // which is unavailable in this case, and so the
+    // allocation fails and returns NULL.
+    int* failed_malloc = malloc(1000000000000);
+    if (failed_malloc == NULL) {
+        printf("The allocation failed, the value of "
+               "failed_malloc is: %p",
+               (void*)failed_malloc);
+    }
+ 
+    // Remember to always free dynamically allocated memory.
+    free(allocated_with_malloc);
+    free(allocated_with_calloc);
+}
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Values of allocated_with_calloc: 0 0 0 0 0 
+The allocation failed, the value of failed_malloc is: (nil)</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="difference-between-malloc-and-calloc-in-c">Difference between malloc() and calloc() in C</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>malloc()</strong></td><td><strong>calloc()</strong></td></tr><tr><td>Malloc() refers to a function which can create one block of memory of a fixed size</td><td>Calloc() is a function that will assign a specified number of blocks of memory to single variable</td></tr><tr><td>It can only take one segment.</td><td>It will take only two segments.</td></tr><tr><td>Malloc() will be faster than calloc ().</td><td>calloc () is comparatively  slower than mall0c()</td></tr><tr><td>It has more time efficiency</td><td>calloc() will have very low time efficiency.</td></tr><tr><td>Syntax: void*<br>malloc(size_t size;</td><td>Syntax : void* calloc(size_t num, size_t size);</td></tr><tr><td>It won&#8217;t initialize the memory to zero.</td><td>It will  initialize the memory to zero</td></tr><tr><td>It won&#8217;t add any extra memory overhead</td><td>calloc() will add extra memory overhead.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="faq-difference-between-malloc-and-calloc-with-examples">FAQ- Difference Between malloc() and calloc() with Examples</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698661702133" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is the return type of malloc () or calloc ()?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. malloc() and calloc() will return <strong>void *</strong></p>
+
+</div>
+</div>
+<div id="faq-question-1698661707314" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is the syntax of malloc?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <strong>ptr = (int*) malloc(100 * sizeof(int));</strong><br />It allocates memory for 100 integers, and since the size of an <code>int</code> is typically 4 bytes on many systems, this will allocate 400 bytes of memory. The pointer <code>ptr</code> holds the address of the first byte in the allocated memory, which is the starting address of the block of 400 bytes.</p>
+
+</div>
+</div>
+<div id="faq-question-1698661715067" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. What is difference between malloc and new?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <code>new</code> is a C++ operator for dynamic memory allocation, initializing objects and returning the exact data type.<br /><code>malloc()</code> is a C and C++ library function for general memory allocation, not initializing objects, and returning <code>void*</code></p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/difference-between-malloc-and-calloc-with-examples/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

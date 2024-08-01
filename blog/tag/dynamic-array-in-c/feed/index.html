@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dynamic Array In C</title>
+	<atom:link href="https://www.skillvertex.com/tag/dynamic-array-in-c/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:39:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>Dynamic Array In C</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Dynamic Array In C</title>
+		<link>https://www.skillvertex.com/blog/dynamic-array-in-c/</link>
+					<comments>https://www.skillvertex.com/blog/dynamic-array-in-c/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:39:51 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Dynamic Array In C]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3202</guid>
+
+					<description><![CDATA[Dynamic Array In C A dynamic array in C is a versatile and powerful data structure that provides the flexibility to allocate memory at runtime, allowing for the dynamic resizing of the array during program execution. Unlike static arrays, which have a fixed size determined at compile time, dynamic arrays can adapt to changing requirements, ... <a title="Dynamic Array In C" class="read-more" href="https://www.skillvertex.com/blog/dynamic-array-in-c/" aria-label="More on Dynamic Array In C">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#dynamic-array-in-c">Dynamic Array In C</a></li><li ><a href="#1-dynamic-array-using-malloc-function">1. Dynamic Array Using malloc() Function</a></li><li ><a href="#2-dynamic-array-using-calloc-function">2. Dynamic Array Using calloc() Function</a></li><li ><a href="#3-dynamically-resizing-array-using-realloc-function">3. Dynamically Resizing Array Using realloc() Function</a></li><li ><a href="#4-variable-length-arrays-vl-as">4. Variable Length Arrays(VLAs)</a></li><li ><a href="#5-flexible-array">5. Flexible Array</a></li><li ><a href="#dynamic-allocation-of-two-dimensional-array">Dynamic Allocation of Two-Dimensional Array</a></li><li ><a href="#"> </a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-array-in-c">Dynamic Array In C</h2>
+
+
+
+<p>A dynamic array in C is a versatile and powerful data structure that provides the flexibility to allocate memory at runtime, allowing for the dynamic resizing of the array during program execution. Unlike static arrays, which have a fixed size determined at compile time, dynamic arrays can adapt to changing requirements, making them an essential tool in C programming for managing and manipulating data efficiently. In this introduction, we&#8217;ll explore the concept of dynamic arrays in C, how to create and resize them, and the advantages they offer in terms of memory management and adaptability to varying program needs.</p>
+
+
+
+<p>However,  we can create a dynamic array with the help of the following methods:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Using malloc() Function</strong></li>
+
+
+
+<li><strong>Using calloc() Function</strong></li>
+
+
+
+<li><strong>Resizing Array Using realloc() Function</strong></li>
+
+
+
+<li><strong>Using Variable Length Arrays(VLAs)</strong></li>
+
+
+
+<li><strong>Using Flexible Array Members</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="1-dynamic-array-using-malloc-function">1. Dynamic Array Using malloc() Function</h2>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Dynamic Memory Allocation</strong>: <code>malloc</code> is used to allocate memory at runtime. This is in contrast to static memory allocation, where memory is allocated at compile time, as seen in static arrays.</li>
+
+
+
+<li><strong>Memory Size</strong>: When you call <code>malloc</code>, you specify the size of the memory block you need in bytes. It allocates a contiguous block of memory of the specified size on the heap.</li>
+
+
+
+<li><strong>Return Type</strong>: <code>malloc</code> returns a pointer of type <code>void*</code>. This means it can be cast into a pointer of any data type based on your needs. You typically cast it to the appropriate pointer type to work with the allocated memory.</li>
+
+
+
+<li><strong>Header File</strong>: The <code>malloc</code> function is part of the C standard library and is defined in the <code>&lt;stdlib.h&gt;</code> header file. To use <code>malloc</code>, you need to include this header in your program.</li>
+</ol>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*) malloc(byte-size);
+</code></pre>
+
+
+
+<p>Therefore, we can produce a dynamic array of any type by allocating a single block of memory of a particular size and thus typecasting the returned pointer to the pointer of the returned type.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (int*) malloc(100 * sizeof(int));
+</code></pre>
+
+
+
+<p>Here, they have used a dynamic array of type&nbsp;<strong>int&nbsp;</strong>and size&nbsp;<strong>100 elements.</strong></p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to create dynamic array using malloc() function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size; 
+  
+    // Size of the array 
+    printf("Enter size of elements:"); 
+    scanf("%d", &amp;size); 
+  
+    //  Memory allocates dynamically using malloc() 
+    ptr = (int*)malloc(size * sizeof(int)); 
+  
+    // Checking for memory allocation 
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+    } 
+    else { 
+  
+        // Memory allocated 
+        printf("Memory successfully allocated using "
+               "malloc.\n"); 
+  
+        // Get the elements of the array 
+        for (int j = 0; j &lt; size; ++j) { 
+            ptr&#91;j] = j + 1; 
+        } 
+  
+        // Print the elements of the array 
+        printf("The elements of the array are: "); 
+        for (int k = 0; k &lt; size; ++k) { 
+            printf("%d, ", ptr&#91;k]); 
+        } 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter size of elements:5
+Memory successfully allocated using malloc.
+The elements of the array are: 1, 2, 3, 4, 5,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="2-dynamic-array-using-calloc-function">2. Dynamic Array Using calloc() Function</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dynamic Memory Allocation and Initialization</strong>: <code>calloc</code> is used to dynamically allocate a specified number of blocks of memory, each of a specified type. Unlike <code>malloc</code>, which does not initialize the memory, <code>calloc</code> initializes each block with a default value of 0. This ensures that the allocated memory is zero-initialized from the start.</li>
+
+
+
+<li><strong>Function Arguments</strong>: The <code>calloc</code> function takes two arguments:
+<ol class="wp-block-list">
+<li>The number of elements required in the dynamic array.</li>
+
+
+
+<li>The size of each element in bytes.</li>
+</ol>
+</li>
+
+
+
+<li><strong>Memory Allocation</strong>: <code>calloc</code> allocates a contiguous block of memory on the heap. The total memory allocated is equal to the number of elements multiplied by the size of each element. The memory block is initialized to zero for each byte.</li>
+</ul>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (cast-type*)calloc(n, element-size);
+</code></pre>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>ptr = (int*) calloc(5, sizeof(float));
+</code></pre>
+
+
+
+<p>The example provided below illustrates how to create a dynamic array using the calloc() method.</p>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to create dynamic array using calloc() function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size; 
+  
+    // Size of the array 
+    printf("Enter size of elements:"); 
+    scanf("%d", &amp;size); 
+  
+    //  Memory allocates dynamically using calloc() 
+    ptr = (int*)calloc(size, sizeof(int)); 
+  
+    // Checking for memory allocation 
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+    } 
+    else { 
+  
+        // Memory allocated 
+        printf("Memory successfully allocated using "
+               "malloc.\n");
+ // Get the elements of the array 
+        for (int j = 0; j &lt; size; ++j) { 
+            ptr&#91;j] = j + 1; 
+        } 
+  
+        // Print the elements of the array 
+        printf("The elements of the array are: "); 
+        for (int k = 0; k &lt; size; ++k) { 
+            printf("%d, ", ptr&#91;k]); 
+        } 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter size of elements:6
+Memory successfully allocated using malloc.
+The elements of the array are: 1, 2, 3, 4, 5, 6, </code></pre>
+
+
+
+<h2 class="wp-block-heading" id="3-dynamically-resizing-array-using-realloc-function">3. Dynamically Resizing Array Using realloc() Function</h2>
+
+
+
+<p>In C, the realloc function is used to change the size of previously allocated memory. It&#8217;s a way to resize an existing array or create a new one with a different size. This allows your program to adapt to changing memory requirements. The function takes a pointer to the old memory block and the new size in bytes as arguments. It automatically copies the data from the old block to the new one if necessary.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>ptr = realloc(ptr, newSize);
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>/ C program to resize dynamic array using realloc() 
+// function 
+  
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+int main() 
+{ 
+  
+    // address of the block created hold by this pointer 
+    int* ptr; 
+    int size = 5; 
+  
+  
+    //  Memory allocates dynamically using calloc() 
+    ptr = (int*)calloc(size, sizeof(int)); 
+  
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); 
+        exit(0); 
+    } 
+    else { 
+        printf("Memory successfully allocated using "
+               "calloc.\n"); 
+    } 
+  
+    // inserting elements 
+    for (int j = 0; j &lt; size; ++j) { 
+        ptr&#91;j] = j + 1; 
+    } 
+  
+    printf("The elements of the array are: "); 
+    for (int k = 0; k &lt; size; ++k) { 
+        printf("%d, ", ptr&#91;k]); 
+    } 
+  
+    printf("\n"); 
+  
+    size = 10; 
+  
+    int *temp = ptr; 
+  
+    //  using realloc 
+    ptr = realloc(ptr, size * sizeof(int)); 
+    if (!ptr) { 
+        printf("Memory Re-allocation failed."); 
+        ptr = temp; 
+    } 
+    else { 
+        printf("Memory successfully re-allocated using "
+               "realloc.\n"); 
+    } 
+  
+    // inserting new elements 
+    for (int j = 5; j &lt; size; ++j) { 
+        ptr&#91;j] = j + 10; 
+    } 
+  
+    printf("The new elements of the array are: "); 
+    for (int k = 0; k &lt; size; ++k) { 
+        printf("%d, ", ptr&#91;k]); 
+    } 
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Memory successfully allocated using calloc.
+The elements of the array are: 1, 2, 3, 4, 5, 
+Memory successfully re-allocated using realloc.
+The new elements of the array are: 1, 2, 3, 4, 5, 15, 16, 17, 18, 19, </code></pre>
+
+
+
+<h2 class="wp-block-heading" id="4-variable-length-arrays-vl-as"><strong>4. Variable Length Arrays(VLAs)</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Dynamic Sizing</strong>: VLAs in C allow you to determine the size of an array at runtime. This dynamic sizing is useful for situations where the array size is not known until the program is running.</li>
+
+
+
+<li><strong>Stack Memory Allocation</strong>: VLAs allocate memory on the stack, making them local to the scope in which they are defined. The memory is automatically released when the scope ends, which can be advantageous for memory management.</li>
+
+
+
+<li><strong>Immutable Size</strong>: Once you define a VLA with a specific size, you cannot change that size during its lifetime. The size remains fixed.</li>
+
+
+
+<li><strong>Limitations</strong>: Using VLAs has some limitations, such as the potential for stack overflow if the array size is too large, limited portability (as VLAs were introduced in C99 and may not be supported in older compilers), and potential inefficiency for very large arrays.</li>
+</ul>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>
+// C program to demonstrate the use of VLAs 
+#include &lt;stdio.h&gt; 
+  
+int main() 
+{ 
+  
+    int n; 
+    printf("Enter the size of the array: "); 
+    scanf("%d", &amp;n); 
+    
+    int arr&#91;n]; 
+  
+    printf("Enter elements: "); 
+  
+    for (int i = 0; i &lt; n; ++i) { 
+  
+        scanf("%d", &amp;arr&#91;i]); 
+    } 
+      
+      printf("Elements of VLA of Given Size: "); 
+    for (int i = 0; i &lt; n; ++i) { 
+  
+        printf("%d ", arr&#91;i]); 
+    } 
+  
+    return 0; 
+}</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Enter the size of the array: 5
+Enter elements: 1 2 3 4 5
+Elements of VLA of Given Size: 1 2 3 4 5</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="5-flexible-array">5. Flexible Array</h2>
+
+
+
+<p>Flexible array members in C are arrays defined within a structure without a specific size. Introduced in the C99 standard, they allow for variable-sized arrays in structures. You can control their size using malloc(). A few rules apply: the flexible array member is best placed as the last member of the structure, its size can change at runtime, and the structure must have at least one other named member. Flexible array members are valuable for creating dynamic arrays within structures, often used in data structures like queues and stacks.</p>
+
+
+
+<p>Refer  the structure given below for example</p>
+
+
+
+<pre class="wp-block-code"><code>struct student
+{
+  int len;
+  int 
+};</code></pre>
+
+
+
+<p>Then, we can use the malloc() function to allocate memory:</p>
+
+
+
+<pre class="wp-block-code"><code>struct student *s = malloc(sizeof(*s) + 5 * sizeof(int));
+</code></pre>
+
+
+
+<p>Example</p>
+
+
+
+<pre class="wp-block-code"><code>// C program to demonstrate the use of Flexible Array Member 
+#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt; 
+  
+// defining struct 
+typedef struct { 
+    int len; 
+    int arr&#91;]; 
+} fam; 
+  
+int main() 
+{ 
+    // creating an array member of size 5 
+    fam* fam1 
+        = (fam*)malloc(sizeof(fam*) + 5 * sizeof(int)); 
+  
+    // creating an array mebmer of size 10 
+    fam* fam2 
+        = (fam*)malloc(sizeof(fam*) + 10 * sizeof(int)); 
+      
+    // inserting elements 
+    for (int i = 0; i &lt; 5; i++) { 
+        fam1-&gt;arr&#91;i] = i + 1; 
+    } 
+    for (int i = 0; i &lt; 10; i++) { 
+        fam2-&gt;arr&#91;i] = i + 10; 
+    } 
+  
+    //  printing elements 
+    printf("Array of Size 5:\n"); 
+    for (int i = 0; i &lt; 5; i++) { 
+        printf("%d, ", fam1-&gt;arr&#91;i]); 
+    } 
+    printf("\n"); 
+  
+    printf("Array of size 10:\n"); 
+    for (int i = 0; i &lt; 10; i++) { 
+        printf("%d, ", fam2-&gt;arr&#91;i]); 
+    } 
+    return 0; 
+}
+</code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>Array of Size 5:
+1, 2, 3, 4, 5, 
+Array of size 10:
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19,</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="dynamic-allocation-of-two-dimensional-array">Dynamic Allocation of Two-Dimensional Array</h2>
+
+
+
+<p>  Creating  a two-dimensional dynamic array in c. &nbsp;These are the  various  methods inorder to produce a 2D dynamic array.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Using a single pointer and a 1D array with pointer arithmetic</strong></li>
+
+
+
+<li><strong>Using an array of pointers&nbsp;</strong></li>
+
+
+
+<li><strong>Using a pointer to a pointer&nbsp;</strong></li>
+
+
+
+<li><strong>Using a double-pointer and one malloc call&nbsp;</strong></li>
+
+
+
+<li><strong>Using a pointer to Variable Length Array</strong></li>
+
+
+
+<li><strong>Using a pointer to the first row of VLA</strong></li>
+</ol>
+
+
+
+<h2 class="wp-block-heading" id="faq-dynamic-array-in-c">FAQ-  Dynamic Array In C</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698743429420" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What is a dynamic array in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Dynamic arrays in C are a valuable data structure that enables the creation and manipulation of arrays with flexible sizes during program execution. They are implemented using pointers and memory allocation functions, which optimizes memory usage and helps in building efficient programs. This flexibility and memory efficiency make dynamic arrays a powerful tool in programming.</p>
+
+</div>
+</div>
+<div id="faq-question-1698743436081" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2.What is the syntax of dynamic array in C?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. printf(&#8220;Enter size of elements:&#8221;); scanf(&#8220;%d&#8221;, &amp;size); //</p>
+
+</div>
+</div>
+<div id="faq-question-1698743440985" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3. How to use dynamic array in class?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. <br />Create a new array of the desired size.<br />Copy data from the old array to the new one.<br />Delete the old array to avoid memory waste.<br />Make sure your pointer points to the new array.<br />These steps help you resize a dynamic array efficiently.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<h2 class="wp-block-heading"><br></h2>
+<div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/dynamic-array-in-c/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

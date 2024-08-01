@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C/C++ Preprocessor Directives | Set 2</title>
+	<atom:link href="https://www.skillvertex.com/tag/c-c-preprocessor-directives-set-2/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.skillvertex.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2024 11:46:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+
+<image>
+	<url>https://www.skillvertex.com/blog/wp-content/uploads/2024/01/favicon.png</url>
+	<title>C/C++ Preprocessor Directives | Set 2</title>
+	<link>https://www.skillvertex.com/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>C/C++ Preprocessor Directives &#124; Set 2</title>
+		<link>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/</link>
+					<comments>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/#respond</comments>
+		
+		<dc:creator><![CDATA[Hridhya Manoj]]></dc:creator>
+		<pubDate>Fri, 10 May 2024 11:46:13 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[C/C++ Preprocessor Directives | Set 2]]></category>
+		<guid isPermaLink="false">https://www.skillvertex.com/blog/?p=3240</guid>
+
+					<description><![CDATA[C/C++ Preprocessor Directives &#124; Set 2 In C and C++, preprocessor directives are lines of code that start with a # symbol and are processed by the preprocessor before the actual compilation of the program. These directives are not terminated by semicolons like regular C/C++ statements. They are used for various purposes, such as Types ... <a title="C/C++ Preprocessor Directives &#124; Set 2" class="read-more" href="https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/" aria-label="More on C/C++ Preprocessor Directives &#124; Set 2">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc" id="rank-math-toc"><p>Table of Contents</p><nav><ul><li ><a href="#c-c-preprocessor-directives-set-2">C/C++ Preprocessor Directives | Set 2</a></li><li ><a href="#types-of-preprocessor-directives-are-given-below">Types of preprocessor directives are given below:</a></li><li ><a href="#faq-c-c-preprocessor-directives-set-2">FAQ- C/C++ Preprocessor Directives | Set 2</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="c-c-preprocessor-directives-set-2">C/C++ Preprocessor Directives | Set 2</h2>
+
+
+
+<p>In C and C++, preprocessor directives are lines of code that start with a <code>#</code> symbol and are processed by the preprocessor before the actual compilation of the program. These directives are not terminated by semicolons like regular C/C++ statements. They are used for various purposes, such as</p>
+
+
+
+<h2 class="wp-block-heading" id="types-of-preprocessor-directives-are-given-below"><strong>Types of preprocessor directives are given below:</strong></h2>
+
+
+
+<ol class="wp-block-list">
+<li>Conditional Compilation</li>
+
+
+
+<li>Line control</li>
+
+
+
+<li>Error directive</li>
+</ol>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Conditional Compilation: </strong>The #ifdef directive is used to conditionally include a block of code in the preprocessor output based on whether a macro name is defined. The #ifdef directive checks if a macro is defined. If the macro is defined, the code within the conditional block is included in the preprocessor output. If the macro is not defined, the code within the block is skipped. The #ifndef directive is the opposite of #ifdef. It checks if a macro is not defined. If the macro is not defined, the code within the conditional block is included in the preprocessor output. The #if directive allows you to conditionally include code based on an expression that evaluates to either true or false. If the expression is true, the code is included; otherwise, it&#8217;s skipped.</li>
+</ol>
+
+
+
+<pre class="wp-block-code"><code>ifndef macro_name
+    statement1;
+    statement2;
+    statement3;
+    .
+    .
+    .
+    statementN;
+endif</code></pre>
+
+
+
+<p>Whereas, a macro with the name &#8216;macro name&#8217; has not been defined using the #define directive. Therefore, only the block of statements will be executed. </p>
+
+
+
+<ul class="wp-block-list">
+<li><code>#if</code>: The #if directive allows you to specify a condition, and if that condition evaluates to a non-zero value (true), the code block immediately following #if is executed. If the condition is false (evaluates to zero), the code block is skipped.</li>
+
+
+
+<li>#elif (short for &#8220;else if&#8221;): The #elif directive provides an alternative condition to be checked if the preceding #if or #elif condition is false. If the #elif condition evaluates to a non-zero value, the code block immediately following #elif is executed.</li>
+
+
+
+<li><code>#else</code>: The #else directive is used to specify a block of code that is executed when none of the previous conditions (specified in #if or #elif) are met. In other words, if all previous conditions are false, the code block following #else is executed.</li>
+</ul>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#if macro_condition
+   statements
+#elif macro_condition
+   statements
+#else
+   statements
+#endif</code></pre>
+
+
+
+<p><strong>Example</strong></p>
+
+
+
+<pre class="wp-block-code"><code>#include&lt;iostream&gt;
+ 
+#define gfg 7
+  
+#if gfg &gt; 200
+   #undef gfg
+   #define gfg 200
+#elif gfg &lt; 50
+   #undef gfg
+   #define gfg 50
+#else
+   #undef gfg
+   #define gfg 100
+#endif
+ 
+int main()
+{
+    std::cout &lt;&lt; gfg;  // gfg = 50
+}    </code></pre>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>50</code></pre>
+
+
+
+<p>2. <strong>Line control ( #line )</strong>: The <code>#line</code> directive in C and C++ allows you to control error reporting by specifying the filename and line number associated with error messages. It is useful for custom error reporting and code generation tools.</p>
+
+
+
+<p>Syntax</p>
+
+
+
+<pre class="wp-block-code"><code>#line number "filename"
+</code></pre>
+
+
+
+<p>The <code>#line</code> directive in C and C++ is used to set the line number for the next code line and can also specify an optional filename to be displayed in error messages. The line numbers of successive lines are increased one by one from this point on, and the &#8220;filename&#8221; parameter is used to redefine the file name shown in error messages.</p>
+
+
+
+<p>3. <strong>Error directive ( #error )</strong>:The <code>#error</code> directive is used in C and C++ to intentionally halt the compilation process and generate an error message, which can be optionally specified as a parameter. It is often used for creating custom error messages or for controlling compilation based on specific conditions.</p>
+
+
+
+<p>Syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>#error optional_error
+</code></pre>
+
+
+
+<p>Optional_error is an error that is specified by the user and will be displayed when the directive is found in the program. Example:</p>
+
+
+
+<p>Output</p>
+
+
+
+<pre class="wp-block-code"><code>error: #error Skill Vertex not found !
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="faq-c-c-preprocessor-directives-set-2">FAQ- C/C++ Preprocessor Directives | Set 2</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1698996123559" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q1. What are the types of C++ preprocessing directives?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. In C++, preprocessor directives serve various purposes, including defining macros, including files, controlling compilation, handling errors, and more. They are processed before the program&#8217;s actual compilation.</p>
+
+</div>
+</div>
+<div id="faq-question-1698996132551" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q2. What is #ifdef and #endif in C++?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. #ifdef is used to check if a symbol is defined. If the specified symbol is defined, the code enclosed between #ifdef and #endif is included in the preprocessor output and compiled.<br />#if is used to evaluate a Boolean expression. If the expression following #if evaluates to true, the enclosed code is included in the preprocessor output and compiled.</p>
+
+</div>
+</div>
+<div id="faq-question-1698996137438" class="rank-math-list-item">
+<h4 class="rank-math-question ">Q3.What is a preprocessor directive and its types?</h4>
+<div class="rank-math-answer ">
+
+<p>Ans. Preprocessor directives in programming languages, such as C and C++, are lines that start with the <code>#</code> character. They are not part of the standard source code but are instructions for the compiler to process certain aspects of the program before actual compilation. Preprocessor directives are used for tasks like macro definitions, conditional compilation, including header files, and other preprocessing tasks to prepare the code for compilation.</p>
+
+</div>
+</div>
+</div>
+</div><div class="saboxplugin-wrap"   ><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Hridhya Manoj' src='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ae736fcf3d5b340b054cf103f576c9?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="saboxplugin-authorname"><a href="https://www.skillvertex.com/blog/author/hridhya-manoj/" class="vcard author" rel="author"><span class="fn">Hridhya Manoj</span></a></div><div class="saboxplugin-desc"><div ><p>Hello, I&#8217;m Hridhya Manoj. I&#8217;m passionate about technology and its ever-evolving landscape. With a deep love for writing and a curious mind, I enjoy translating complex concepts into understandable, engaging content. Let&#8217;s explore the world of tech together</p>
+</div></div><div class="clearfix"></div></div></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.skillvertex.com/blog/c-c-preprocessor-directives-set-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
